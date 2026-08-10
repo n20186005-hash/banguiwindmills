@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+/* ===== Bangui Windmills — Design System =====
+   Theme: Clean Energy Coastal
+   Palette inspired by Ilocos Norte's sea, sky, sand, and wind turbines
+   ========================================= */
+
+@theme {
+  --color-sky: oklch(0.72 0.12 230);
+  --color-sky-light: oklch(0.88 0.06 230);
+  --color-ocean: oklch(0.38 0.08 250);
+  --color-ocean-dark: oklch(0.25 0.06 255);
+  --color-turbine: oklch(0.92 0.01 240);
+  --color-gold: oklch(0.70 0.12 85);
+  --color-gold-light: oklch(0.85 0.08 85);
+  --color-green: oklch(0.62 0.16 160);
+  --color-navy: oklch(0.22 0.04 260);
+  --color-sand: oklch(0.90 0.03 90);
+  --color-stone: oklch(0.48 0.01 260);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Smooth scrolling for single-page navigation */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-navy);
+  background-color: #fafbfc;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Section spacing */
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-alt {
+  background-color: var(--color-turbine);
+}
+
+/* Section dividers — wavy blade-like shape */
+.section-divider {
+  position: relative;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-turbine);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+/* Card styles */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px oklch(0 0 0 / 0.06), 0 1px 2px oklch(0 0 0 / 0.04);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px oklch(0 0 0 / 0.08);
+  transform: translateY(-2px);
+}
+
+/* Badge / tag style */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background: var(--color-sky-light);
+  color: var(--color-ocean);
+}
+
+/* FAQ accordion animation */
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.faq-answer.open {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer > div {
+  overflow: hidden;
+}
+
+/* Fade-in on scroll */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+/* Wind turbine spin animation for logo */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+/* Gallery lightbox styles */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: oklch(0 0 0 / 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+/* Header scroll background transition */
+.header-scrolled {
+  background: oklch(1 0 0 / 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 3px oklch(0 0 0 / 0.08);
+}
+
+/* Google Maps iframe responsive */
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* GSAP-like scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

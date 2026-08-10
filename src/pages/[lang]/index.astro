@@ -1,0 +1,10 @@
+---
+// Legacy redirect — no longer generates pages (single-language site)
+export function getStaticPaths() {
+  return [];
+}
+const destination = '/';
+---
+<meta http-equiv="refresh" content={`0;url=${destination}`} />
+<script is:inline>window.location.href = '/';</script>
+<p>Redirecting to <a href="/">Bangui Windmills</a>...</p>

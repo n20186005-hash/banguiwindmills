@@ -1,0 +1,70 @@
+---
+import { attraction, mapsUrl } from '../config';
+---
+
+<footer class="bg-navy text-white/70">
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="grid gap-12 md:grid-cols-3">
+      <!-- Brand -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-2.5">
+          <img
+            src="/favicon.svg"
+            alt=""
+            class="h-8 w-8 invert animate-spin-slow"
+            width="32"
+            height="32"
+          />
+          <span class="text-lg font-semibold text-white">{attraction.name}</span>
+        </div>
+        <p class="text-sm leading-relaxed">
+          A landmark of sustainable energy and natural beauty on the shores of Bangui Bay,
+          Ilocos Norte — where the wind powers both the land and the imagination.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider text-white/90">Quick Links</h3>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#introduction" class="transition-colors hover:text-gold">Overview</a></li>
+          <li><a href="#history" class="transition-colors hover:text-gold">History</a></li>
+          <li><a href="#entrance-fee" class="transition-colors hover:text-gold">Entrance & Fees</a></li>
+          <li><a href="#transport" class="transition-colors hover:text-gold">How to Get There</a></li>
+          <li><a href="#gallery" class="transition-colors hover:text-gold">Photo Gallery</a></li>
+          <li><a href="#faq" class="transition-colors hover:text-gold">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact / Map -->
+      <div>
+        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider text-white/90">Location</h3>
+        <div class="space-y-3 text-sm">
+          <p>Bangui Bay, Bangui<br />Ilocos Norte, 2920 Philippines</p>
+          <p class="font-mono text-white/50">{attraction.plusCode}</p>
+          <a
+            href={mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 text-gold transition-colors hover:text-gold-light"
+          >
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            View on Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="mt-12 border-t border-white/10 pt-8 text-center text-xs text-white/40">
+      <p>
+        This is an unofficial travel guide created by enthusiasts. We are not affiliated with
+        the Bangui Windmills management, NorthWind Power Development Corporation, ACEN, or any
+        government entity. All information is provided for reference only — please verify
+        details before your visit.
+      </p>
+    </div>
+  </div>
+</footer>

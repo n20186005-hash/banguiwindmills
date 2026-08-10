@@ -1,0 +1,97 @@
+---
+import { getBaseUrl, attraction } from '../config';
+import '../global.css';
+const baseUrl = getBaseUrl();
+
+// SEO / OG 用数据
+const pageTitle = `${attraction.name} — Ilocos Norte\'s Iconic Wind Farm`;
+const pageDesc = attraction.description;
+const canonicalUrl = baseUrl ? `${baseUrl}/` : undefined;
+const ogImage = baseUrl ? `${baseUrl}/gallery/bangui-windmills-1.jpg` : '/gallery/bangui-windmills-1.jpg';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta -->
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDesc} />
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDesc} />
+    <meta property="og:type" content="website" />
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={attraction.name} />
+    <meta property="og:site_name" content={attraction.name} />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDesc} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Favicon / Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
+
+    <!-- GA4 -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-HXM22WWPKP"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HXM22WWPKP');
+    </script>
+
+    <!-- JSON-LD Structured Data: TouristAttraction -->
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "TouristAttraction",
+        "name": "Bangui Windmills",
+        "description": "The first wind farm in Southeast Asia, featuring 20 towering wind turbines stretched along the picturesque coastline of Bangui Bay in Ilocos Norte, Philippines.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bangui Bay",
+          "addressLocality": "Bangui",
+          "addressRegion": "Ilocos Norte",
+          "addressCountry": "PH"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "18.5285706",
+          "longitude": "120.7181102"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "touristType": "Wind Farm / Scenic Viewpoint",
+        "sameAs": "https://maps.app.goo.gl/6rStRyytritErtFk6"
+      }
+    </script>
+  </head>
+
+  <body class="min-h-screen bg-white text-navy antialiased">
+    <slot />
+
+    <!-- Scroll reveal inline script -->
+    <script is:inline>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+  </body>
+</html>

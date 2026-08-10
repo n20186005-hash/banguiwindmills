@@ -28,7 +28,7 @@ importers:
         specifier: 7.0.3
         version: 7.0.3
       sharp:
-        specifier: ^0.35.3
+        specifier: 0.35.3
         version: 0.35.3(@types/node@24.13.3)
       typescript:
         specifier: 5.9.3

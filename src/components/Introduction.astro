@@ -1,0 +1,83 @@
+---
+import { attraction } from '../config';
+---
+
+<section id="introduction" class="section">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+      <!-- Text -->
+      <div class="reveal space-y-6">
+        <span class="badge">
+          <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+          </svg>
+          Ilocos Norte, Philippines
+        </span>
+        <h2 class="text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+          Where Wind<br class="hidden sm:block" /> Meets the Sea
+        </h2>
+        <div class="space-y-4 text-stone leading-relaxed">
+          <p>
+            Stretching 9 kilometers along the dark-sand shoreline of Bangui Bay, the
+            <strong class="text-navy">Bangui Windmills</strong> form one of the
+            Philippines' most photographed landmarks. Twenty Vestas V82 wind turbines
+            — each standing 70 meters (230 feet) tall — spin gracefully against the
+            West Philippine Sea, creating a mesmerizing contrast between cutting-edge
+            technology and raw coastal beauty.
+          </p>
+          <p>
+            Built in 2005 as <strong class="text-navy">Southeast Asia's first wind farm</strong>,
+            these turbines generate enough electricity to cover approximately 40% of
+            Ilocos Norte's power needs. Beyond their engineering significance, they
+            have become a symbol of the region's commitment to renewable energy and
+            a must-visit destination along the Ilocos tourist circuit.
+          </p>
+          <p>
+            Best of all? The viewing area is <strong class="text-green">completely free</strong>
+            and open to the public year-round — just pull up to the shoreline, step
+            out of your car, and find yourself dwarfed by these gentle giants.
+          </p>
+        </div>
+
+        <!-- Quick Facts -->
+        <div class="grid grid-cols-2 gap-3 pt-2 sm:grid-cols-4">
+          <div class="rounded-xl bg-sky-light/40 px-4 py-3 text-center">
+            <div class="text-xl font-bold text-ocean">24h</div>
+            <div class="text-xs text-stone">Open Daily</div>
+          </div>
+          <div class="rounded-xl bg-green/10 px-4 py-3 text-center">
+            <div class="text-xl font-bold text-green">FREE</div>
+            <div class="text-xs text-stone">Entrance</div>
+          </div>
+          <div class="rounded-xl bg-gold-light/40 px-4 py-3 text-center">
+            <div class="text-xl font-bold text-navy">9 km</div>
+            <div class="text-xs text-stone">Shoreline</div>
+          </div>
+          <div class="rounded-xl bg-ocean/10 px-4 py-3 text-center">
+            <div class="text-xl font-bold text-ocean">70 m</div>
+            <div class="text-xs text-stone">Turbine Height</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="reveal">
+        <div class="relative overflow-hidden rounded-2xl shadow-xl">
+          <img
+            src="/gallery/bangui-windmills-2.jpg"
+            alt="Bangui Windmills along the coastline"
+            class="aspect-[4/5] w-full object-cover"
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="1000"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 rounded-lg bg-white/90 backdrop-blur-sm px-4 py-2 text-sm font-medium text-navy">
+            {attraction.plusCode}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

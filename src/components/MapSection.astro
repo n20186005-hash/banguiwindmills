@@ -1,0 +1,45 @@
+---
+import { attraction, mapsUrl } from '../config';
+---
+
+<section id="map-section" class="section">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal mb-12 text-center">
+      <span class="badge">Location</span>
+      <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+        Find Us on the Map
+      </h2>
+    </div>
+
+    <div class="reveal map-container mx-auto max-w-4xl shadow-lg">
+      <iframe
+        src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.926588422!2d120.7155353!3d18.5285706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3389254c5574a46d%3A0xf1e2525a3b963752!2sBangui%20Windmills!5e0!3m2!1sen!2sph!4v1690000000000!5m2!1sen!2sph`}
+        title="Bangui Windmills — Google Maps"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="reveal mt-8 text-center">
+      <div class="inline-flex flex-wrap items-center justify-center gap-4 rounded-2xl bg-turbine/50 px-6 py-4">
+        <div class="text-sm text-stone">
+          <strong class="text-navy">Address:</strong> {attraction.address}
+        </div>
+        <div class="hidden sm:block h-6 w-px bg-stone/30"></div>
+        <div class="text-sm text-stone">
+          <strong class="text-navy">Plus Code:</strong> <span class="font-mono">{attraction.plusCode}</span>
+        </div>
+        <div class="hidden sm:block h-6 w-px bg-stone/30"></div>
+        <a
+          href={mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm font-semibold text-ocean hover:underline"
+        >
+          Open in Google Maps →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

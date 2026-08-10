@@ -1,0 +1,105 @@
+---
+import { mapsUrl } from '../config';
+---
+
+<section id="transport" class="section-alt">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal mb-12 text-center">
+      <span class="badge">Getting Here</span>
+      <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+        Detailed Transport Guide
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-stone leading-relaxed">
+        Bangui is approximately 550 km north of Manila and about 55 km from Laoag City.
+        Multiple options exist whether you're self-driving or relying on public transport.
+      </p>
+    </div>
+
+    <div class="grid gap-8 lg:grid-cols-3">
+      <!-- By Car / Self-Drive -->
+      <div class="reveal card p-6 sm:p-8">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-ocean/10">
+          <svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-navy">By Car / Self-Drive</h3>
+        <div class="mt-3 space-y-3 text-sm text-stone leading-relaxed">
+          <p>From <strong>Manila</strong>: Take NLEX → SCTEX → TPLEX, then follow the Manila North Road (AH26) through La Union, Ilocos Sur, and into Ilocos Norte. Total drive time: approximately <strong>9–11 hours</strong>.</p>
+          <p>From <strong>Laoag</strong>: Head north on the Pan-Philippine Highway (AH26) towards Bangui. The drive takes about <strong>1 to 1.5 hours</strong> (approximately 55 km).</p>
+          <div class="rounded-lg bg-turbine/50 p-3 text-xs">
+            <strong>Tip:</strong> Use Google Maps or Waze — search for "Bangui Windmills" or enter the Plus Code <span class="font-mono">GPH9+C6H</span>. The road is well-paved throughout.
+          </div>
+        </div>
+      </div>
+
+      <!-- By Bus -->
+      <div class="reveal card p-6 sm:p-8">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-green/10">
+          <svg class="h-6 w-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-navy">By Bus</h3>
+        <div class="mt-3 space-y-3 text-sm text-stone leading-relaxed">
+          <p>Several bus companies operate Manila–Laoag routes:</p>
+          <ul class="list-disc pl-4 space-y-1">
+            <li><strong>Partas Bus</strong> — Cubao to Laoag</li>
+            <li><strong>Florida Bus</strong> — Sampaloc to Laoag</li>
+            <li><strong>Fariñas Transit</strong> — Cubao to Laoag</li>
+            <li><strong>GV Florida</strong> — Manila to Laoag</li>
+          </ul>
+          <p>From Laoag bus terminal, take a <strong>tricycle</strong> or <strong>jeepney</strong> to the Bangui-bound bus/van terminal, then take a northbound bus or van to Bangui proper (~1 hour). From Bangui town, a short tricycle ride (5–10 minutes) takes you to the windmills.</p>
+          <div class="rounded-lg bg-turbine/50 p-3 text-xs">
+            <strong>Approximate bus fare:</strong> PHP 600–900 (Manila–Laoag, one way). Bus journey: 8–10 hours.
+          </div>
+        </div>
+      </div>
+
+      <!-- By Tour / Tricycle -->
+      <div class="reveal card p-6 sm:p-8">
+        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gold-light/50">
+          <svg class="h-6 w-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-navy">By Tour / Tricycle</h3>
+        <div class="mt-3 space-y-3 text-sm text-stone leading-relaxed">
+          <p>
+            <strong>Day Tours from Laoag:</strong> Many hotels and travel agencies in Laoag
+            offer Ilocos Norte day tours that typically include Bangui Windmills, Cape
+            Bojeador Lighthouse, Kapurpurawan Rock Formation, and Pagudpud beaches.
+            Prices range from <strong>PHP 1,500–3,500</strong> per person depending on
+            group size and itinerary.
+          </p>
+          <p>
+            <strong>Tricycle from Bangui Town:</strong> If you're already in Bangui proper,
+            tricycles are readily available to take you to the windmills. The ride takes
+            about 5–10 minutes. Negotiate the fare beforehand — expect around
+            <strong>PHP 50–100</strong> for a round trip.
+          </p>
+          <div class="rounded-lg bg-turbine/50 p-3 text-xs">
+            <strong>Habl-Habl (Motorcycle Taxi):</strong> A budget option for solo travelers from Bangui town center. Rates are negotiable, typically PHP 30–50 one-way.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Maps CTA -->
+    <div class="reveal mt-10 text-center">
+      <a
+        href={mapsUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-full bg-ocean px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-ocean-dark"
+      >
+        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        Navigate with Google Maps
+      </a>
+    </div>
+  </div>
+</section>
