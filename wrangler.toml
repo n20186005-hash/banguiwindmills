@@ -1,0 +1,8 @@
+# wrangler.toml — Cloudflare Workers Static Assets 部署
+# 适用：Astro 纯静态站点（构建输出 ./dist）
+
+name = "bangui-windmills"
+compatibility_date = "2025-12-01"
+
+[assets]
+directory = "./dist"
