@@ -1,10 +1,54 @@
 ---
+import en from '../../i18n/en.json';
+import zh from '../../i18n/zh.json';
+import fil from '../../i18n/fil.json';
+
 export function getStaticPaths() {
-  const ALL_LANGS = ['en', 'zh', 'fil', 'km'];
-  return ALL_LANGS.map((lang) => ({ params: { lang } }));
+  return ['en', 'zh', 'fil', 'km'].map((lang) => ({ params: { lang } }));
 }
-const destination = '/';
+
+const { lang } = Astro.params;
+
+if (lang === 'km') {
+  return Astro.redirect('/fil/', 301);
+}
+
+const LANG_MAP = { en, zh, fil };
+const t = LANG_MAP[lang as 'en' | 'zh' | 'fil'];
+const currentLang = lang as 'en' | 'zh' | 'fil';
+
+import BaseLayout from '../../components/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Hero from '../../components/Hero.astro';
+import Introduction from '../../components/Introduction.astro';
+import History from '../../components/History.astro';
+import BestTime from '../../components/BestTime.astro';
+import EntranceFee from '../../components/EntranceFee.astro';
+import Parking from '../../components/Parking.astro';
+import Transport from '../../components/Transport.astro';
+import NearbyFood from '../../components/NearbyFood.astro';
+import NearbyAttractions from '../../components/NearbyAttractions.astro';
+import Gallery from '../../components/Gallery.astro';
+import FAQ from '../../components/FAQ.astro';
+import MapSection from '../../components/MapSection.astro';
+import Footer from '../../components/Footer.astro';
 ---
-<meta http-equiv="refresh" content={`0;url=${destination}`} />
-<script is:inline>window.location.href = '/';</script>
-<p>Redirecting to <a href="/">Bangui Windmills</a>...</p>
+
+<BaseLayout t={t} lang={currentLang}>
+  <Header t={t} lang={currentLang} />
+  <main>
+    <Hero t={t} />
+    <Introduction t={t} />
+    <History t={t} />
+    <BestTime t={t} />
+    <EntranceFee t={t} />
+    <Parking t={t} />
+    <Transport t={t} />
+    <NearbyFood t={t} />
+    <NearbyAttractions t={t} />
+    <Gallery t={t} />
+    <FAQ t={t} />
+    <MapSection t={t} />
+  </main>
+  <Footer t={t} lang={currentLang} />
+</BaseLayout>
