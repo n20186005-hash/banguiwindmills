@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "title": "Bangui Windmills — Ang Unang Wind Farm sa Timog-Silangang Asya | Gabay sa Bisita",
+    "description": "Kumpletong gabay para sa mga bibisita sa Bangui Windmills sa Ilocos Norte, Pilipinas. Ang unang wind farm sa Timog-Silangang Asya — 20 turbines sa 9 km na baybayin. Kasaysayan, transportasyon, tiket, pinakamagandang oras, at mga kalapit na atraksyon.",
+    "ogTitle": "Bangui Windmills — Unang Wind Farm sa Timog-Silangang Asya",
+    "ogDescription": "Ang unang komersyal na wind farm sa Timog-Silangang Asya. 20 matatayog na wind turbine sa magandang baybayin ng Bangui Bay, Ilocos Norte, Pilipinas."
+  },
+  "header": {
+    "siteName": "Bangui Windmills",
+    "tagline": "Ilocos Norte · Pilipinas",
+    "intro": "Pangkalahatang-ideya",
+    "history": "Kasaysayan",
+    "bestTime": "Pinakamagandang Oras",
+    "entranceFee": "Bayad sa Pagpasok",
+    "parking": "Paradahan",
+    "transport": "Paano Pumunta",
+    "nearbyFood": "Kainan sa Malapit",
+    "nearby": "Mga Kalapit",
+    "gallery": "Galeriya",
+    "faq": "FAQ",
+    "map": "Mapa",
+    "selectLanguage": "Wika",
+    "skipToContent": "Laktawan patungong pangunahing nilalaman"
+  },
+  "common": {
+    "maps": "Tingnan ang Mapa",
+    "photoCredit": "Pagkilala sa Larawan",
+    "readMore": "Magbasa pa",
+    "onSiteConfirm": "Maaaring magbago ang mga kondisyon — kumpirmahin sa lugar bago ang pagbisita"
+  },
+  "hero": {
+    "localName": "Bangui Windmills",
+    "title": "Bangui Windmills",
+    "subtitle": "Ang unang wind farm sa Timog-Silangang Asya — 20 matatayog na turbine na nakatayo sa baybayin ng Bangui Bay, kung saan nagtatagpo ang kalikasan at makabagong teknolohiya.",
+    "rating": "4.7",
+    "reviews": "1,486",
+    "reviewsSuffix": "na pagsusuri",
+    "ctaMaps": "Buksan sa Google Maps",
+    "ctaExplore": "Tuklasin",
+    "facts": [
+      { "k": "Uri", "v": "Wind Farm / Tanawin" },
+      { "k": "Lokasyon", "v": "Ilocos Norte, Pilipinas" },
+      { "k": "Turbines", "v": "20 yunit (Vestas V82)" },
+      { "k": "Haba", "v": "9 km na baybayin" }
+    ],
+    "heroAlt": "Bangui Windmills sa baybayin ng Ilocos Norte, Pilipinas"
+  },
+  "info": {
+    "eyebrow": "Sa Isang Sulyap",
+    "title": "Impormasyon para sa mga Bisita",
+    "subtitle": "Mga pangunahing katotohanan tungkol sa Bangui Windmills para sa inyong pagpaplano ng pagbisita.",
+    "facts": [
+      { "k": "Pangalan", "v": "Bangui Windmills", "icon": "park" },
+      { "k": "Lokal na Pangalan", "v": "Bangui Windmills", "icon": "city" },
+      { "k": "Uri", "v": "Wind Farm / Tanawin", "icon": "tree" },
+      { "k": "Lokasyon", "v": "Bangui Bay, Bangui, Ilocos Norte", "icon": "pin" },
+      { "k": "Map Code", "v": "GPH9+C6H", "icon": "pin" },
+      { "k": "Rating", "v": "4.7 / 5 (≈1,486)", "icon": "star" },
+      { "k": "Bansa", "v": "Pilipinas", "icon": "city" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "Panimula",
+    "title": "Saan Nagtatagpo ang Hangin at Dagat",
+    "description": "Naunat ng 9 na kilometro sa madilim na buhanging baybayin ng Bangui Bay, ang Bangui Windmills ay isa sa mga pinakakilalang tanawin sa Pilipinas. Dalawampung Vestas V82 wind turbines — bawat isa ay may taas na 70 metro (230 talampakan) — marahang umiikot laban sa Kanlurang Dagat ng Pilipinas, na lumilikha ng kamangha-manghang pagitan ng makabagong teknolohiya at likas na ganda ng baybayin.",
+    "whyTitle": "Bakit Dito Bumisita",
+    "why": "Itinayo noong 2005 bilang unang wind farm sa Timog-Silangang Asya, ang mga turbine na ito ay nakakagawa ng sapat na kuryente para sa humigit-kumulang 40% ng pangangailangan ng kuryente ng Ilocos Norte. Higit pa sa kahalagahan nito sa inhinyeriya, naging simbolo ito ng pangako ng rehiyon para sa renewable energy at isang dapat bisitahang destinasyon sa ruta ng turismo sa Ilocos. Pinakamaganda sa lahat? Ang lugar ng pagtingin ay ganap na LIBRE at bukas para sa publiko sa buong taon.",
+    "highlights": {
+      "title": "Ano ang Makikita",
+      "items": [
+        "20 na 70-metrong wind turbine sa 9 km na baybayin",
+        "Ganap na libreng lugar ng pagtingin, bukas 24 oras bawat araw",
+        "Kamangha-manghang tanawin ng dagat para sa pagkuha ng larawan",
+        "Likas na simula para sa scenic na ruta ng Ilocos Norte"
+      ]
+    }
+  },
+  "history": {
+    "eyebrow": "Kasaysayan",
+    "title": "Ang Unang Wind Farm sa Timog-Silangang Asya",
+    "subtitle": "Mula sa pangunahing pangitain hanggang sa kilalang palatandaan — kung paano naging duyan ng komersyal na lakas ng hangin sa Timog-Silangang Asya ang Bangui Bay.",
+    "sections": [
+      {
+        "era": "2005",
+        "heading": "Pagpapatakbo at Unang Yugto",
+        "body": "Ang Bangui Wind Farm ay pinatakbo ng NorthWind Power Development Corporation, kung saan 15 na Vestas V82 1.65 MW na turbine ang naitayo sa baybayin. Ito ang nagmarka ng pagsisimula ng komersyal na enerhiya ng hangin sa Timog-Silangang Asya. Ang kumpanyang Danish na Vestas ang nagbigay ng mga turbine, at ang proyekto ay bahagyang pinondohan ng Danish International Development Agency (DANIDA)."
+      },
+      {
+        "era": "2008",
+        "heading": "Ikalawang Yugto ng Pagpapalawak",
+        "body": "Limang karagdagang turbine ang idinagdag, na nagdala ng kabuuan sa 20 yunit at nagpalawak ng kapasidad ng wind farm sa humigit-kumulang 33 MW. Ang tanyag na istilong nakahanay sa buong bay ay naging makapangyarihang biswal na simbolo para sa mga hangarin ng Pilipinas sa renewable energy."
+      },
+      {
+        "era": "2010s",
+        "heading": "Mula sa Power Plant patungong Kilalang Turista",
+        "body": "Habang kumakalat ang balita sa pamamagitan ng mga travel blog at social media, ang mga windmill ay naging bucket-list na hinto sa circuit ng turismo sa Ilocos Norte. Ang baybaying lugar ng pagtingin ay natural na naging destinasyon ng turismo habang nananatiling ganap na gumaganang pasilidad ng kuryente. Ngayon, ang Bangui Windmills ay nagbibigay ng kuryente para sa halos 40% ng Ilocos Norte at tumatanggap ng libu-libong bisita taon-taon."
+      },
+      {
+        "era": "Ngayon",
+        "heading": "Sa ilalim ng ACEN Renewables",
+        "body": "Ang pasilidad ng NorthWind Bangui ay kasalukuyang pinamamahalaan sa ilalim ng ACEN Corporation (dating AC Energy), ang plataporma ng enerhiya ng Ayala Group. Sa kabuuang kapasidad na 52 MW sa lahat ng ari-arian ng NorthWind, ang Bangui site ay nananatiling pangunahing halimbawa ng malinis na paglipat ng enerhiya sa Pilipinas at modelo kung paano maaaring magkasabay ang renewable na imprastraktura at masiglang turismo."
+      }
+    ]
+  },
+  "bestTime": {
+    "eyebrow": "Pinakamagandang Oras ng Pagbisita",
+    "title": "Kailan Pumunta",
+    "subtitle": "Ang tuyong panahon ay may pinakamagandang panahon. Ang pagsikat at paglubog ng araw ay perpekto para sa pagkuha ng larawan.",
+    "day": [
+      { "label": "Pagsikat ng Araw", "tone": "morning", "score": "Pinakamagandang Liwanag", "text": "5:30–7:00 ng umaga — Ang mga turbine na hugis anino laban sa ginintuang pagsikat ng araw sa Kanlurang Dagat ng Pilipinas. Mas kaunti ang tao, mas malamig ang temperatura." },
+      { "label": "Huling Hapon", "tone": "afternoon", "score": "Gintong Oras", "text": "3:00–5:30 ng hapon — Malambot na ginintuang liwanag habang lumulubog ang araw sa likod ng mga bundok ng Ilocos. Sikat sa mga grupo ng turista." },
+      { "label": "Tanghali", "tone": "evening", "score": "Mas Mainit", "text": "Matinding liwanag sa itaas at mas matinding init. Magdala ng tubig, sunscreen, at sumbrero — limitado ang lilim sa lugar ng pagtingin." }
+    ],
+    "note": "Panahon ng Ulan at Bagyo (Hunyo–Oktubre): Ang malalakas na hangin at malakas na ulan ay maaaring makaapekto sa kakayahang makakita at makapunta. Laging suriin ang ulat ng panahon bago maglakbay sa mga buwang ito."
+  },
+  "entranceFee": {
+    "eyebrow": "Bayad sa Pagpasok",
+    "title": "Bayad sa Pagpasok at mga Tiket",
+    "subtitle": "Isa sa iilang pandaigdigang atraksyon sa Pilipinas na ganap na WALANG BAYAD.",
+    "priceNote": "Walang Bayad sa Pagpasok — Ganap na Libre",
+    "included": [
+      "Lugar ng pagtingin sa baybayin at mga lugar ng pagkuha ng larawan",
+      "Paglalakad sa tabi ng dagat malapit sa mga turbine",
+      "Pagkuha ng mga larawan (para sa personal na gamit)"
+    ],
+    "possibleExpenses": [
+      "Mga lokal na souvenir at meryenda mula sa mga tindero malapit sa lugar ng pagtingin (boluntaryo)",
+      "Bayad sa kapaligiran — kung minsan ay naniningil ang lokal na pamahalaan ng maliit na bayad (~PHP 10–20), ngunit hindi ito laging ipinapatupad",
+      "Pagkuha ng larawan gamit ang drone — laging suriin ang lokal na tuntunin bago lumipad; maaaring limitado ang paggamit ng drone malapit sa imprastraktura ng kuryente"
+    ]
+  },
+  "parking": {
+    "eyebrow": "Paradahan",
+    "title": "Impormasyon sa Paradahan",
+    "overview": "LIBRE ang paradahan at magagamit sa gilid ng kalsada sa tabi ng lugar ng pagtingin."
+  },
+  "transport": {
+    "eyebrow": "Transportasyon",
+    "title": "Paano Pumunta sa Bangui Windmills",
+    "overview": "Ang Bangui ay humigit-kumulang 550 km hilaga ng Manila at mga 55 km mula sa Lungsod ng Laoag. Maraming pagpipilian para sa pagmamaneho ng sarili o pampublikong sasakyan.",
+    "modes": [
+      {
+        "icon": "car",
+        "title": "Sa Pamamagitan ng Kotse / Sariling Pagmamaneho",
+        "description": "Mula sa Manila: Sumakay ng NLEX → SCTEX → TPLEX, pagkatapos ay ang Manila North Road (AH26) sa pamamagitan ng Ilocos. Mula sa Laoag: ~55 km pahilaga.",
+        "details": [
+          "Humigit-kumulang 9–11 oras na biyahe mula sa Manila",
+          "1 hanggang 1.5 oras mula sa Lungsod ng Laoag",
+          "Gumamit ng Google Maps o Waze — hanapin ang \"Bangui Windmills\" o ilagay ang Plus Code GPH9+C6H",
+          "Ang kalsada ay maayos na sementado sa buong lugar"
+        ]
+      },
+      {
+        "icon": "bus",
+        "title": "Sa Pamamagitan ng Bus",
+        "description": "Maraming kumpanya ng bus ang nagpapatakbo ng rutang Manila–Laoag kabilang ang Partas, Florida, Fariñas Transit, at GV Florida.",
+        "details": [
+          "Tantiya ng pamasahe: PHP 600–900 para sa isang biyaheng Manila–Laoag",
+          "Ang biyahe sa bus ay tumatagal ng mga 8–10 oras",
+          "Mula sa terminal ng Laoag, sumakay ng tricycle o jeepney patungong terminal ng van na papuntang Bangui",
+          "Bus o van na papuntang Bangui bayan (~1 oras), pagkatapos ay tricycle papuntang windmills (5–10 minuto)"
+        ]
+      },
+      {
+        "icon": "taxi",
+        "title": "Sa Pamamagitan ng Tour / Tricycle",
+        "description": "Maraming hotel sa Laoag ang nag-aalok ng mga day tour. Ang tricycle mula sa sentro ng Bangui bayan ang pinakamaraming paraan ng lokal na transportasyon.",
+        "details": [
+          "Ang mga Ilocos Norte day tour ay karaniwang kinabibilangan ng Bangui Windmills, Cape Bojeador Lighthouse, Kapurpurawan Rock Formation, at mga dalampasigan ng Pagudpud",
+          "Tantiya ng presyo ng tour: PHP 1,500–3,500 bawat tao",
+          "Tricycle mula sa Bangui bayan papuntang windmills: tantiya ng PHP 50–100 para sa round trip",
+          "Habl-habl (motorcycle taxi): opsyon para sa solo na manlalakbay, PHP 30–50 para sa isang biyahe"
+        ]
+      }
+    ]
+  },
+  "nearbyFood": {
+    "eyebrow": "Kainan sa Malapit",
+    "title": "Saan Kakain Malapit sa Bangui Windmills",
+    "subtitle": "Mula sa mabilis na meryendang Ilocos Empanada hanggang sa mga kaswal na cafe na may tanawin ng dagat.",
+    "spots": [
+      {
+        "icon": "food",
+        "name": "Mga Tindero ng Ilocos Empanada",
+        "distance": "Sa mismong sentro ng lugar ng pagtingin",
+        "desc": "Ang tanyag na Ilocos Empanada — isang malutong na piniritong balot na may palaman na berdeng papaya, munggo, at longanisa sausage, na isinasawsaw sa sukang Iloco. Isang lokal na meryenda na dapat subukan sa mismong paanan ng windmills."
+      },
+      {
+        "icon": "food",
+        "name": "Kang Kang Windmill Cafe",
+        "distance": "Malapit sa lugar ng pagtingin ng windmills",
+        "desc": "Kaswal na cafe na naghahain ng kape, malamig na inumin, meryenda, at magagaan na pagkain na may tanawin ng mga turbine. Sikat na lugar para magpahinga at magpalamig pagkatapos maglakad sa baybayin."
+      },
+      {
+        "icon": "food",
+        "name": "Mga Carinderia sa Bangui Bayan",
+        "distance": "2–3 km mula sa windmills (Bangui proper)",
+        "desc": "Mga lokal na kainan (carinderia) sa sentro ng Bangui bayan na naghahain ng murang lutong-bahay na Pilipino: adobo, sinigang, inihaw, at kanin. Humanap ng mga lugar na maraming lokal na kumakain."
+      },
+      {
+        "icon": "food",
+        "name": "18 Degrees North Camping Cafe",
+        "distance": "Malapit sa lugar ng windmill",
+        "desc": "Isang maginhawang camping-themed na cafe na naghahain ng kape, frappe, at meryenda. Ang upuang panlabas ay may tanawin ng mga windmill — sikat sa mga mas batang manlalakbay at road tripper."
+      },
+      {
+        "icon": "food",
+        "name": "Chingado BBQ",
+        "distance": "Malapit sa lugar ng pagtingin",
+        "desc": "Bahay ng inihaw na dalubhasa sa Filipino BBQ: inihaw na baboy, isaw, at mga paboritong pagkain sa kalye. Samahan ng malamig na kanin at soda para sa nakakabusog na pagkain."
+      },
+      {
+        "icon": "food",
+        "name": "Cañon View Inn at Restaurant",
+        "distance": "Sa loob ng lugar ng Bangui",
+        "desc": "Inn na may kasamang restaurant na naghahain ng mga karaniwang putaheng Pilipino, pancit, at sariwang pagkaing-dagat kung mayroon. Nag-aalok ng panloob at panlabas na upuan."
+      }
+    ],
+    "note": "Ang lahat ng rekomendasyon ay gabay lamang batay sa uri. Walang partikular na komersyal na establisyimento ang inirerekomenda. Pumili batay sa sariling pagpapasya — ang kalinisan at dami ng lokal na kumakain ay karaniwang senyales ng kalidad."
+  },
+  "nearby": {
+    "eyebrow": "Mga Kalapit",
+    "title": "Mga Atraksyong Dapat Bumisita sa Malapit",
+    "subtitle": "Ang Bangui Windmills ay bahagi ng isang scenic na rutang baybayin na may mga pinakakilalang destinasyon sa Ilocos Norte. Lahat ng lugar sa ibaba ay maaaring bisitahin sa isang biyaheng araw mula sa Laoag.",
+    "spots": [
+      {
+        "icon": "building",
+        "name": "Cape Bojeador Lighthouse",
+        "distance": "~12 km mula sa Bangui Windmills",
+        "desc": "Isang makasaysayang Spanish colonial na parola na itinayo noong 1892, na nakatayo sa ibabaw ng burol na nakatanaw sa Kanlurang Dagat ng Pilipinas. Ang parola na may pinakamataas na kinalalagyan sa Pilipinas at isang Pambansang Kayamanan ng Kultura."
+      },
+      {
+        "icon": "star",
+        "name": "Kapurpurawan Rock Formation",
+        "distance": "~15 km mula sa Bangui Windmills",
+        "desc": "Napakagandang puting mga anyong batong apog na hinubog ng hangin at alon ng dagat sa loob ng milyun-milyong taon. Paborito ng mga photographer, lalo na sa maagang liwanag ng umaga."
+      },
+      {
+        "icon": "view",
+        "name": "Burgos Wind Farm",
+        "distance": "~10 km mula sa Bangui Windmills",
+        "desc": "Isang mas malaking wind farm na may 50 na turbine sa mga burol ng Burgos. Ang lugar ng pagtingin ay nag-aalok ng malawak na tanawin ng mga turbine laban sa mga bundok at baybayin."
+      },
+      {
+        "icon": "park",
+        "name": "Saud Beach, Pagudpud",
+        "distance": "~25 km hilaga ng Bangui",
+        "desc": "Kadalasang tinatawag na \"Boracay ng Hilaga\" — isang mahabang hugis-buwan na dalampasigan ng puting buhangin na may berdeng tubig. Perpektong lugar para tapusin ang isang araw ng paglilibot sa pamamagitan ng paglangoy."
+      },
+      {
+        "icon": "leaf",
+        "name": "Patapat Viaduct",
+        "distance": "~30 km hilaga ng Bangui",
+        "desc": "Isang kahanga-hangang mataas na highway sa baybayin na paikot-ikot sa mga bangin ng Pagudpud. Ang konkretong viaduct ay nagbibigay ng nakakabighaning tanawin ng dagat at mabatong baybayin sa ibaba."
+      },
+      {
+        "icon": "moon",
+        "name": "Kabigan Falls",
+        "distance": "~28 km hilaga ng Bangui",
+        "desc": "Isang magandang 80-talampakang talon na nasa loob ng malago at tropikal na kagubatan sa Pagudpud. Isang maikling paglalakad mula sa paradahan sa pamamagitan ng mga kawayanan ang patungo sa palanggana ng talon."
+      }
+    ],
+    "route": {
+      "title": "Isang Araw na Scenic na Ruta sa Ilocos Norte",
+      "intro": "Isang klasikong rutang pagmamaneho na nagsisimula at nagtatapos sa Laoag, na sumasaklaw sa mga highlight ng hilagang Ilocos Norte. Mainam para sa mga unang beses bibisita.",
+      "steps": [
+        { "place": "Laoag → Cape Bojeador Lighthouse (umaga)", "note": "Bisitahin muna ang parola kapag malambot pa ang liwanag at kakaunti pa ang tao.", "time": "~45 min" },
+        { "place": "Kapurpurawan Rock Formation", "note": "Lakarin ang limestone trail; ang umaga ang pinakamagandang oras para sa pagkuha ng larawan.", "time": "~1 oras" },
+        { "place": "Lugar ng pagtingin sa Burgos Wind Farm", "note": "Maikling hinto para malawak na larawan ng 50-turbine na hanay.", "time": "~30 min" },
+        { "place": "Bangui Windmills (huli ng umaga)", "note": "Pangunahing hinto — maglakad sa baybayin, kumain ng Empanada, kumuha ng larawan sa maraming anggulo.", "time": "~1.5 oras" },
+        { "place": "Tanghalian malapit sa Bangui o Pagudpud", "note": "Ilocos Empanada sa windmills o pormal na kainan sa lugar ng Saud Beach.", "time": "~1 oras" },
+        { "place": "Patapat Viaduct → Kabigan Falls → Saud Beach", "note": "Pumili batay sa interes: tanawin sa itaas, paglalakad patungong talon, o paglangoy sa dalampasigan.", "time": "~2.5 oras" },
+        { "place": "Bumalik sa Laoag (hapon/gabi)", "note": "Tantiya ng 1.5–2 oras na biyahe pabalik sa timog.", "time": "~2 oras" }
+      ],
+      "note": "Ang tagal ng ruta ay kasama na ang pagmamaneho at maikling pagbisita; ayusin batay sa inyong bilis at interes. Sa tuyong panahon (Nobyembre–Abril), magsimula nang maaga upang iwasan ang matinding init sa tanghali."
+    }
+  },
+  "gallery": {
+    "eyebrow": "Galeriya",
+    "title": "Galeriya ng Larawan ng Bangui Windmills",
+    "subtitle": "Matatayog na turbines, kamangha-manghang baybayin, at ang tanyag na tanawin ng dagat sa Ilocos Norte.",
+    "viewMaps": "Tingnan ang Bangui Windmills sa Google Maps",
+    "creditNote": "Ang lahat ng larawan ay pag-aari ng kanilang orihinal na photographer. Ang site na ito ay naglalagay lamang ng mga link para sa sanggunian.",
+    "photos": [
+      { "file": "bangui-windmills-1.jpg", "alt": "Bangui Windmills na may tanawin ng dagat", "caption": "Mga turbine sa baybayin ng Bangui Bay" },
+      { "file": "bangui-windmills-2.jpg", "alt": "Windmills na may kahanga-hangang langit", "caption": "Ang mga higanteng 70 metro" },
+      { "file": "bangui-windmills-3.jpg", "alt": "Pagsikat ng araw sa Bangui Windmills", "caption": "Liwanag ng umaga sa mga turbine" },
+      { "file": "bangui-windmills-4.jpg", "alt": "Tanawin ng baybayin ng mga windmill", "caption": "Ang 9 km na baybayin" },
+      { "file": "bangui-windmills-5.jpg", "alt": "Malapitan na larawan ng turbine", "caption": "Malapitan sa Vestas V82" },
+      { "file": "bangui-windmills-6.jpg", "alt": "Panoramikong tanawin ng Bangui Windmills", "caption": "Malawak na tanawin ng bay" },
+      { "file": "bangui-windmills-7.jpg", "alt": "Huling hapon sa mga windmill", "caption": "Liwanag ng gintong oras" },
+      { "file": "bangui-windmills-8.jpg", "alt": "Kalsada sa tabi ng mga turbine", "caption": "Tanawin ng kalsada sa baybayin" },
+      { "file": "bangui-windmills-9.jpg", "alt": "Dalampasigan malapit sa windmills", "caption": "Madidilim na buhangin na baybayin" },
+      { "file": "bangui-windmills-10.jpg", "alt": "Malawak na larawan ng hanay ng turbine", "caption": "Dalawampung turbine na magkakatabi" },
+      { "file": "bangui-windmills-11.jpg", "alt": "Langit bago ang bagyo", "caption": "Kamangha-manghang panahon sa Ilocos" },
+      { "file": "bangui-windmills-12.jpg", "alt": "Tanawin na parang nasa himpapawid ng wind farm", "caption": "Perspektibo mula sa itaas ng bukid" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Mga Madalas Itanong",
+    "items": [
+      {
+        "q": "Ano nga ba ang Bangui Windmills?",
+        "a": "Ang Bangui Windmills ay binubuo ng 20 Vestas V82 wind turbines na bumubuo sa Bangui Wind Farm — ang unang komersyal na wind farm sa Timog-Silangang Asya. Bawat turbine ay may taas na 70 metro (230 talampakan) at gumagawa ng 1.65 megawatts ng kuryente. Sila ay nakahanay sa 9 kilometrong baybayin ng Bangui, Ilocos Norte, at gumagawa ng humigit-kumulang 40% ng pangangailangan ng kuryente ng lalawigan, habang isa ring pangunahing atraksyong panturista."
+      },
+      {
+        "q": "May bayad ba sa pagpasok?",
+        "a": "Wala. Ang lugar ng pagtingin sa Bangui Windmills ay ganap na LIBRE. Walang tarangkahan, walang booth ng tiket, at walang anumang bayad sa pagpasok. Ang mga bisita ay maaaring huminto lamang sa baybayin at tamasahin ang tanawin. Kung minsan, naniningil ang lokal na pamahalaan ng maliit na bayad sa kapaligiran (tantiya ng PHP 10–20), ngunit hindi ito laging ipinapatupad."
+      },
+      {
+        "q": "Ano ang mga oras ng pagbubukas?",
+        "a": "Ang lugar ng pagtingin sa Bangui Windmills ay bukas 24 oras bawat araw, 7 araw sa isang linggo. Walang oras ng pagsasara dahil ang lugar ng pagtingin ay sa tabi ng pampublikong kalsada at dalampasigan. Ngunit para sa pinakamagandang karanasan, iminumungkahi naming bumisita sa oras ng liwanag ng araw — lalo na sa pagsikat ng araw (5:30–7:00 ng umaga) o huling bahagi ng hapon (3:00–5:30 ng hapon)."
+      },
+      {
+        "q": "Maaari bang pumasok o umakyat sa mga wind turbine?",
+        "a": "Hindi maaari. Ang mga wind turbine ay gumaganang kagamitan sa paggawa ng kuryente at hindi bukas para sa publiko dahil sa kaligtasan. Malugod na tinatanggap ang mga bisita na tumingin at kumuha ng larawan mula sa baybayin at tabi ng kalsada, ngunit mahigpit na ipinagbabawal ang pag-akyat, paghawak, o pagpasok sa lugar ng pagtatrabaho ng turbine."
+      },
+      {
+        "q": "Paano pumunta sa Bangui Windmills mula sa Manila?",
+        "a": "Mula sa Manila, sumakay ng bus patungong Laoag (8–10 oras) sa pamamagitan ng Partas, Florida, o Fariñas Transit. Mula sa Laoag, sumakay ng bus o van na papuntang Bangui (~1 oras), pagkatapos ay maikling biyahe ng tricycle papuntang windmills. Bilang kahalili, magmaneho ng sarili sa pamamagitan ng North Luzon Expressway (NLEX), SCTEX, at TPLEX, pagkatapos ay ipagpatuloy sa Manila North Road (AH26) — kabuuang oras ng biyahe ay humigit-kumulang 9–11 oras. Marami ring available na day tour mula sa mga hotel sa Laoag."
+      },
+      {
+        "q": "Ano ang pinakamagandang oras para bumisita?",
+        "a": "Ang tuyong panahon (Nobyembre hanggang Abril) ay may pinakamagandang panahon na may malinaw na langit at katanggap-tanggap na temperatura. Ang Disyembre hanggang Pebrero ang panahon ng rurok ng mga turista. Para sa pagkuha ng larawan, ang pagsikat at paglubog ng araw ay nagbibigay ng pinakamagandang liwanag. Iwasan ang panahon ng ulan at bagyo (Hunyo hanggang Oktubre) kapag ang malakas na ulan at hangin ay maaaring makaapekto sa kakayahang makakita at makapunta."
+      },
+      {
+        "q": "Gaano katagal dapat manatili rito?",
+        "a": "Para sa mabilis na pagkuha ng larawan, sapat na ang 30–45 minuto. Para sa mas masayang pagbisita — paglalakad sa baybayin, pagtikim ng empanada mula sa mga lokal na tindero, at pagkuha ng larawan mula sa iba't ibang anggulo — maglaan ng 1–2 oras. Kung pagsasamahin ito sa mga kalapit na atraksyon tulad ng Kapurpurawan Rock Formation at Cape Bojeador Lighthouse, maglaan ng kalahating araw para sa buong lugar."
+      },
+      {
+        "q": "May paradahan ba? Libre ba ito?",
+        "a": "Oo, LIBRE ang paradahan. Ang mga bisita ay naka-parada sa gilid ng kalsada sa tabi ng lugar ng pagtingin. Walang itinalagang paradahan — ang kalsada ay magkatabi ng mga turbine, at may espasyo sa buong 9 kilometrong bahagi. Ang lugar malapit sa sentrong pangkat ng turbine ang pinakasikat na lugar ng paradahan."
+      },
+      {
+        "q": "May mga restaurant ba o tindero ng pagkain sa malapit?",
+        "a": "Oo. May ilang opsyon sa pagkain malapit sa windmills, kabilang ang Kang Kang Windmill Cafe, Chingado BBQ, 18 Degrees North Camping Cafe, at Cañon View Inn. Ang mga lokal na tindero sa sentrong lugar ng pagtingin ay nagbebenta ng tanyag na Ilocos Empanada, malamig na inumin, ice cream, at meryenda. May karagdagang mga carinderia (lokal na kainan) sa sentro ng Bangui bayan, mga 2–3 km ang layo."
+      },
+      {
+        "q": "Ano pang ibang atraksyon ang malapit sa Bangui Windmills?",
+        "a": "Ang Bangui Windmills ay bahagi ng isang scenic na rutang baybayin na may ilang dapat bisitahin na lugar: Kapurpurawan Rock Formation (~15 km), Cape Bojeador Lighthouse (~12 km), Patapat Viaduct (~30 km), Saud Beach sa Pagudpud (~25 km), Kabigan Falls (~28 km), at Burgos Wind Farm (~10 km). Lahat ay maaaring bisitahin sa isang araw na biyahe mula sa Laoag."
+      },
+      {
+        "q": "Maaari bang magpalipad ng drone sa Bangui Windmills?",
+        "a": "Ang paggamit ng drone malapit sa mga wind turbine ay karaniwang hindi hinihikayat at maaaring limitahan dahil sa mga alalahanin sa kaligtasan sa paligid ng gumaganang imprastraktura ng kuryente. Kung balak mong magpalipad ng drone, suriin muna ang lokal na pamahalaan at operator ng wind farm. Ang hindi awtorisadong pagpapalipad ng drone malapit sa mga turbine ay maaaring magdulot ng panganib at maaaring labag sa mga regulasyon ng aviation sa Pilipinas."
+      },
+      {
+        "q": "Sino ang nagpapatakbo ng Bangui Windmills?",
+        "a": "Ang Bangui Wind Farm ay orihinal na binuo ng NorthWind Power Development Corporation (2005). Ngayon, ang pasilidad ay pinamamahalaan sa ilalim ng ACEN Corporation (dating AC Energy), ang nakalistang plataporma ng enerhiya ng Ayala Group. Ang ACEN ay isa sa pinakamalalaking kumpanya ng renewable energy sa Timog-Silangang Asya."
+      }
+    ]
+  },
+  "map": {
+    "eyebrow": "Mapa",
+    "title": "Hanapin ang Bangui Windmills sa Mapa",
+    "subtitle": "Matatagpuan sa baybayin ng Bangui Bay, hilagang bahagi ng Ilocos Norte.",
+    "addressLabel": "Address",
+    "addressValue": "Bangui Bay, Bangui, Ilocos Norte, 2920 Pilipinas",
+    "hoursLabel": "Oras ng pagbubukas",
+    "hoursValue": "Bukas 24 oras — pampublikong lugar ng pagtingin",
+    "openLabel": "Buksan sa Google Maps"
+  },
+  "footer": {
+    "siteName": "Bangui Windmills",
+    "tagline": "Independent non-profit na impormasyon para sa mga bisita",
+    "rights": "Isang independyente at non-profit na proyekto ng impormasyon para sa mga bisita. Hindi kaanib sa anumang ahensya ng gobyerno o opisyal na organisasyon. Walang anumang komersyal na rekomendasyon.",
+    "missionTitle": "Tungkol sa site na ito",
+    "missionText": "Ito ay isang independyente, non-profit na proyekto ng impormasyon para sa mga bisita na walang kaugnayan sa anumang ahensya ng gobyerno, operator ng wind farm, o organisasyon ng turismo. Ang impormasyon tungkol sa atraksyon ay pinagsama-sama at sinuri mula sa mga pampublikong sanggunian mula sa mga opisina ng turismo ng Ilocos Norte at sa Kagawaran ng Turismo (DOT). Naglalaman ito ng walang anumang komersyal na rekomendasyon, bayad na ranggo, o promosyon.",
+    "exploreTitle": "Tuklasin",
+    "resourcesTitle": "Mga pampublikong sanggunian",
+    "resources": [
+      { "label": "Google Maps", "url": "https://maps.app.goo.gl/6rStRyytritErtFk6" },
+      { "label": "Philippine DOT", "url": "https://www.tourism.gov.ph" },
+      { "label": "Ilocos Norte", "url": "https://www.ilocosnorte.gov.ph" }
+    ],
+    "visitTitle": "Bisitahin",
+    "addressLabel": "Address",
+    "addressValue": "Bangui Bay, Bangui, Ilocos Norte, 2920 Pilipinas",
+    "mapsLabel": "Buksan sa Google Maps",
+    "disclaimer": "Ang lahat ng ipinakitang larawan ay ari-arian at may copyright ng kanilang orihinal na photographer. Kung may anumang isyu sa copyright, mangyaring makipag-ugnayan sa amin.",
+    "privacy": "Patakaran sa Privacy",
+    "terms": "Mga Tuntunin ng Serbisyo",
+    "cookie": "Mga Setting ng Cookie"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Patakaran sa Privacy",
+      "lastUpdated": "Huling na-update: Agosto 2026",
+      "sections": [
+        {
+          "h": "Impormasyong kinokolekta namin",
+          "p": "Kinokolekta lamang namin ang pinakamababang datos na kinakailangan para ibigay ang serbisyo. Maaaring kabilang dito ang:",
+          "li": [
+            "Datos ng pagba-browse (IP address, uri ng browser, mga pahinang binisita)",
+            "Cookie at mga katulad na teknolohiya",
+            "Anumang impormasyong boluntaryo mong ibinibigay sa pamamagitan ng email o contact form"
+          ]
+        },
+        {
+          "h": "Paano namin ginagamit ang inyong impormasyon",
+          "p": "Ginagamit namin ang nakolektang impormasyon para:",
+          "li": [
+            "Pagbutihin ang nilalaman ng website at karanasan ng gumagamit",
+            "Suriin ang trapiko at mga pattern ng paggamit",
+            "Tumugon sa mga kahilingan",
+            "Sumunod sa aming mga ligal na obligasyon"
+          ]
+        },
+        {
+          "h": "Mga serbisyo ng third-party",
+          "p": "Ang aming website ay maaaring gumamit ng mga serbisyo ng third-party tulad ng Google Maps (para sa mga naka-embed na mapa at datos ng lokasyon), Google Analytics (para sa pagsusuri ng trapiko), at mga pampublikong galeriya ng larawan. Ang mga serbisyong ito ay may kani-kanilang mga patakaran sa privacy.",
+          "li": []
+        },
+        {
+          "h": "Inyong mga karapatan",
+          "p": "Sa ilalim ng mga naaangkop na batas sa proteksyon ng datos, mayroon kang mga sumusunod na karapatan:",
+          "li": [
+            "I-access ang inyong personal na datos",
+            "Humingi ng pagwawasto o pagtanggal",
+            "Tutol sa pagproseso",
+            "Magsampa ng reklamo sa kinauukulang awtoridad"
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Mga Tuntunin ng Serbisyo",
+      "lastUpdated": "Huling na-update: Agosto 2026",
+      "sections": [
+        {
+          "h": "Pag-access at paggamit",
+          "p": "Sa pamamagitan ng pag-access at paggamit ng site na ito, sumasang-ayon kang sumunod sa mga Tuntunin ng Serbisyong ito.",
+          "li": []
+        },
+        {
+          "h": "Paggamit ng nilalaman",
+          "p": "Ang lahat ng nilalaman sa site na ito ay para sa sanggunian lamang. Kami ay isang independyenteng third-party na website ng impormasyon sa paglalakbay at hindi kaanib sa anumang atraksyong panturista, ahensya ng gobyerno, operator ng wind farm, o komersyal na entidad.",
+          "li": []
+        },
+        {
+          "h": "Katumpakan ng impormasyon",
+          "p": "Nagsisikap kaming magbigay ng tumpak at napapanahong impormasyon, ngunit hindi namin magagarantiya ang ganap na katumpakan. Ang mga kondisyon ng pagbisita, bayad, at serbisyo ay maaaring magbago nang walang abiso. Laging suriin ang mahahalagang impormasyon sa pamamagitan ng opisyal na mga sanggunian bago maglakbay.",
+          "li": []
+        },
+        {
+          "h": "Pag-aari ng intelektwal na ari-arian",
+          "p": "Ang disenyo at orihinal na nilalaman ng site na ito ay protektado ng copyright. Ang mga larawan ay ginagamit para sa layuning pang-edukasyon at sanggunian. Ang paggamit ng datos ng Google Maps ay sumusunod sa Mga Tuntunin ng Serbisyo ng Google.",
+          "li": []
+        },
+        {
+          "h": "Limitasyon ng pananagutan",
+          "p": "Ang site na ito ay ibinibigay 'ayon sa kasalukuyan' nang walang anumang garantiya. Hindi kami mananagot para sa anumang pagkalugi na nagmumula sa paggamit ng impormasyon sa site na ito, kabilang ngunit hindi limitado sa mga desisyon sa paglalakbay na ginawa batay sa nilalaman nito.",
+          "li": []
+        }
+      ]
+    },
+    "cookie": {
+      "title": "Mga Setting ng Cookie",
+      "lastUpdated": "Huling na-update: Agosto 2026",
+      "sections": [
+        {
+          "h": "Gumagamit kami ng cookie para pagbutihin ang inyong karanasan sa pagba-browse. Maaari mong pamahalaan ang inyong mga kagustuhan sa ibaba.",
+          "p": "",
+          "li": []
+        },
+        {
+          "h": "Mahahalagang cookie",
+          "p": "Ang mga cookie na ito ay mahalaga para sa maayos na paggana ng website at hindi maaaring i-disable.",
+          "cookies": [
+            { "name": "Mahahalagang cookie", "desc": "Laging aktibo.", "active": true, "onLabel": "Aktibo", "offLabel": "Hindi Aktibo" }
+          ]
+        },
+        {
+          "h": "Cookie para sa pagsusuri",
+          "p": "Tinutulungan kaming maunawaan kung paano nakikipag-ugnayan ang mga bisita sa aming website sa pamamagitan ng pagkolekta ng hindi kilalang datos ng paggamit.",
+          "cookies": [
+            { "name": "Google Analytics", "desc": "Kinokolekta ang hindi kilalang impormasyon tungkol sa kung paano ginagamit ng mga bisita ang aming site.", "active": true, "onLabel": "Aktibo", "offLabel": "Hindi Aktibo" }
+          ]
+        },
+        {
+          "h": "Cookie para sa kagustuhan",
+          "p": "Naaalala nila ang inyong mga setting, tulad ng kagustuhan sa wika at tema.",
+          "cookies": [
+            { "name": "Mga kagustuhan ng gumagamit", "desc": "Sine-save ang inyong kagustuhan sa wika at mga setting ng site.", "active": true, "onLabel": "Aktibo", "offLabel": "Hindi Aktibo" }
+          ]
+        },
+        {
+          "h": "Cookie para sa marketing",
+          "p": "Ginagamit ang mga ito para magpakita ng mga may kaugnayang patalastas at sukatin ang bisa ng mga kampanya sa advertising.",
+          "cookies": [
+            { "name": "Personalized na mga patalastas", "desc": "Maaaring magpakita ng mga may kaugnayang patalastas batay sa inyong mga interes.", "active": false, "onLabel": "Aktibo", "offLabel": "Hindi Aktibo" }
+          ]
+        },
+        {
+          "h": "Pamamahala ng pahintulot",
+          "p": "Maaari mong baguhin ang inyong mga setting ng cookie anumang oras. Tandaan na ang pag-disable ng ilang cookie ay maaaring makaapekto sa paggana ng website.",
+          "actions": [
+            { "label": "I-save ang mga kagustuhan", "primary": true },
+            { "label": "Tanggihan ang lahat", "primary": false }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,25 +1,24 @@
 {
   "meta": {
-    "title": "Royal Palace Park Phnom Penh Cambodia — Visitor Guide",
-    "description": "Complete visitor guide to Royal Palace Park in Phnom Penh, Cambodia. History, location, transportation, facilities and travel information for a calm public green space near the Royal Palace.",
-    "ogTitle": "Royal Palace Park — Visitor Guide",
-    "ogDescription": "History, location, transport, facilities and travel tips for Royal Palace Park in Phnom Penh, Cambodia."
+    "title": "Bangui Windmills — Ilocos Norte's Iconic Wind Farm | Visitor Guide",
+    "description": "Complete visitor guide to Bangui Windmills in Ilocos Norte, Philippines. Southeast Asia's first wind farm — 20 turbines along 9 km of coastline. History, transport, entrance fees, best time to visit, and nearby attractions.",
+    "ogTitle": "Bangui Windmills — Southeast Asia's First Wind Farm",
+    "ogDescription": "The first wind farm in Southeast Asia. 20 towering wind turbines along the scenic coastline of Bangui Bay, Ilocos Norte, Philippines."
   },
   "header": {
-    "siteName": "Royal Palace Park",
-    "tagline": "Phnom Penh · Cambodia",
+    "siteName": "Bangui Windmills",
+    "tagline": "Ilocos Norte · Philippines",
     "intro": "Overview",
-    "history": "History & Culture",
-    "architecture": "Architecture",
-    "guide": "Visitor Guide",
-    "nearby": "Nearby",
+    "history": "History",
     "bestTime": "Best Time",
+    "entranceFee": "Entrance",
+    "parking": "Parking",
     "transport": "Getting There",
-    "facilities": "Facilities",
-    "safety": "Visitor Tips",
+    "nearbyFood": "Food Nearby",
+    "nearby": "Nearby",
+    "gallery": "Gallery",
     "faq": "FAQ",
     "map": "Map",
-    "gallery": "Gallery",
     "selectLanguage": "Language",
     "skipToContent": "Skip to main content"
   },
@@ -27,300 +26,274 @@
     "maps": "View Map",
     "photoCredit": "Photo credit",
     "readMore": "Read more",
-    "onSiteConfirm": "Hours may vary by management — confirm on-site"
+    "onSiteConfirm": "Conditions may change — confirm on-site before your visit"
   },
   "hero": {
-    "localName": "ឧទ្យានព្រះបរមរាជវាំង",
-    "title": "Royal Palace Park",
-    "subtitle": "A peaceful public green space near Cambodia's Royal Palace, offering visitors a place to enjoy Phnom Penh's cultural landscape.",
-    "rating": "4.5",
-    "reviews": "5,555",
-    "reviewsSuffix": "public reviews",
-    "ctaMaps": "View Map",
-    "ctaExplore": "Start Exploring",
+    "localName": "Bangui Windmills",
+    "title": "Bangui Windmills",
+    "subtitle": "Southeast Asia's first wind farm — 20 towering turbines standing sentinel along the windswept shores of Bangui Bay, where nature and innovation meet.",
+    "rating": "4.7",
+    "reviews": "1,486",
+    "reviewsSuffix": "reviews",
+    "ctaMaps": "Open in Google Maps",
+    "ctaExplore": "Explore",
     "facts": [
-      { "k": "Type", "v": "Public Park" },
-      { "k": "Location", "v": "Phnom Penh, Cambodia" },
-      { "k": "Rating", "v": "4.5 / 5" },
-      { "k": "District", "v": "Royal Palace area" }
+      { "k": "Type", "v": "Wind Farm / Scenic Viewpoint" },
+      { "k": "Location", "v": "Ilocos Norte, Philippines" },
+      { "k": "Turbines", "v": "20 units (Vestas V82)" },
+      { "k": "Stretch", "v": "9 km coastline" }
     ],
-    "heroAlt": "Royal Palace Park, a green public space in front of the Royal Palace in central Phnom Penh, Cambodia"
+    "heroAlt": "Bangui Windmills along the coastline of Ilocos Norte, Philippines"
   },
   "info": {
     "eyebrow": "At a Glance",
     "title": "Visitor Information",
-    "subtitle": "Key facts about Royal Palace Park for planning your visit.",
+    "subtitle": "Key facts about Bangui Windmills to help you plan your visit.",
     "facts": [
-      { "k": "Name", "v": "Royal Palace Park", "icon": "park" },
-      { "k": "Chinese", "v": "王宫公园", "icon": "city" },
-      { "k": "Type", "v": "City Park / Public Space", "icon": "tree" },
-      { "k": "Location", "v": "Samdach Sothearos Blvd, Phnom Penh", "icon": "pin" },
-      { "k": "Map Code", "v": "HW8J+3VX", "icon": "pin" },
-      { "k": "Rating", "v": "4.5 / 5 (≈5,555)", "icon": "star" },
-      { "k": "City", "v": "Phnom Penh, Cambodia", "icon": "city" }
+      { "k": "Name", "v": "Bangui Windmills", "icon": "park" },
+      { "k": "Local Name", "v": "Bangui Windmills", "icon": "city" },
+      { "k": "Type", "v": "Wind Farm / Scenic Viewpoint", "icon": "tree" },
+      { "k": "Location", "v": "Bangui Bay, Bangui, Ilocos Norte", "icon": "pin" },
+      { "k": "Map Code", "v": "GPH9+C6H", "icon": "pin" },
+      { "k": "Rating", "v": "4.7 / 5 (≈1,486)", "icon": "star" },
+      { "k": "Country", "v": "Philippines", "icon": "city" }
     ]
   },
   "intro": {
     "eyebrow": "Introduction",
-    "title": "About Royal Palace Park",
-    "description": "Royal Palace Park sits in the area around the Royal Palace in central Phnom Penh — one of the city's key public spaces for exploring Cambodia's royal culture and urban landscape. It is close to the Royal Palace complex, near the Tonlé Sap river, and within the historic city centre. Visitors usually come to walk, photograph the cityscape, learn about the royal architecture, and combine it with nearby cultural sites.",
+    "title": "Where Wind Meets the Sea",
+    "description": "Stretching 9 kilometers along the dark-sand shoreline of Bangui Bay, the Bangui Windmills form one of the Philippines' most photographed landmarks. Twenty Vestas V82 wind turbines — each standing 70 meters (230 feet) tall — spin gracefully against the West Philippine Sea, creating a mesmerizing contrast between cutting-edge technology and raw coastal beauty.",
     "whyTitle": "Why visit",
-    "why": "If you only have time for one free, easy and photogenic stop in Phnom Penh, the Royal Palace Park is hard to beat: it is both a living specimen of Cambodia's monarchy and city layout, and a daily stage for locals' morning exercise and evening strolls. Standing here, you take in the gilded rooftops of the palace, the straight tree-lined avenues and the slow river on the far bank — the city's past and present meet in a single frame.",
+    "why": "Built in 2005 as Southeast Asia's first wind farm, these turbines generate enough electricity to cover approximately 40% of Ilocos Norte's power needs. Beyond their engineering significance, they have become a symbol of the region's commitment to renewable energy and a must-visit destination along the Ilocos tourist circuit. Best of all? The viewing area is completely free and open to the public year-round.",
     "highlights": {
       "title": "What you'll find",
       "items": [
-        "A calm green space for walking and resting",
-        "Views of royal architecture and the city skyline",
-        "Easy access to the riverside and historic quarter",
-        "A natural starting point for a cultural walking route"
+        "20 towering 70-meter wind turbines along a 9-km coastline",
+        "Completely free viewing area, open 24 hours a day",
+        "Dramatic ocean views perfect for photography",
+        "A natural starting point for the Ilocos Norte scenic route"
       ]
     }
   },
   "history": {
-    "eyebrow": "History & Culture",
-    "title": "Cambodia's Royal Heritage",
-    "subtitle": "Phnom Penh as the capital, the role of the Royal Palace, and how royal architecture shapes the surrounding city.",
+    "eyebrow": "History",
+    "title": "Southeast Asia's First Wind Farm",
+    "subtitle": "From pioneering vision to iconic landmark — how Bangui Bay became the birthplace of commercial wind power in Southeast Asia.",
     "sections": [
       {
-        "era": "1860s",
-        "heading": "Phnom Penh becomes the capital",
-        "body": "Around 1866, King Norodom moved the royal court from Oudong to Phnom Penh and chose the present palace area to build a new royal city. The open space in front of the palace was planned as part of the city from the start, becoming its ceremonial and cultural heart and setting the stage for today's park."
+        "era": "2005",
+        "heading": "Commissioning & Phase I",
+        "body": "The Bangui Wind Farm was commissioned by NorthWind Power Development Corporation, with 15 Vestas V82 1.65 MW turbines installed along the shoreline. This marked the birth of commercial wind energy in Southeast Asia. Danish firm Vestas supplied the turbines, and the project was financed partly through the Danish International Development Agency (DANIDA)."
       },
       {
-        "era": "French Protectorate",
-        "heading": "A colonial planning axis",
-        "body": "From the late 19th to the mid-20th century under the French Protectorate, authorities laid out a grid of tree-lined boulevards and public squares centred on the palace. The green space in front of the palace was preserved as the city's 'forecourt', forming Phnom Penh's most ceremonial urban axis together with the riverside and plazas."
+        "era": "2008",
+        "heading": "Phase II Expansion",
+        "body": "Five additional turbines were added, bringing the total to 20 units and expanding the wind farm's capacity to approximately 33 MW. The iconic single-row layout stretching across the bay became a powerful visual symbol for the Philippines' renewable energy ambitions."
       },
       {
-        "era": "Royal Palace",
-        "heading": "The Royal Palace complex",
-        "body": "The Royal Palace is the official residence of the King of Cambodia and the centre of coronations and state ceremonies. Its walls, gardens and gilded roofs define the character of the surrounding public space — the park's sightlines, scale and sense of dignity all come from its proximity."
-      },
-      {
-        "era": "After independence",
-        "heading": "The making of a public space",
-        "body": "After Cambodia's independence in 1953, the open grounds in front of the palace took on a clearer public role: national days, parades and civic gatherings often used this area as a stage, gradually turning the royal forecourt into a city living room open to everyone."
-      },
-      {
-        "era": "Public ground",
-        "heading": "The park as shared public space",
-        "body": "The green areas in front of and around the palace became a place where residents and visitors could gather, walk and enjoy the city — a public ground shaped by royal ceremony and civic history, yet open to all."
+        "era": "2010s",
+        "heading": "From Power Plant to Tourist Icon",
+        "body": "As word spread through travel blogs and social media, the windmills became a bucket-list stop on the Ilocos Norte travel circuit. The shoreline viewing area naturally evolved into a tourism destination while remaining a fully operational power facility. Today, Bangui Windmills power about 40% of Ilocos Norte's electricity and welcome thousands of visitors annually."
       },
       {
         "era": "Today",
-        "heading": "A shared urban space",
-        "body": "Today the park remains a free, open public space near the palace. Locals exercise at dawn and families cool off at dusk, while visitors gaze at the palace and photograph the skyline — sensing Phnom Penh's continuity from the royal era to modern daily life."
+        "heading": "Under ACEN Renewables",
+        "body": "The NorthWind Bangui facility now operates under ACEN Corporation (formerly AC Energy), the Ayala Group's energy platform. With a total capacity of 52 MW across its NorthWind assets, the Bangui site remains a flagship of the Philippines' clean energy transition and a model for how renewable infrastructure can coexist with thriving tourism."
       }
-    ],
-    "legend": {
-      "eyebrow": "Cultural stories",
-      "title": "Legends & Royal Culture",
-      "intro": "The palace area carries Cambodia's monarchical narrative and Buddhist tradition. Below are cultural symbols and folk stories associated with this area (compiled from public sources; some details vary across oral versions).",
-      "stories": [
-        {
-          "title": "The Naga, guardian serpent",
-          "body": "The Naga (multi-headed serpent) common in Khmer architecture is seen as a guardian of waterways and kingship. Naga motifs on the palace walls and stepped eaves symbolise protection of the monarchy and echo the faith in the Tonlé Sap and Mekong systems. From the park, these serpent balustrades often extend toward the riverside."
-        },
-        {
-          "title": "Gilded roofs and the cosmic mountain",
-          "body": "The tall spires (prasat) of the palace complex borrow the imagery of Mount Meru — the centre of the world in Hindu and Buddhist cosmology. The gilding and bright tiles are not only decorative but convey an ancient idea of 'the king at the centre, order in place', shaping the park's most striking skyline."
-        },
-        {
-          "title": "Royal ceremonies as the city's stage",
-          "body": "National festivals such as the Water Festival (Bon Om Touk) and the King's birthday often centre on the palace and riverside. Locals believe ceremonies held here bring rain and abundance to the city. Even on an ordinary walk through the park, you can feel the solemnity left by this 'ceremonial space'."
-        }
-      ],
-      "note": "The above is for general educational purposes and not an official conclusion; please refer to the public materials of the Cambodian royal court and ministry of culture and tourism for specific history and ceremony details."
-    }
-  },
-  "architecture": {
-    "eyebrow": "Architecture",
-    "title": "Highlights of the Royal Palace complex",
-    "subtitle": "The park itself is free to enter, but its real 'star' is the palace complex at the end of the view. Below are the main highlights you can see and learn about from the park side (interior visits follow official information).",
-    "items": [
-      {
-        "icon": "building",
-        "name": "Throne Hall",
-        "khmer": "ព្រះរាជដំណាក់",
-        "desc": "The landmark building of the palace forecourt, with its soaring spire and gilded ornaments most eye-catching from the park — the heart of state ceremony and coronations. Its proportions and roofline are the skyline protagonist of the whole area."
-      },
-      {
-        "icon": "star",
-        "name": "Silver Pagoda",
-        "khmer": "វត្តព្រះកែវ",
-        "desc": "A sacred temple inside the palace walls, named for its floor once paved with silver tiles. Its multi-tiered roof is visible from the park; the Buddha statues and artefacts within are masterpieces of Cambodian Buddhist art, and the outer courtyards are open to visitors (ticketed, dress code required)."
-      },
-      {
-        "icon": "view",
-        "name": "Galleries & murals",
-        "khmer": "ផ្លូវព័ទ្ធជុំវិញ",
-        "desc": "The palace outer walls and courtyards are often lined with continuous galleries and narrative murals, mostly drawn from the Indian epic Ramayana. Walking along the park path, you can study these scroll-like reliefs and paintings from outside the wall."
-      },
-      {
-        "icon": "park",
-        "name": "Royal gardens & lawns",
-        "khmer": "សួនរាជវាំង",
-        "desc": "The open lawns and rows of trees in front of the palace are the transition between the park and the royal space. Neat greenery, symmetrical pools and paths reflect the Khmer court garden ideal of 'dignified yet approachable'."
-      },
-      {
-        "icon": "leaf",
-        "name": "Naga balustrades & gates",
-        "khmer": "ជណ្តើរនាគ",
-        "desc": "The palace gates and bridges are commonly decorated with multi-headed Naga (serpent) stone balustrades — the most direct symbol to identify royal architecture. When photographing the palace gate from the park, these serpent rails are often the foreground."
-      },
-      {
-        "icon": "moon",
-        "name": "Dusk city skyline",
-        "khmer": "ផ្ទៃបណ្តាយពេលល្ងាច",
-        "desc": "At sunset the gilded roofs glow under warm light, linking the palace forecourt and riverside into one view. This is the park's favourite spot for photographers and the best moment to feel the 'monarchy — city — river' relationship."
-      }
-    ],
-    "note": "The palace interior usually requires a ticket and dress code (shoulders and knees covered); please follow official announcements for opening and ticketing. The outer green space of the park is free to view."
-  },
-  "guide": {
-    "eyebrow": "Visitor Guide",
-    "title": "How to Explore",
-    "subtitle": "An easy walking route linking the Royal Palace area, the park, the riverside and nearby cultural districts.",
-    "route": {
-      "title": "Easy Walk Route",
-      "steps": [
-        "Royal Palace area",
-        "Royal Palace Park",
-        "Riverside (Tonlé Sap & Mekong)",
-        "Nearby cultural districts"
-      ]
-    },
-    "tips": {
-      "title": "Good for",
-      "items": [
-        "Families with children",
-        "Photographers and cityscape lovers",
-        "Culture and history travellers"
-      ]
-    }
+    ]
   },
   "bestTime": {
     "eyebrow": "Best Time to Visit",
     "title": "When to Visit",
-    "subtitle": "Cambodia is warm all year. Mornings and evenings are usually the most comfortable for walking.",
+    "subtitle": "The dry season offers the best weather. Mornings and late afternoon are ideal for photography.",
     "day": [
-      { "label": "Morning", "tone": "morning", "score": "Cooler", "text": "Cooler temperatures make it pleasant for walking and photography before the heat builds." },
-      { "label": "Afternoon", "tone": "afternoon", "score": "Good light", "text": "Strong light works well for photos of the architecture and cityscape." },
-      { "label": "Evening", "tone": "evening", "score": "City views", "text": "The cityscape becomes more pronounced as the light fades — good for relaxed walks." }
+      { "label": "Sunrise", "tone": "morning", "score": "Best Light", "text": "5:30–7:00 AM — The turbines silhouetted against the golden dawn over the West Philippine Sea. Fewer crowds, cooler temperatures." },
+      { "label": "Late Afternoon", "tone": "afternoon", "score": "Golden Hour", "text": "3:00–5:30 PM — Soft golden light as the sun dips behind the Ilocos mountains. Popular with tour groups." },
+      { "label": "Midday", "tone": "evening", "score": "Hotter", "text": "Harsh overhead light and stronger heat. Bring water, sunscreen, and a hat — shade is limited." }
     ],
-    "note": "Cambodia is hot year-round. Bring drinking water, use sun protection, and avoid prolonged sun exposure during peak hours."
+    "note": "Rainy & Typhoon Season (June–October): Strong winds and heavy rain may limit visibility and access. Always check weather forecasts before traveling during these months."
+  },
+  "entranceFee": {
+    "eyebrow": "Admission",
+    "title": "Entrance Fee & Tickets",
+    "subtitle": "One of the few world-class attractions in the Philippines that costs absolutely nothing.",
+    "priceNote": "No Entrance Fee — Completely Free",
+    "included": [
+      "Shoreline viewing area & photo spots",
+      "Walking along the beach near the turbines",
+      "Taking photographs (personal use)"
+    ],
+    "possibleExpenses": [
+      "Local souvenirs and snacks from vendors near the viewing area (voluntary)",
+      "Environmental fee — occasional small fees collected by local government (~PHP 10–20), not consistently applied",
+      "Drone photography — always check local rules before flying; drone use near power infrastructure may be restricted"
+    ]
+  },
+  "parking": {
+    "eyebrow": "Parking",
+    "title": "Parking Information",
+    "overview": "Parking is free and available along the roadside shoulder adjacent to the viewing area."
   },
   "transport": {
     "eyebrow": "Getting There",
-    "title": "How to Get to Royal Palace Park",
-    "overview": "The park is in central Phnom Penh, next to the Royal Palace and within walking distance of the riverside. Choose the option that fits your plans.",
+    "title": "How to Get to Bangui Windmills",
+    "overview": "Bangui is approximately 550 km north of Manila and about 55 km from Laoag City. Multiple options exist whether you're self-driving or relying on public transport.",
     "modes": [
       {
-        "icon": "plane",
-        "title": "From the Airport",
-        "description": "Phnom Penh International Airport (PNH) is about 10 km west of the city centre. From there, continue to the park by taxi, ride-hailing app or bus.",
+        "icon": "car",
+        "title": "By Car / Self-Drive",
+        "description": "From Manila: Take NLEX → SCTEX → TPLEX, then the Manila North Road (AH26) through Ilocos. From Laoag: ~55 km north.",
         "details": [
-          "After baggage claim, follow the signs to the official taxi counter or the ride-hailing pick-up point outside the arrivals hall",
-          "For a licensed taxi: pay the fixed fare at the counter, get a voucher, and hand it to the driver at the official rank",
-          "For a ride-hailing app: connect to airport Wi-Fi, set the destination to 'Royal Palace, Samdach Sothearos Blvd', and meet the driver at the assigned door",
-          "Have local currency (riel) or US dollars small bills ready — most airport taxis do not take cards",
-          "The trip to the Royal Palace area takes roughly 30–45 minutes depending on traffic; show the driver the destination on a map app if needed",
-          "Some city bus lines connect the airport with central Phnom Penh — check current routes and the last service time before you travel"
-        ]
-      },
-      {
-        "icon": "walk",
-        "title": "On Foot",
-        "description": "Best for visitors staying nearby or exploring the riverside and historic centre.",
-        "details": [
-          "From the riverside promenade, walk west along Sisowath Quay toward the Royal Palace",
-          "The park sits just south of the palace walls, about a 10–15 minute walk from the river",
-          "Streets in the historic centre are mostly flat and signposted"
+          "Approximately 9–11 hours drive from Manila",
+          "1 to 1.5 hours from Laoag City",
+          "Use Google Maps or Waze — search for \"Bangui Windmills\" or Plus Code GPH9+C6H",
+          "The road is well-paved throughout"
         ]
       },
       {
         "icon": "bus",
-        "title": "Public Transport",
-        "description": "City buses connect parts of Phnom Penh. Check current lines and stops before you travel.",
+        "title": "By Bus",
+        "description": "Several bus companies operate Manila–Laoag routes including Partas, Florida, Fariñas Transit, and GV Florida.",
         "details": [
-          "Use official city bus services where available",
-          "Plan your route and transfers in advance with a map app",
-          "Alight at a stop nearest the Royal Palace, then walk a few minutes to the park"
+          "Manila to Laoag bus fare: approximately PHP 600–900 one way",
+          "Bus journey takes about 8–10 hours",
+          "From Laoag terminal, take a tricycle or jeepney to Bangui-bound van terminal",
+          "Northbound bus/van to Bangui town takes ~1 hour, then tricycle to windmills (5–10 minutes)"
         ]
       },
       {
         "icon": "taxi",
-        "title": "Taxi / Ride-hailing",
-        "description": "Licensed taxis and local ride-hailing services are widely available. Avoid naming specific companies.",
+        "title": "By Tour / Tricycle",
+        "description": "Day tours from Laoag hotels are widely available. Tricycles from Bangui town center offer the most flexible local option.",
         "details": [
-          "Use legal, locally licensed transport",
-          "Agree on the fare or use the app's metered price before the trip",
-          "Set the destination to Samdach Sothearos Blvd, near the Royal Palace"
-        ]
-      },
-      {
-        "icon": "car",
-        "title": "Driving",
-        "description": "Parking near the palace can be limited. Confirm parking and no-stopping rules before you drive.",
-        "details": [
-          "Parking space is limited near the palace",
-          "Look for public parking in the surrounding streets and confirm no-stopping zones",
-          "Check local traffic rules and peak-hour restrictions in advance"
+          "Ilocos Norte day tours typically include Bangui Windmills, Cape Bojeador Lighthouse, Kapurpurawan Rock Formation, and Pagudpud beaches",
+          "Tour prices range from PHP 1,500–3,500 per person",
+          "Tricycle from Bangui town to windmills: approximately PHP 50–100 round trip",
+          "Habl-habl (motorcycle taxi): budget option for solo travelers, PHP 30–50 one-way"
         ]
       }
     ]
   },
-  "facilities": {
-    "eyebrow": "Facilities",
-    "title": "Visitor Facilities Nearby",
-    "subtitle": "Type-based guidance only — no commercial names are recommended.",
-    "cards": [
+  "nearbyFood": {
+    "eyebrow": "Food Nearby",
+    "title": "Where to Eat Near Bangui Windmills",
+    "subtitle": "From quick Ilocos Empanada snacks to casual sit-down cafes with ocean views.",
+    "spots": [
       {
-        "icon": "wc",
-        "title": "Restrooms",
-        "text": "Public restrooms can be found in and around the park, nearby visitor areas and public buildings such as museums or markets. They are typically signposted. Plan your restroom stops before entering the main visiting area, and carry small change or tissues as supplies are not always provided."
-      },
-      {
-        "icon": "access",
-        "title": "Accessibility",
-        "text": "The park is an open urban space with mostly level paved paths, but some areas may have uneven ground, curbs and higher foot traffic. Step-free routes are generally available along the main promenades. Visitors with reduced mobility, prams or wheelchairs should check conditions on-site in advance and allow extra time."
-      },
-      {
-        "icon": "parking",
-        "title": "Parking",
-        "text": "Dedicated parking at the palace is limited, and some streets nearby are no-stopping zones. Public parking may be found on surrounding streets or at larger public buildings a short walk away. Using public transport or local transport is generally easier, especially during busy periods."
+        "icon": "food",
+        "name": "Ilocos Empanada Vendors",
+        "distance": "On-site near central viewing area",
+        "desc": "The famous Ilocos Empanada — a crispy deep-fried rice-wrapped pastry stuffed with green papaya, mung beans, and longanisa sausage, served with sukang Iloco vinegar. A must-try local snack right at the windmills."
       },
       {
         "icon": "food",
-        "title": "Food & Drink",
-        "text": "The surrounding city area offers many options by type: local restaurants, casual eateries, drink stalls, cafés and street-food areas. Choose places that look clean and busy with locals, check prices where possible, and drink bottled or boiled water. No specific venue is recommended here."
+        "name": "Kang Kang Windmill Cafe",
+        "distance": "Near the windmills viewing area",
+        "desc": "Casual cafe serving coffee, cold drinks, snacks, and light meals with views of the turbines. A popular spot to rest and cool down after walking the shoreline."
       },
       {
-        "icon": "hotel",
-        "title": "Accommodation",
-        "text": "Central Phnom Penh has a wide range of accommodation by type: hostels, guesthouses, mid-range hotels and upscale hotels. Choose an area based on budget, transport convenience and your travel plan — riverside and city-centre districts are common choices. Book through a platform or directly and compare recent reviews."
+        "icon": "food",
+        "name": "Bangui Town Carinderias",
+        "distance": "2–3 km from the windmills (Bangui proper)",
+        "desc": "Local eateries (carinderias) in Bangui town center serving affordable Filipino home-cooked meals: adobo, sinigang, inihaw, and rice. Look for places busy with locals."
       },
       {
-        "icon": "shop",
-        "title": "Shops & Shopping",
-        "text": "Nearby city areas usually have convenience stores, daily-needs shops, local markets and souvenir areas. For everyday items, convenience stores and markets are widely available; for gifts, look for fixed-price shops or agree on a price at markets. Choose based on your actual needs and check opening hours."
+        "icon": "food",
+        "name": "18 Degrees North Camping Cafe",
+        "distance": "Near the windmill area",
+        "desc": "A laid-back camping-themed cafe serving coffee, frappes, and snacks. Outdoor seating with windmill views — popular with younger travelers and road trippers."
       },
       {
-        "icon": "fuel",
-        "title": "Fuel & Charging",
-        "text": "Drivers can find fuel stations and EV charging points across the city by type. Plan your route in advance, refuel before leaving the centre, and note that charging coverage varies by area. Keep a map app handy to locate the nearest option when needed."
+        "icon": "food",
+        "name": "Chingado BBQ",
+        "distance": "Close to the viewing area",
+        "desc": "Grill house specializing in Filipino barbecue: inihaw na baboy (grilled pork), isaw, and street food favorites. Pair with cold rice and a soda for a satisfying meal."
+      },
+      {
+        "icon": "food",
+        "name": "Cañon View Inn & Restaurant",
+        "distance": "Within the Bangui area",
+        "desc": "Inn with an on-site restaurant serving standard Filipino dishes, pancit, and fresh seafood when available. Offers both indoor and outdoor seating."
       }
-    ]
+    ],
+    "note": "All recommendations are type-based guidance only. No specific commercial venue is endorsed. Choose establishments based on your own judgment — look for cleanliness and crowds of locals as quality signals."
   },
-  "safety": {
-    "eyebrow": "Visitor Tips",
-    "title": "Visitor Notice",
-    "items": [
-      "Take care of your personal belongings",
-      "Avoid displaying valuables in crowded areas",
-      "Respect local customs and culture",
-      "Follow public-area rules and signs",
-      "Pay attention to weather changes and heat"
+  "nearby": {
+    "eyebrow": "Nearby",
+    "title": "Nearby Attractions Worth Visiting",
+    "subtitle": "Bangui Windmills is part of a scenic coastal route packed with Ilocos Norte's most iconic destinations. All spots below can be combined in a single day trip from Laoag.",
+    "spots": [
+      {
+        "icon": "building",
+        "name": "Cape Bojeador Lighthouse",
+        "distance": "~12 km from Bangui Windmills",
+        "desc": "A historic Spanish colonial lighthouse built in 1892, perched on a hill overlooking the West Philippine Sea. The highest-elevated lighthouse in the Philippines and a National Cultural Treasure."
+      },
+      {
+        "icon": "star",
+        "name": "Kapurpurawan Rock Formation",
+        "distance": "~15 km from Bangui Windmills",
+        "desc": "Spectacular white limestone rock formations sculpted by wind and ocean waves over millions of years. A photographer's favorite, especially during early morning light."
+      },
+      {
+        "icon": "view",
+        "name": "Burgos Wind Farm",
+        "distance": "~10 km from Bangui Windmills",
+        "desc": "A larger-scale wind farm with 50 turbines across the hills of Burgos. The viewpoint offers a sweeping panorama of the turbines against the mountains and coast."
+      },
+      {
+        "icon": "park",
+        "name": "Saud Beach, Pagudpud",
+        "distance": "~25 km north of Bangui",
+        "desc": "Often called the 'Boracay of the North' — a long crescent of powdery white sand with turquoise waters. A perfect spot to end a day of sightseeing with a swim."
+      },
+      {
+        "icon": "leaf",
+        "name": "Patapat Viaduct",
+        "distance": "~30 km north of Bangui",
+        "desc": "A dramatic elevated coastal highway winding along the cliffs of Pagudpud. The elevated concrete viaduct offers breathtaking views of the ocean and the rocky coastline below."
+      },
+      {
+        "icon": "moon",
+        "name": "Kabigan Falls",
+        "distance": "~28 km north of Bangui",
+        "desc": "A picturesque 80-foot waterfall set in a lush tropical forest in Pagudpud. A short trek from the parking area through bamboo groves leads to the waterfall basin."
+      }
+    ],
+    "route": {
+      "title": "One-Day Ilocos Norte Scenic Route",
+      "intro": "A classic driving route starting and ending in Laoag, covering the highlights of northern Ilocos Norte. Ideal for first-time visitors.",
+      "steps": [
+        { "place": "Laoag → Cape Bojeador Lighthouse (morning)", "note": "Visit the lighthouse first when light is soft and crowds are thin.", "time": "~45 min" },
+        { "place": "Kapurpurawan Rock Formation", "note": "Walk the limestone trail; morning is the best for photos.", "time": "~1 hr" },
+        { "place": "Burgos Wind Farm viewpoint", "note": "Brief stop for panoramic photos of the 50-turbine array.", "time": "~30 min" },
+        { "place": "Bangui Windmills (late morning)", "note": "Main stop — walk the shoreline, snack on empanada, take photos.", "time": "~1.5 hr" },
+        { "place": "Lunch near Bangui or Pagudpud", "note": "Ilocos Empanada at the windmills or a sit-down meal in Saud Beach area.", "time": "~1 hr" },
+        { "place": "Patapat Viaduct → Kabigan Falls → Saud Beach", "note": "Choose based on interest: viewpoint, waterfall trek, or beach swim.", "time": "~2.5 hr" },
+        { "place": "Return to Laoag (evening)", "note": "Approximately 1.5–2 hour drive back south.", "time": "~2 hr" }
+      ],
+      "note": "Route times include driving and short visits; adjust by pace and interest. During dry season (Nov–Apr), start early to avoid midday heat."
+    }
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Bangui Windmills Photo Gallery",
+    "subtitle": "Towering turbines, dramatic coastlines, and the iconic Ilocos Norte seascape.",
+    "viewMaps": "View Bangui Windmills on Google Maps",
+    "creditNote": "All images © their original photographers. This site links to public sources for reference only.",
+    "photos": [
+      { "file": "bangui-windmills-1.jpg", "alt": "Bangui Windmills with ocean backdrop", "caption": "Turbines along Bangui Bay" },
+      { "file": "bangui-windmills-2.jpg", "alt": "Windmills with dramatic sky", "caption": "The 70-meter giants" },
+      { "file": "bangui-windmills-3.jpg", "alt": "Sunrise at Bangui Windmills", "caption": "Sunrise light on the turbines" },
+      { "file": "bangui-windmills-4.jpg", "alt": "Shoreline view of windmills", "caption": "The 9-kilometer coastline" },
+      { "file": "bangui-windmills-5.jpg", "alt": "Turbine close-up", "caption": "Up close with a Vestas V82" },
+      { "file": "bangui-windmills-6.jpg", "alt": "Bangui Windmills panoramic", "caption": "Panoramic bay view" },
+      { "file": "bangui-windmills-7.jpg", "alt": "Late afternoon at the windmills", "caption": "Golden hour light" },
+      { "file": "bangui-windmills-8.jpg", "alt": "Road alongside turbines", "view": "The coastal road view" },
+      { "file": "bangui-windmills-9.jpg", "alt": "Beach near the windmills", "caption": "Dark sand shoreline" },
+      { "file": "bangui-windmills-10.jpg", "alt": "Wide shot of turbine row", "caption": "Twenty turbines in a single row" },
+      { "file": "bangui-windmills-11.jpg", "alt": "Stormy sky over the windmills", "caption": "Dramatic Ilocos weather" },
+      { "file": "bangui-windmills-12.jpg", "alt": "Aerial-style view of the wind farm", "caption": "Aerial perspective of the farm" }
     ]
   },
   "faq": {
@@ -328,147 +301,81 @@
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "q": "Where is Royal Palace Park?",
-        "a": "In central Phnom Penh, near the Royal Palace along Samdach Sothearos Blvd, close to the riverside (Sisowath Quay)."
+        "q": "What exactly are the Bangui Windmills?",
+        "a": "The Bangui Windmills are 20 Vestas V82 wind turbines that form the Bangui Wind Farm — the first commercial wind farm in Southeast Asia. Each turbine stands 70 meters (230 feet) tall and generates 1.65 megawatts of electricity. They stretch along 9 kilometers of coastline in Bangui, Ilocos Norte, and generate approximately 40% of the province's electricity needs while serving as a major tourist attraction."
       },
       {
-        "q": "Is there an entrance fee for the park?",
-        "a": "The outer public green space is usually free to enter. The adjacent palace complex (including the Silver Pagoda) is a separate ticketed site — please check official notices."
+        "q": "Is there an entrance fee?",
+        "a": "No, the Bangui Windmills viewing area is completely free. There are no gates, no ticket booths, and no admission fees. Visitors can simply pull up to the shoreline and enjoy the view. Occasionally, a small environmental fee (around PHP 10–20) may be collected by local government personnel, but this is not consistently applied."
       },
       {
-        "q": "Can I visit inside the Royal Palace?",
-        "a": "Yes, but it is a separate attraction requiring a ticket and a dress code (shoulders and knees covered, no sleeveless tops/shorts). Opening hours may also shift temporarily for royal events."
+        "q": "What are the operating hours?",
+        "a": "The Bangui Windmills viewing area is open 24 hours a day, 7 days a week. There are no closing times since the viewing area is along a public road and shoreline. However, for the best experience, we recommend visiting during daylight hours — especially sunrise (5:30–7:00 AM) or late afternoon (3:00–5:30 PM)."
       },
       {
-        "q": "Is it suitable for families?",
-        "a": "Very much so. Open lawns, flat paths and easy riverside access make it great for family walks, cultural discovery and relaxed photography."
+        "q": "Can I go inside or climb the wind turbines?",
+        "a": "No. The wind turbines are active power-generating equipment and are not open to the public for safety reasons. Visitors are welcome to view and photograph them from the shoreline and roadside, but climbing, touching, or entering the turbine area is strictly prohibited."
       },
       {
-        "q": "When is a good time to visit?",
-        "a": "Mornings and evenings are cooler and better for photos; avoid long sun exposure at midday."
+        "q": "How do I get to Bangui Windmills from Manila?",
+        "a": "From Manila, take a bus to Laoag (8–10 hours) via Partas, Florida, or Fariñas Transit. From Laoag, take a northbound bus or van to Bangui (~1 hour), then a short tricycle ride to the windmills. Alternatively, self-drive along the North Luzon Expressway (NLEX), SCTEX, and TPLEX, then continue on the Manila North Road (AH26) — total drive time is approximately 9–11 hours. Day tours from Laoag hotels are also widely available."
       },
       {
-        "q": "Any photography tips?",
-        "a": "The park's outer area is free to photograph. If you enter the palace grounds, follow their rules and show respect to religious sites and guards; avoid disturbing ceremonies."
+        "q": "What is the best time to visit?",
+        "a": "The dry season (November through April) offers the best weather with clear skies and manageable temperatures. December to February is peak season. For photography, sunrise and late afternoon provide the most dramatic light. Avoid the rainy and typhoon season (June to October) when heavy rain and strong winds may affect visibility and access."
       },
       {
-        "q": "What else is nearby?",
-        "a": "The National Museum, Independence Monument, riverside night market and Central Market are all within walking distance or a short ride, forming a one-day city culture route."
+        "q": "How much time should I spend here?",
+        "a": "For a quick photo stop, 30–45 minutes is sufficient. For a relaxed visit — walking along the shoreline, enjoying empanada from local vendors, and taking photos from multiple angles — plan for 1–2 hours. If combining with nearby attractions like Kapurpurawan Rock Formation and Cape Bojeador Lighthouse, allocate a half day for the entire area."
       },
       {
-        "q": "How do I get there?",
-        "a": "Walk, ride-hailing or taxi from the centre all work; about 30–45 minutes by road from Phnom Penh International Airport. See the 'Getting There' section."
+        "q": "Is parking available? Is it free?",
+        "a": "Yes, parking is free. Visitors park along the roadside shoulder adjacent to the viewing area. There is no designated parking lot — the road runs parallel to the turbines, and there's space all along the 9-kilometer stretch. The area near the central turbine cluster is the most popular parking spot."
       },
       {
-        "q": "What should I wear?",
-        "a": "The park is an open space, so everyday clothing is fine. But if you plan to visit the palace or temples, bring shoulder- and knee-covering clothes to meet the dress code."
+        "q": "Are there restaurants or food vendors nearby?",
+        "a": "Yes. Several food options exist near the windmills, including Kang Kang Windmill Cafe, Chingado BBQ, 18 Degrees North Camping Cafe, and Cañon View Inn. Local vendors sell the famous Ilocos Empanada, cold drinks, ice cream, and snacks near the central viewing area. Additional carinderias (local eateries) are available in Bangui town proper, about 2–3 km away."
+      },
+      {
+        "q": "What other attractions are near Bangui Windmills?",
+        "a": "Bangui Windmills is part of a scenic coastal route with several must-visit spots nearby: Kapurpurawan Rock Formation (~15 km), Cape Bojeador Lighthouse (~12 km), Patapat Viaduct (~30 km), Saud Beach in Pagudpud (~25 km), Kabigan Falls (~28 km), and Burgos Wind Farm (~10 km). All can be visited in a single day trip from Laoag."
+      },
+      {
+        "q": "Can I fly a drone at Bangui Windmills?",
+        "a": "Drone use near the wind turbines is generally discouraged and may be restricted due to safety concerns around active power infrastructure. If you plan to fly a drone, check with local authorities and the wind farm operator beforehand. Unauthorized drone flights near turbines could pose risks and may be illegal under Philippine aviation regulations."
+      },
+      {
+        "q": "Who operates the Bangui Windmills?",
+        "a": "The Bangui Wind Farm was originally developed by NorthWind Power Development Corporation (2005). Today, the facility operates under ACEN Corporation (formerly AC Energy), the Ayala Group's listed energy platform. ACEN is one of the largest renewable energy companies in Southeast Asia."
       }
     ]
   },
   "map": {
-    "eyebrow": "Location",
-    "title": "Find Royal Palace Park on the Map",
-    "subtitle": "The park is in central Phnom Penh, next to the Royal Palace and close to the riverside.",
+    "eyebrow": "Map",
+    "title": "Find Bangui Windmills on the Map",
+    "subtitle": "Located along the coast of Bangui Bay, northern Ilocos Norte.",
     "addressLabel": "Address",
-    "addressValue": "Samdach Sothearos Blvd, Phnom Penh, Cambodia",
+    "addressValue": "Bangui Bay, Bangui, Ilocos Norte, 2920 Philippines",
     "hoursLabel": "Opening hours",
-    "hoursValue": "Open public space — hours may vary by management",
+    "hoursValue": "Open 24 hours — public viewing area",
     "openLabel": "Open in Google Maps"
   },
-  "nearby": {
-    "eyebrow": "Nearby",
-    "title": "Worth combining nearby",
-    "subtitle": "Royal Palace Park sits at the heart of Phnom Penh's historic quarter. The following landmarks are reachable on foot or a short ride. Details are compiled from public sources; opening and ticketing follow official information.",
-    "spots": [
-      {
-        "icon": "building",
-        "name": "National Museum of Cambodia",
-        "distance": "About 5–10 min walk",
-        "desc": "A terracotta Khmer-style building holding sculptures and artefacts from Angkor to the modern era — the best starting point to understand Cambodian art history, just northeast of the palace."
-      },
-      {
-        "icon": "star",
-        "name": "Independence Monument",
-        "distance": "About 15–20 min walk / short ride",
-        "desc": "A lotus-shaped monument built to mark independence in 1953, beautifully lit at night and one of Phnom Penh's most recognisable landmarks."
-      },
-      {
-        "icon": "view",
-        "name": "Riverside (Sisowath Quay)",
-        "distance": "About 10–15 min walk",
-        "desc": "Runs along the Tonlé Sap and Mekong; a breezy evening promenade with street food and boat rides, the natural extension of a park walk."
-      },
-      {
-        "icon": "shop",
-        "name": "Central Market (Phsar Thmei)",
-        "distance": "Short ride / ride-hailing",
-        "desc": "A distinctive Art Deco domed market for clothing, silverware and souvenirs, full of local street energy."
-      },
-      {
-        "icon": "moon",
-        "name": "Riverside Night Market",
-        "distance": "About 15 min walk",
-        "desc": "Opens along the river after dark with snacks, handicrafts and river views — a relaxing way to end the day."
-      },
-      {
-        "icon": "leaf",
-        "name": "Wat Phnom",
-        "distance": "Short ride",
-        "desc": "The legendary hilltop temple said to be the origin of Phnom Penh's name, offering a calm overlook of the surrounding streets, not far from the palace area."
-      }
-    ],
-    "route": {
-      "title": "One-day city culture route",
-      "intro": "A progressive walk-plus-ride route starting from the park, ideal for first-time visitors to Phnom Penh.",
-      "steps": [
-        { "place": "Royal Palace Park (morning)", "note": "Walk and gaze at the palace complex in the cool hours; capture gilded roofs and lawns.", "time": "~45 min" },
-        { "place": "National Museum of Cambodia", "note": "Walk over to learn the thread of Khmer art and history.", "time": "~1 hr" },
-        { "place": "Riverside lunch", "note": "Choose a restaurant or casual bite along Sisowath Quay with a river view.", "time": "~1 hr" },
-        { "place": "Independence Monument", "note": "Head there in the afternoon; photos and a short rest in the surrounding gardens.", "time": "~40 min" },
-        { "place": "Central Market / Wat Phnom", "note": "Pick one based on interest — shopping or a hilltop city view.", "time": "~1 hr" },
-        { "place": "Riverside Night Market (evening)", "note": "Return to the river to finish with snacks and night scenery.", "time": "~1.5 hr" }
-      ],
-      "note": "Route times include walking and visits; adjust by energy and interest. Carry water and use sun protection in summer."
-    }
-  },
-  "gallery": {
-    "eyebrow": "Gallery",
-    "title": "Moments at Royal Palace Park",
-    "subtitle": "Landscape, royal architecture, the city environment and the visitor experience.",
-    "viewMaps": "View Royal Palace Park on Google Maps",
-    "creditNote": "All images © their original photographers. This site links to public sources for reference only.",
-    "photos": [
-      { "file": "royal-palace-park-1.jpg", "alt": "Green lawn and trees in front of the Royal Palace", "caption": "Open green space near the palace" },
-      { "file": "royal-palace-park-2.jpg", "alt": "Royal Palace wall and rooftops seen from the park", "caption": "Royal architecture nearby" },
-      { "file": "royal-palace-park-3.jpg", "alt": "Walking path through the park", "caption": "A quiet walking path" },
-      { "file": "royal-palace-park-4.jpg", "alt": "Visitors relaxing on the lawn", "caption": "Visitors enjoying the park" },
-      { "file": "royal-palace-park-5.jpg", "alt": "City skyline beyond the palace grounds", "caption": "Phnom Penh cityscape" },
-      { "file": "royal-palace-park-6.jpg", "alt": "Tonlé Sap river and riverside near the centre", "caption": "Riverside nearby" },
-      { "file": "royal-palace-park-7.jpg", "alt": "Evening light over the palace area", "caption": "Evening atmosphere" },
-      { "file": "royal-palace-park-8.jpg", "alt": "Garden plants and shaded benches", "caption": "Shaded garden areas" },
-      { "file": "royal-palace-park-9.jpg", "alt": "Street scene near Sothearos Blvd", "caption": "Around Sothearos Blvd" },
-      { "file": "royal-palace-park-10.jpg", "alt": "Wide view of the park and palace gates", "caption": "Park and palace gates" },
-      { "file": "royal-palace-park-11.jpg", "alt": "Local life and vendors near the area", "caption": "Local everyday life" },
-      { "file": "royal-palace-park-12.jpg", "alt": "Aerial-style view of central Phnom Penh", "caption": "Central Phnom Penh" },
-      { "file": "royal-palace-park-13.jpg", "alt": "Another view around Royal Palace Park", "caption": "More from the park" }
-    ]
-  },
   "footer": {
-    "siteName": "Royal Palace Park",
+    "siteName": "Bangui Windmills",
     "tagline": "Independent non-profit visitor information",
     "rights": "An independent non-profit visitor information project. Not affiliated with any government agency or official organisation. Contains no commercial recommendations.",
     "missionTitle": "About this site",
-    "missionText": "This is an independent, non-profit visitor information project with no affiliation to any government body or official organisation. Attraction information is cross-checked against public sources from Phnom Penh Municipality, the Phnom Penh Tourism Office and the Ministry of Tourism of Cambodia. It contains no commercial recommendations, paid rankings or promotions.",
+    "missionText": "This is an independent, non-profit visitor information project with no affiliation to any government body, wind farm operator, or tourism organisation. Attraction information is cross-checked against public sources from Ilocos Norte tourism offices and the Department of Tourism (DOT). It contains no commercial recommendations, paid rankings or promotions.",
     "exploreTitle": "Explore",
     "resourcesTitle": "Public resources",
     "resources": [
-      { "label": "Google Maps", "url": "https://maps.app.goo.gl/FbkFtnh44ZvDLpNi9" },
-      { "label": "Tourism Cambodia", "url": "https://www.tourismcambodia.org" },
-      { "label": "Phnom Penh Municipality", "url": "https://www.phnompenh.gov.kh" }
+      { "label": "Google Maps", "url": "https://maps.app.goo.gl/6rStRyytritErtFk6" },
+      { "label": "Philippine DOT", "url": "https://www.tourism.gov.ph" },
+      { "label": "Ilocos Norte", "url": "https://www.ilocosnorte.gov.ph" }
     ],
     "visitTitle": "Visit",
     "addressLabel": "Address",
-    "addressValue": "Samdach Sothearos Blvd, Phnom Penh, Cambodia",
+    "addressValue": "Bangui Bay, Bangui, Ilocos Norte, 2920 Philippines",
     "mapsLabel": "Open in Google Maps",
     "disclaimer": "All images shown are the property of and copyrighted by their original photographers. If any copyright issue arises, please contact us.",
     "privacy": "Privacy Policy",
@@ -478,7 +385,7 @@
   "legal": {
     "privacy": {
       "title": "Privacy Policy",
-      "lastUpdated": "Last updated: July 2026",
+      "lastUpdated": "Last updated: August 2026",
       "sections": [
         {
           "h": "Information we collect",
@@ -486,7 +393,7 @@
           "li": [
             "Browsing data (IP address, browser type, pages visited)",
             "Cookies and similar technologies",
-            "Any information you voluntarily provide through the contact form or email"
+            "Any information you voluntarily provide through email or contact form"
           ]
         },
         {
@@ -501,11 +408,11 @@
         },
         {
           "h": "Third-party services",
-          "p": "Our website may use third-party services such as Google Maps (for embedded maps and location data), Google Analytics (for traffic analysis), and Unsplash (for images). These services each have their own privacy policies."
+          "p": "Our website may use third-party services such as Google Maps (for embedded maps and location data), Google Analytics (for traffic analysis), and public image galleries. These services each have their own privacy policies."
         },
         {
           "h": "Your rights",
-          "p": "Under the General Data Protection Regulation (GDPR) and related laws, you have the following rights:",
+          "p": "Under applicable data protection laws, you have the following rights:",
           "li": [
             "Access your personal data",
             "Request correction or deletion",
@@ -517,7 +424,7 @@
     },
     "terms": {
       "title": "Terms of Service",
-      "lastUpdated": "Last updated: July 2026",
+      "lastUpdated": "Last updated: August 2026",
       "sections": [
         {
           "h": "Access and use",
@@ -525,15 +432,15 @@
         },
         {
           "h": "Content use",
-          "p": "All content on this site is provided for reference only. We are an independent third-party travel information website and are not affiliated with any tourist attraction, government agency, or commercial operator."
+          "p": "All content on this site is provided for reference only. We are an independent third-party travel information website and are not affiliated with any tourist attraction, government agency, wind farm operator, or commercial entity."
         },
         {
           "h": "Accuracy of information",
-          "p": "We strive to provide accurate and up-to-date information, but cannot guarantee completeness or accuracy. Itineraries, conditions, and services are subject to change without notice. Please always verify important information through official channels before traveling."
+          "p": "We strive to provide accurate and up-to-date information, but cannot guarantee completeness or accuracy. Visiting conditions, fees, and services are subject to change without notice. Please always verify important information through official channels before traveling."
         },
         {
           "h": "Intellectual property",
-          "p": "The design and original content of this site are protected by copyright. Images are from Unsplash and used under their license. Use of Google Maps data complies with Google's Terms of Service."
+          "p": "The design and original content of this site are protected by copyright. Images are used for educational and reference purposes. Use of Google Maps data complies with Google's Terms of Service."
         },
         {
           "h": "Limitation of liability",
@@ -543,7 +450,7 @@
     },
     "cookie": {
       "title": "Cookie Settings",
-      "lastUpdated": "Last updated: July 2026",
+      "lastUpdated": "Last updated: August 2026",
       "sections": [
         {
           "h": "We use cookies to improve your browsing experience. You can manage your preferences below.",
