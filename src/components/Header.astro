@@ -1,13 +1,15 @@
 ---
 import { attraction } from '../config';
 
+const { t } = Astro.props;
+
 const navItems = [
-  { label: 'Overview', href: '#introduction' },
-  { label: 'History', href: '#history' },
-  { label: 'Visit', href: '#best-time' },
-  { label: 'Nearby', href: '#nearby-food' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'FAQ', href: '#faq' },
+  { label: t.header.intro, href: '#introduction' },
+  { label: t.header.history, href: '#history' },
+  { label: t.header.bestTime, href: '#best-time' },
+  { label: t.header.nearby, href: '#nearby-food' },
+  { label: t.header.gallery, href: '#gallery' },
+  { label: t.header.faq, href: '#faq' },
 ];
 ---
 
@@ -44,7 +46,7 @@ const navItems = [
           href={import.meta.env.PROD ? '#map-section' : '#map-section'}
           class="ml-2 rounded-lg bg-ocean px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-ocean-dark"
         >
-          Directions
+          {t.header.map}
         </a>
       </nav>
 
@@ -78,7 +80,7 @@ const navItems = [
           href="#map-section"
           class="mt-1 rounded-lg bg-ocean px-4 py-2.5 text-sm font-semibold text-white text-center hover:bg-ocean-dark transition-colors"
         >
-          Get Directions
+          {t.header.map}
         </a>
       </nav>
     </div>

@@ -289,11 +289,19 @@
       { "file": "bangui-windmills-5.jpg", "alt": "Turbine close-up", "caption": "Up close with a Vestas V82" },
       { "file": "bangui-windmills-6.jpg", "alt": "Bangui Windmills panoramic", "caption": "Panoramic bay view" },
       { "file": "bangui-windmills-7.jpg", "alt": "Late afternoon at the windmills", "caption": "Golden hour light" },
-      { "file": "bangui-windmills-8.jpg", "alt": "Road alongside turbines", "view": "The coastal road view" },
+      { "file": "bangui-windmills-8.jpg", "alt": "Road alongside turbines", "caption": "The coastal road view" },
       { "file": "bangui-windmills-9.jpg", "alt": "Beach near the windmills", "caption": "Dark sand shoreline" },
       { "file": "bangui-windmills-10.jpg", "alt": "Wide shot of turbine row", "caption": "Twenty turbines in a single row" },
       { "file": "bangui-windmills-11.jpg", "alt": "Stormy sky over the windmills", "caption": "Dramatic Ilocos weather" },
-      { "file": "bangui-windmills-12.jpg", "alt": "Aerial-style view of the wind farm", "caption": "Aerial perspective of the farm" }
+      { "file": "bangui-windmills-12.jpg", "alt": "Aerial-style view of the wind farm", "caption": "Aerial perspective of the farm" },
+      { "file": "bangui-windmills-13.jpg", "alt": "Turbine blades spinning close-up", "caption": "Clean energy in motion" },
+      { "file": "bangui-windmills-14.jpg", "alt": "Windmills with visitors", "caption": "A popular tourist stop" },
+      { "file": "bangui-windmills-15.jpg", "alt": "Wide bay view with windmills", "caption": "Bangui Bay scenic panorama" },
+      { "file": "bangui-windmills-16.jpg", "alt": "Sunset at Bangui Windmills", "caption": "Sunset glow over the sea" },
+      { "file": "bangui-windmills-17.jpg", "alt": "Turbines from a distance", "caption": "Northward view up the coast" },
+      { "file": "bangui-windmills-18.jpg", "alt": "Windmills with foreground road", "caption": "Along the Pan-Philippine Highway" },
+      { "file": "bangui-windmills-19.jpg", "alt": "Turbine tower and nacelle", "caption": "The 70-meter tower close-up" },
+      { "file": "bangui-windmills-20.jpg", "alt": "Wide angle of the entire wind farm", "caption": "Southeast Asia's first wind farm" }
     ]
   },
   "faq": {

@@ -1,5 +1,7 @@
 ---
 import { attraction } from '../config';
+
+const { t } = Astro.props;
 ---
 
 <section id="introduction" class="section">
@@ -11,32 +13,30 @@ import { attraction } from '../config';
           <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
           </svg>
-          Ilocos Norte, Philippines
+          {t.intro.eyebrow}
         </span>
-        <h2 class="text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
-          Where Wind<br class="hidden sm:block" /> Meets the Sea
-        </h2>
+        <h2 class="text-3xl font-extrabold tracking-tight text-navy sm:text-4xl" set:html={t.intro.title} />
         <div class="space-y-4 text-stone leading-relaxed">
-          <p>
-            Stretching 9 kilometers along the dark-sand shoreline of Bangui Bay, the
-            <strong class="text-navy">Bangui Windmills</strong> form one of the
-            Philippines' most photographed landmarks. Twenty Vestas V82 wind turbines
-            — each standing 70 meters (230 feet) tall — spin gracefully against the
-            West Philippine Sea, creating a mesmerizing contrast between cutting-edge
-            technology and raw coastal beauty.
-          </p>
-          <p>
-            Built in 2005 as <strong class="text-navy">Southeast Asia's first wind farm</strong>,
-            these turbines generate enough electricity to cover approximately 40% of
-            Ilocos Norte's power needs. Beyond their engineering significance, they
-            have become a symbol of the region's commitment to renewable energy and
-            a must-visit destination along the Ilocos tourist circuit.
-          </p>
-          <p>
-            Best of all? The viewing area is <strong class="text-green">completely free</strong>
-            and open to the public year-round — just pull up to the shoreline, step
-            out of your car, and find yourself dwarfed by these gentle giants.
-          </p>
+          <p>{t.intro.description}</p>
+          <div>
+            <h3 class="mb-2 text-lg font-bold text-navy">{t.intro.whyTitle}</h3>
+            <p>{t.intro.why}</p>
+          </div>
+        </div>
+
+        <!-- Highlights -->
+        <div class="space-y-3">
+          <h3 class="text-lg font-bold text-navy">{t.intro.highlights.title}</h3>
+          <ul class="space-y-2">
+            {t.intro.highlights.items.map((item: string) => (
+              <li class="flex items-start gap-2">
+                <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-stone leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <!-- Quick Facts -->

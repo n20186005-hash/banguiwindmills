@@ -1,41 +1,63 @@
 ---
+const { t } = Astro.props;
+const photos = t.gallery.photos;
 ---
 
 <section id="gallery" class="section">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="reveal mb-12 text-center">
-      <span class="badge">Gallery</span>
+      <span class="badge">{t.gallery.eyebrow}</span>
       <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
-        Photo Gallery
+        {t.gallery.title}
       </h2>
       <p class="mx-auto mt-4 max-w-2xl text-stone leading-relaxed">
-        Click any photo to view it full-size. These towering giants against the Ilocos
-        coastline never fail to impress.
+        {t.gallery.subtitle}
       </p>
     </div>
 
     <!-- Gallery Grid -->
     <div class="reveal columns-2 gap-4 sm:columns-3 lg:columns-4">
-      {Array.from({ length: 12 }, (_, i) => {
-        const n = i + 1;
-        return (
-          <button
-            class="gallery-item mb-4 block w-full overflow-hidden rounded-xl cursor-pointer group focus:outline-none focus-visible:ring-2 focus-visible:ring-ocean"
-            data-index={i}
-            aria-label={`View photo ${n} full-size`}
-          >
-            <img
-              src={`/gallery/bangui-windmills-${n}.jpg`}
-              alt={`Bangui Windmills — Photo ${n}`}
-              class="w-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:brightness-110"
-              loading="lazy"
-              decoding="async"
-              width="600"
-              height="400"
-            />
-          </button>
-        );
-      })}
+      {photos.map((photo, i) => (
+        <button
+          class="gallery-item mb-4 block w-full overflow-hidden rounded-xl cursor-pointer group focus:outline-none focus-visible:ring-2 focus-visible:ring-ocean"
+          data-index={i}
+          data-file={photo.file}
+          data-alt={photo.alt}
+          aria-label={`View photo ${i + 1} full-size`}
+        >
+          <img
+            src={`/gallery/${photo.file}`}
+            alt={photo.alt}
+            class="w-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:brightness-110"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="400"
+          />
+          <div class="p-2 text-center text-xs text-stone/70">
+            {photo.caption}
+          </div>
+        </button>
+      ))}
+    </div>
+
+    <div class="reveal mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
+      <a
+        href="https://www.google.com/maps/place/Bangui+Windmills/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 font-semibold text-ocean hover:underline"
+      >
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        {t.gallery.viewMaps}
+      </a>
+    </div>
+
+    <div class="reveal mt-4 text-center text-xs text-stone/50">
+      <p>{t.gallery.creditNote}</p>
     </div>
 
     <!-- Lightbox -->
@@ -67,7 +89,10 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
         </svg>
       </button>
-      <img id="lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[85vh] object-contain rounded-lg" />
+      <div class="flex flex-col items-center max-w-[90vw]">
+        <img id="lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[80vh] object-contain rounded-lg" />
+        <p id="lightbox-caption" class="mt-3 text-sm text-white/80 text-center max-w-[80vw]"></p>
+      </div>
     </div>
   </div>
 </section>
@@ -76,6 +101,7 @@
   const galleryItems = document.querySelectorAll('.gallery-item');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
   const closeBtn = document.getElementById('lightbox-close');
   const prevBtn = document.getElementById('lightbox-prev');
   const nextBtn = document.getElementById('lightbox-next');
@@ -83,9 +109,12 @@
   let currentIndex = 0;
 
   function openLightbox(index) {
-    const n = index + 1;
-    lightboxImg.src = `/gallery/bangui-windmills-${n}.jpg`;
-    lightboxImg.alt = `Bangui Windmills — Photo ${n}`;
+    const item = galleryItems[index];
+    const file = item?.dataset.file ?? '';
+    const alt = item?.dataset.alt ?? '';
+    lightboxImg.src = `/gallery/${file}`;
+    lightboxImg.alt = alt;
+    lightboxCaption.textContent = '';
     lightbox?.classList.add('open');
     currentIndex = index;
     document.body.style.overflow = 'hidden';

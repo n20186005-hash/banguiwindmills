@@ -1,9 +1,45 @@
 ---
+import en from '../../i18n/en.json';
+import zh from '../../i18n/zh.json';
+import fil from '../../i18n/fil.json';
+
 export function getStaticPaths() {
-  const ALL_LANGS = ['en', 'zh', 'fil', 'km'];
-  return ALL_LANGS.map((lang) => ({ params: { lang } }));
+  return ['en', 'zh', 'fil', 'km'].map((lang) => ({ params: { lang } }));
 }
+
+const { lang } = Astro.params;
+
+if (lang === 'km') {
+  return Astro.redirect('/fil/privacy-policy/', 301);
+}
+
+const LANG_MAP = { en, zh, fil };
+const t = LANG_MAP[lang as 'en' | 'zh' | 'fil'];
+const currentLang = lang as 'en' | 'zh' | 'fil';
+
+import BaseLayout from '../../components/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 ---
-<meta http-equiv="refresh" content="0;url=/" />
-<script is:inline>window.location.href = '/';</script>
-<p>Redirecting...</p>
+
+<BaseLayout t={t} lang={currentLang}>
+  <Header t={t} lang={currentLang} />
+  <main>
+    <article class="max-w-3xl mx-auto px-4 py-24 prose prose-lg">
+      <h1>{t.legal.privacy.title}</h1>
+      <p class="text-sm text-stone">{t.legal.privacy.lastUpdated}</p>
+      {t.legal.privacy.sections.map((section: any) => (
+        <section>
+          <h2>{section.h}</h2>
+          {section.p && <p>{section.p}</p>}
+          {section.li && section.li.length > 0 && (
+            <ul>
+              {section.li.map((item: string) => <li>{item}</li>)}
+            </ul>
+          )}
+        </section>
+      ))}
+    </article>
+  </main>
+  <Footer t={t} lang={currentLang} />
+</BaseLayout>

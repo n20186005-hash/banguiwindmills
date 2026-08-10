@@ -1,4 +1,8 @@
 ---
+import fil from '../i18n/fil.json';
+const t = fil;
+const lang = 'fil';
+
 import BaseLayout from '../components/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
@@ -16,21 +20,21 @@ import MapSection from '../components/MapSection.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout>
-  <Header />
+<BaseLayout t={t} lang={lang}>
+  <Header t={t} lang={lang} />
   <main>
-    <Hero />
-    <Introduction />
-    <History />
-    <BestTime />
-    <EntranceFee />
-    <Parking />
-    <Transport />
-    <NearbyFood />
-    <NearbyAttractions />
-    <Gallery />
-    <FAQ />
-    <MapSection />
+    <Hero t={t} />
+    <Introduction t={t} />
+    <History t={t} />
+    <BestTime t={t} />
+    <EntranceFee t={t} />
+    <Parking t={t} />
+    <Transport t={t} />
+    <NearbyFood t={t} />
+    <NearbyAttractions t={t} />
+    <Gallery t={t} />
+    <FAQ t={t} />
+    <MapSection t={t} />
   </main>
-  <Footer />
+  <Footer t={t} lang={lang} />
 </BaseLayout>

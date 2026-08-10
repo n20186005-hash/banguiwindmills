@@ -1,79 +1,14 @@
 ---
-interface FaqItem {
-  question: string;
-  answer: string;
-}
-
-const faqs: FaqItem[] = [
-  {
-    question: 'What exactly are the Bangui Windmills?',
-    answer:
-      'The Bangui Windmills are 20 Vestas V82 wind turbines that form the Bangui Wind Farm — the first commercial wind farm in Southeast Asia. Each turbine stands 70 meters (230 feet) tall and generates 1.65 megawatts of electricity. They stretch along 9 kilometers of coastline in Bangui, Ilocos Norte, and generate approximately 40% of the province\'s electricity needs while serving as a major tourist attraction.',
-  },
-  {
-    question: 'Is there an entrance fee?',
-    answer:
-      'No, the Bangui Windmills viewing area is completely free. There are no gates, no ticket booths, and no admission fees. Visitors can simply pull up to the shoreline and enjoy the view. Occasionally, a small environmental fee (around PHP 10–20) may be collected by local government personnel, but this is not consistently applied.',
-  },
-  {
-    question: 'What are the operating hours?',
-    answer:
-      'The Bangui Windmills viewing area is open 24 hours a day, 7 days a week. There are no closing times since the viewing area is along a public road and shoreline. However, for the best experience, we recommend visiting during daylight hours — especially sunrise (5:30–7:00 AM) or late afternoon (3:00–5:30 PM).',
-  },
-  {
-    question: 'Can I go inside or climb the wind turbines?',
-    answer:
-      'No. The wind turbines are active power-generating equipment and are not open to the public for safety reasons. Visitors are welcome to view and photograph them from the shoreline and roadside, but climbing, touching, or entering the turbine area is strictly prohibited.',
-  },
-  {
-    question: 'How do I get to Bangui Windmills from Manila?',
-    answer:
-      'From Manila, take a bus to Laoag (8–10 hours) via Partas, Florida, or Fariñas Transit. From Laoag, take a northbound bus or van to Bangui (~1 hour), then a short tricycle ride to the windmills. Alternatively, self-drive along the North Luzon Expressway (NLEX), SCTEX, and TPLEX, then continue on the Manila North Road (AH26) — total drive time is approximately 9–11 hours. Day tours from Laoag hotels are also widely available.',
-  },
-  {
-    question: 'What is the best time to visit?',
-    answer:
-      'The dry season (November through April) offers the best weather with clear skies and manageable temperatures. December to February is peak season. For photography, sunrise and late afternoon provide the most dramatic light. Avoid the rainy and typhoon season (June to October) when heavy rain and strong winds may affect visibility and access.',
-  },
-  {
-    question: 'How much time should I spend here?',
-    answer:
-      'For a quick photo stop, 30–45 minutes is sufficient. For a relaxed visit — walking along the shoreline, enjoying empanada from local vendors, and taking photos from multiple angles — plan for 1–2 hours. If combining with nearby attractions like Kapurpurawan Rock Formation and Cape Bojeador Lighthouse, allocate a half day for the entire area.',
-  },
-  {
-    question: 'Is parking available? Is it free?',
-    answer:
-      'Yes, parking is free. Visitors park along the roadside shoulder adjacent to the viewing area. There is no designated parking lot — the road runs parallel to the turbines, and there\'s space all along the 9-kilometer stretch. The area near the central turbine cluster is the most popular parking spot.',
-  },
-  {
-    question: 'Are there restaurants or food vendors nearby?',
-    answer:
-      'Yes. Several food options exist near the windmills, including Kang Kang Windmill Cafe, Chingado BBQ, 18 Degrees North Camping Cafe, and Cañon View Inn. Local vendors sell the famous Ilocos Empanada, cold drinks, ice cream, and snacks near the central viewing area. Additional carinderias (local eateries) are available in Bangui town proper, about 2–3 km away.',
-  },
-  {
-    question: 'What other attractions are near Bangui Windmills?',
-    answer:
-      'Bangui Windmills is part of a scenic coastal route with several must-visit spots nearby: Kapurpurawan Rock Formation (~15 km), Cape Bojeador Lighthouse (~12 km), Patapat Viaduct (~30 km), Saud Beach in Pagudpud (~25 km), Kabigan Falls (~28 km), and Burgos Wind Farm (~10 km). All can be visited in a single day trip from Laoag.',
-  },
-  {
-    question: 'Can I fly a drone at Bangui Windmills?',
-    answer:
-      'Drone use near the wind turbines is generally discouraged and may be restricted due to safety concerns around active power infrastructure. If you plan to fly a drone, check with local authorities and the wind farm operator beforehand. Unauthorized drone flights near turbines could pose risks and may be illegal under Philippine aviation regulations.',
-  },
-  {
-    question: 'Who operates the Bangui Windmills?',
-    answer:
-      'The Bangui Wind Farm was originally developed by NorthWind Power Development Corporation (2005). Today, the facility operates under ACEN Corporation (formerly AC Energy), the Ayala Group\'s listed energy platform. ACEN is one of the largest renewable energy companies in Southeast Asia.',
-  },
-];
+const { t } = Astro.props;
+const faqs = t.faq.items;
 ---
 
 <section id="faq" class="section-alt">
   <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
     <div class="reveal mb-12 text-center">
-      <span class="badge">FAQ</span>
+      <span class="badge">{t.faq.eyebrow}</span>
       <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
-        Frequently Asked Questions
+        {t.faq.title}
       </h2>
     </div>
 
@@ -84,7 +19,7 @@ const faqs: FaqItem[] = [
             class="faq-trigger flex w-full items-center justify-between px-6 py-4 text-left font-semibold text-navy hover:bg-turbine/30 transition-colors"
             aria-expanded="false"
           >
-            <span>{faq.question}</span>
+            <span>{faq.q}</span>
             <svg
               class="faq-icon h-5 w-5 flex-shrink-0 text-stone transition-transform duration-300"
               fill="none"
@@ -97,7 +32,7 @@ const faqs: FaqItem[] = [
           </button>
           <div class="faq-answer">
             <div class="px-6 pb-5 text-stone leading-relaxed text-sm">
-              {faq.answer}
+              {faq.a}
             </div>
           </div>
         </div>
@@ -115,10 +50,10 @@ const faqs: FaqItem[] = [
     {faqs.map((faq) => (
       `{
         "@type": "Question",
-        "name": ${JSON.stringify(faq.question)},
+        "name": ${JSON.stringify(faq.q)},
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": ${JSON.stringify(faq.answer)}
+          "text": ${JSON.stringify(faq.a)}
         }
       }`
     )).join(',\n')}

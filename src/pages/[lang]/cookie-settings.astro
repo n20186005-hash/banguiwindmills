@@ -1,9 +1,74 @@
 ---
+import en from '../../i18n/en.json';
+import zh from '../../i18n/zh.json';
+import fil from '../../i18n/fil.json';
+
 export function getStaticPaths() {
-  const ALL_LANGS = ['en', 'zh', 'fil', 'km'];
-  return ALL_LANGS.map((lang) => ({ params: { lang } }));
+  return ['en', 'zh', 'fil', 'km'].map((lang) => ({ params: { lang } }));
 }
+
+const { lang } = Astro.params;
+
+if (lang === 'km') {
+  return Astro.redirect('/fil/cookie-settings/', 301);
+}
+
+const LANG_MAP = { en, zh, fil };
+const t = LANG_MAP[lang as 'en' | 'zh' | 'fil'];
+const currentLang = lang as 'en' | 'zh' | 'fil';
+
+import BaseLayout from '../../components/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 ---
-<meta http-equiv="refresh" content="0;url=/" />
-<script is:inline>window.location.href = '/';</script>
-<p>Redirecting...</p>
+
+<BaseLayout t={t} lang={currentLang}>
+  <Header t={t} lang={currentLang} />
+  <main>
+    <article class="max-w-3xl mx-auto px-4 py-24 prose prose-lg">
+      <h1>{t.legal.cookie.title}</h1>
+      <p class="text-sm text-stone">{t.legal.cookie.lastUpdated}</p>
+      {t.legal.cookie.sections.map((section: any) => (
+        <section class="not-prose mb-10">
+          <h2 class="text-xl font-semibold text-navy mb-3">{section.h}</h2>
+          {section.p && section.p.length > 0 && <p class="text-stone mb-4 leading-relaxed">{section.p}</p>}
+          {section.li && section.li.length > 0 && (
+            <ul class="list-disc pl-6 mb-4 text-stone space-y-1">
+              {section.li.map((item: string) => <li>{item}</li>)}
+            </ul>
+          )}
+          {section.cookies && section.cookies.length > 0 && (
+            <div class="space-y-4 mb-4">
+              {section.cookies.map((cookie: any) => (
+                <div class="card p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                  <div class="flex-1">
+                    <h3 class="font-semibold text-navy m-0">{cookie.name}</h3>
+                    <p class="text-sm text-stone mb-0 mt-1">{cookie.desc}</p>
+                  </div>
+                  <span class={`badge ${cookie.active ? '' : 'bg-stone/10 text-stone'}`}>
+                    {cookie.active ? cookie.onLabel : cookie.offLabel}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+          {section.actions && section.actions.length > 0 && (
+            <div class="flex flex-wrap gap-3 mt-4">
+              {section.actions.map((action: any) => (
+                <button
+                  class={`px-5 py-2.5 rounded-lg font-medium transition-all ${action.primary
+                    ? 'bg-sky text-white hover:bg-sky/90 shadow-sm'
+                    : 'border border-stone/20 text-navy hover:bg-turbine'
+                  }`}
+                >
+                  {action.label}
+                </button>
+              ))}
+            </div>
+          )}
+        </section>
+      ))}
+    </article>
+  </main>
+  <Footer t={t} lang={currentLang} />
+</BaseLayout>

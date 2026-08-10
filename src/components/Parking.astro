@@ -1,13 +1,14 @@
 ---
+const { t } = Astro.props;
 ---
 
 <section id="parking" class="section">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <!-- Section Header -->
     <div class="reveal mb-12 text-center">
-      <span class="badge">Parking</span>
+      <span class="badge">{t.parking.eyebrow}</span>
       <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
-        Parking Information
+        {t.parking.title}
       </h2>
     </div>
 
@@ -27,8 +28,7 @@
 
         <div class="space-y-4 text-stone leading-relaxed">
           <p>
-            Parking at the Bangui Windmills is <strong class="text-green">free</strong>.
-            Visitors can pull over along the roadside adjacent to the viewing area. The
+            {t.parking.overview} Visitors can pull over along the roadside adjacent to the viewing area. The
             road runs parallel to the shoreline, so you'll have a place to park wherever
             you stop along the 9-kilometer turbine stretch.
           </p>
