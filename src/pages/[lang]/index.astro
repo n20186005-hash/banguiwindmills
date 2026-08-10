@@ -1,7 +1,7 @@
 ---
-// Legacy redirect — no longer generates pages (single-language site)
 export function getStaticPaths() {
-  return [];
+  const ALL_LANGS = ['en', 'zh', 'fil', 'km'];
+  return ALL_LANGS.map((lang) => ({ params: { lang } }));
 }
 const destination = '/';
 ---

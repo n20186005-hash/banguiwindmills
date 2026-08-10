@@ -1,6 +1,7 @@
 ---
 export function getStaticPaths() {
-  return [];
+  const ALL_LANGS = ['en', 'zh', 'fil', 'km'];
+  return ALL_LANGS.map((lang) => ({ params: { lang } }));
 }
 ---
 <meta http-equiv="refresh" content="0;url=/" />
