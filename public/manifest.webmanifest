@@ -1,0 +1,25 @@
+{
+  "name": "Bangui Windmills — Visitor Guide",
+  "short_name": "Bangui Windmills",
+  "description": "Visitor guide to Bangui Windmills, the first wind farm in Southeast Asia, in Bangui, Ilocos Norte, Philippines.",
+  "start_url": "/fil/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f2942",
+  "lang": "fil",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+---
+const { t } = Astro.props;
+
+const ICONS: Record<string, string> = {
+  family: `<svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109V18.375a24.447 24.447 0 0114.396-4.615 24.124 24.124 0 01-3.02 7.468z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9 19.5v-.375a9.375 9.375 0 019.375-9.375h.375A9.375 9.375 0 0121 18.375v.375m-18-9.375A9.375 9.375 0 0012 3.375a9.375 9.375 0 019.375 9.375v.375" /></svg>`,
+  camera: `<svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" /><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" /></svg>`,
+  accessible: `<svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v1.5m0-18.75h18v18.75H3zm9-12.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" /></svg>`,
+};
+---
+
+<section id="itineraries" class="section">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal mb-12 text-center">
+      <span class="badge">{t.itineraries.eyebrow}</span>
+      <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+        {t.itineraries.title}
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-stone leading-relaxed">
+        {t.itineraries.subtitle}
+      </p>
+    </div>
+
+    <!-- By audience -->
+    <h3 class="reveal mb-6 text-xl font-bold text-navy">{t.itineraries.byAudienceTitle}</h3>
+    <div class="grid gap-6 md:grid-cols-3">
+      {t.itineraries.audiences.map((a, i) => (
+        <div class="reveal card p-6" style={`animation-delay: ${i * 0.05}s`}>
+          <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-ocean/10" set:html={ICONS[a.icon] || ICONS.family} />
+          <h4 class="text-lg font-bold text-navy">{a.title}</h4>
+          <p class="mt-1 mb-4 text-sm text-stone leading-relaxed">{a.desc}</p>
+          <ul class="space-y-2">
+            {a.items.map((item) => (
+              <li class="flex items-start gap-2 text-sm text-stone leading-relaxed">
+                <svg class="mt-0.5 h-4 w-4 flex-shrink-0 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <!-- General routes -->
+    <h3 class="reveal mb-6 mt-12 text-xl font-bold text-navy">{t.itineraries.generalTitle}</h3>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="reveal card p-6">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-light/50 text-ocean font-bold">½</span>
+          <div>
+            <h4 class="font-bold text-navy">{t.itineraries.halfDay.title}</h4>
+            <p class="text-xs text-stone">{t.itineraries.halfDay.desc}</p>
+          </div>
+        </div>
+        <ul class="space-y-2">
+          {t.itineraries.halfDay.items.map((item) => (
+            <li class="flex items-start gap-2 text-sm text-stone leading-relaxed">
+              <svg class="mt-0.5 h-4 w-4 flex-shrink-0 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="reveal card p-6">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-gold-light/50 text-navy font-bold">∞</span>
+          <div>
+            <h4 class="font-bold text-navy">{t.itineraries.fullDay.title}</h4>
+            <p class="text-xs text-stone">{t.itineraries.fullDay.desc}</p>
+          </div>
+        </div>
+        <ul class="space-y-2">
+          {t.itineraries.fullDay.items.map((item) => (
+            <li class="flex items-start gap-2 text-sm text-stone leading-relaxed">
+              <svg class="mt-0.5 h-4 w-4 flex-shrink-0 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

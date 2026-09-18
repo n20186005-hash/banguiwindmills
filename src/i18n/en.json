@@ -14,6 +14,9 @@
     "entranceFee": "Entrance",
     "parking": "Parking",
     "transport": "Getting There",
+    "weather": "Weather",
+    "amenities": "Services",
+    "plan": "Itineraries",
     "nearbyFood": "Food Nearby",
     "nearby": "Nearby",
     "gallery": "Gallery",
@@ -28,12 +31,25 @@
     "readMore": "Read more",
     "onSiteConfirm": "Conditions may change — confirm on-site before your visit"
   },
+  "reviews": {
+    "sourceNote": "Rating and review count synced from Google Maps user reviews · September 2026 · ",
+    "sourceLink": "View all Google Maps reviews↗",
+    "copyright": "Synced from Google Maps user reviews, synced September 2026; copyright belongs to the original authors and Google Maps.",
+    "viewAllButton": "View all reviews on Google Maps"
+  },
+  "sources": {
+    "title": "Sources",
+    "subtitle": "Where the information shown on this page comes from.",
+    "reviewLabel": "Reviews",
+    "officialLabel": "Department of Tourism, Philippines",
+    "officialDesc": "The official government tourism portal for regional travel information."
+  },
   "hero": {
     "localName": "Bangui Windmills",
-    "title": "Bangui Windmills",
+    "title": "Bangui Windmills (Bangui)",
     "subtitle": "Southeast Asia's first wind farm — 20 towering turbines standing sentinel along the windswept shores of Bangui Bay, where nature and innovation meet.",
     "rating": "4.7",
-    "reviews": "1,486",
+    "reviews": "3,858",
     "reviewsSuffix": "reviews",
     "ctaMaps": "Open in Google Maps",
     "ctaExplore": "Explore",
@@ -43,7 +59,7 @@
       { "k": "Turbines", "v": "20 units (Vestas V82)" },
       { "k": "Stretch", "v": "9 km coastline" }
     ],
-    "heroAlt": "Bangui Windmills along the coastline of Ilocos Norte, Philippines"
+    "heroAlt": "Bangui Windmills (Bangui Wind Farm) along the coastline of Bangui, Ilocos Norte, Philippines"
   },
   "info": {
     "eyebrow": "At a Glance",
@@ -55,7 +71,7 @@
       { "k": "Type", "v": "Wind Farm / Scenic Viewpoint", "icon": "tree" },
       { "k": "Location", "v": "Bangui Bay, Bangui, Ilocos Norte", "icon": "pin" },
       { "k": "Map Code", "v": "GPH9+C6H", "icon": "pin" },
-      { "k": "Rating", "v": "4.7 / 5 (≈1,486)", "icon": "star" },
+      { "k": "Rating", "v": "4.7 / 5 (≈3,858)", "icon": "star" },
       { "k": "Country", "v": "Philippines", "icon": "city" }
     ]
   },
@@ -309,6 +325,18 @@
     "title": "Frequently Asked Questions",
     "items": [
       {
+        "q": "Where are the Bangui Windmills located?",
+        "a": "The Bangui Windmills are located along the shoreline of Bangui Bay in the municipality of Bangui, Ilocos Norte, Philippines — about 550 km north of Manila and 55 km from Laoag City. The 20 wind turbines line 9 kilometers of coastline beside the Manila North Road (AH26), so they are visible and directly accessible from the road. Plus Code: GPH9+C6H."
+      },
+      {
+        "q": "What is the history of the Bangui Windmills?",
+        "a": "The Bangui Wind Farm was commissioned in 2005 by NorthWind Power Development Corporation with 15 Vestas V82 turbines — the first commercial wind farm in the Philippines and in Southeast Asia. In 2008 five more turbines were added, bringing the total to 20 units and roughly 33 MW of capacity. Today the facility is operated under ACEN Corporation (formerly AC Energy) of the Ayala Group and supplies around 40% of Ilocos Norte's electricity."
+      },
+      {
+        "q": "How do I get to the Bangui Windmills from Vigan or Laoag?",
+        "a": "From Laoag (~55 km, 1–1.5 hours): take a bus or van to Bangui town, then a 5–10 minute tricycle ride to the viewing area. From Vigan, Ilocos Sur (~135 km, 2.5–3 hours): take a bus north to Laoag along the Manila North Road (AH26) and transfer to a van bound for Bangui, or hire a private van for a direct trip. Many day tours from Laoag and Vigan already combine the Bangui Windmills with Cape Bojeador Lighthouse and Kapurpurawan Rock Formation."
+      },
+      {
         "q": "What exactly are the Bangui Windmills?",
         "a": "The Bangui Windmills are 20 Vestas V82 wind turbines that form the Bangui Wind Farm — the first commercial wind farm in Southeast Asia. Each turbine stands 70 meters (230 feet) tall and generates 1.65 megawatts of electricity. They stretch along 9 kilometers of coastline in Bangui, Ilocos Norte, and generate approximately 40% of the province's electricity needs while serving as a major tourist attraction."
       },
@@ -389,6 +417,136 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookie": "Cookie Settings"
+  },
+  "weather": {
+    "eyebrow": "Live Conditions",
+    "title": "Current Weather & 7-Day Forecast",
+    "subtitle": "Coastal conditions at Bangui Bay, refreshed continuously so you can plan your visit with confidence.",
+    "loading": "Loading current conditions…",
+    "error": "Live weather is temporarily unavailable. Please check again shortly.",
+    "now": "Now",
+    "feelsLike": "Feels like",
+    "wind": "Wind",
+    "humidity": "Humidity",
+    "precip": "Rain chance",
+    "forecast": "7-Day Outlook",
+    "umbrella": "Likely to rain — bring a rain jacket or umbrella.",
+    "noUmbrella": "Mostly dry — an umbrella isn't necessary today.",
+    "updated": "Updated",
+    "today": "Today",
+    "uv": "UV Index"
+  },
+  "amenities": {
+    "eyebrow": "Visitor Services",
+    "title": "Facilities & Nearby Services",
+    "subtitle": "As a non-profit guide, we list the types of services around the site — not specific businesses — so you can plan independently and neutrally.",
+    "categories": [
+      { "icon": "restroom", "title": "Public Restrooms", "body": "Basic public toilets are available near the central viewing area and along the municipal baywalk. Facilities are simple; bring your own tissue and hand sanitizer." },
+      { "icon": "dining", "title": "Food & Drinks", "body": "Local snacks and drinks are sold by roadside stalls near the main cluster of turbines — including the well-known Ilocos empanada. See the Food section for details." },
+      { "icon": "lodging", "title": "Stays Nearby", "body": "A range of accommodation types — from small pension houses and homestays to resorts — can be found in Bangui and the wider Pagudpud–Laoag corridor. Book ahead in peak season." },
+      { "icon": "shopping", "title": "Shops & Convenience", "body": "Sari-sari stores and small convenience shops in Bangui town sell drinks, snacks and essentials. For supermarkets and ATMs, head to Laoag or Pagudpud." },
+      { "icon": "fuel", "title": "Fuel & EV Charging", "body": "Petrol stations serve the national highway through Bangui. Charging for electric vehicles is limited in the immediate area — plan longer routes with a charged battery or a backup." },
+      { "icon": "parking", "title": "Parking", "body": "Free roadside parking runs along the shoreline road. See the Parking section for vehicle-size guidance and safety tips." }
+    ],
+    "note": "Listings describe service categories only. We do not endorse or rank any specific establishment, and availability can change — please verify on the ground."
+  },
+  "transportGuide": {
+    "eyebrow": "Getting Here",
+    "title": "How to Reach Bangui Windmills",
+    "subtitle": "Bangui sits at the northern tip of Ilocos Norte, about 2 hours from Laoag City. Here are the main ways in.",
+    "routes": [
+      { "icon": "plane", "title": "From Laoag Airport", "summary": "Laoag International Airport (LAO) is the nearest gateway, with flights from Manila.", "steps": [
+        "Land at Laoag International Airport (LAO), roughly 90–110 km south of Bangui.",
+        "Hire a private transfer, rent a car, or take a northbound bus from Laoag terminal toward Pagudpud/Bangui.",
+        "Follow the national highway north; the windmills appear along the coast just before Bangui town proper."
+      ] },
+      { "icon": "bus", "title": "By Bus / Public Transport", "summary": "Long-haul buses from Manila and regional lines connect to Bangui and Pagudpud.", "steps": [
+        "From Manila, take a Partas or GV Florida bus to Laoag, then transfer to a Bangui/Pagudpud-bound local bus.",
+        "Ask the conductor to drop you at the Bangui Windmills viewing stretch (Paspo / coastal road).",
+        "From the highway, walk or take a short tricycle to the shoreline viewing point."
+      ] },
+      { "icon": "taxi", "title": "Taxi / Ride-Hailing", "summary": "Ride apps are limited up north; private hire is the most reliable.", "steps": [
+        "In Laoag, arrange a taxi, Grab (where available) or a private van for a round-trip to Bangui.",
+        "Agree on a flat fare and waiting time before departure — many drivers wait while you explore.",
+        "For shorter hops, local tricycles connect Bangui town to the viewing area."
+      ] },
+      { "icon": "car", "title": "Driving / Own Vehicle", "summary": "The most flexible option for the Ilocos Norte wind-and-lighthouse loop.", "steps": [
+        "Take the North Luzon Expressway to Tarlac, then the TPLEX toward La Union.",
+        "Continue north via the national highway through Ilocos Sur and Ilocos Norte to Laoag, then Bangui.",
+        "Park on the wide road shoulder facing the turbines; the 9 km stretch is easy to explore stop-by-stop."
+      ] }
+    ],
+    "note": "Roads are generally good but can flood or be disrupted during typhoons (Jul–Oct). Always check weather and road advisories before a long drive."
+  },
+  "seasonal": {
+    "eyebrow": "Seasonal Strategy",
+    "title": "When to Visit — A Seasonal Strategy",
+    "subtitle": "A practical view of Bangui's climate through the year, drawn from long-term climate normals for northern Luzon.",
+    "cols": { "season": "Season", "months": "Months", "climate": "Weather", "coast": "Coast & Sea", "nature": "Nature Watch", "best": "Best For" },
+    "rows": [
+      { "season": "Cool Dry (Amihan)", "months": "Nov – Feb", "climate": "Breezy, 22–29°C, little rain. The northeast monsoon brings steady coastal winds.", "coast": "Calmest seas; clearest light for photos.", "nature": "Strong, visible turbine spin; migratory birds along the coast.", "best": "Most comfortable sightseeing and photography." },
+      { "season": "Hot Dry", "months": "Mar – May", "climate": "Hot and humid, 25–34°C, little rain. Intense midday sun.", "coast": "Warm water; busy beach season.", "nature": "Lush green hills; dry, hazy horizons.", "best": "Early-morning or late-afternoon visits." },
+      { "season": "Wet (Habagat)", "months": "Jun – Sep", "climate": "Southwest monsoon; humid with heavy afternoon rains.", "coast": "Rougher seas, bigger waves; dramatic skies.", "nature": "Verdant landscape; occasional flooding on low roads.", "best": "Dramatic storm-light photography; fewer crowds." },
+      { "season": "Transition / Typhoon", "months": "Oct – early Nov", "climate": "Unstable; typhoon risk peaks. Sudden strong winds and rain.", "coast": "Dangerous surf; possible coastal closures.", "nature": "Turbines may pause in extreme wind for safety.", "best": "Check advisories; flexible, indoor-backup plans." }
+    ]
+  },
+  "itineraries": {
+    "eyebrow": "Suggested Plans",
+    "title": "Suggested Itineraries",
+    "subtitle": "Pick a plan that matches your group and pace — all built around the windmills and nearby Ilocos Norte highlights.",
+    "byAudienceTitle": "Tailored to Your Trip",
+    "audiences": [
+      { "icon": "family", "title": "Families with Kids", "desc": "Easy, low-stress stops with food and photo breaks.", "items": [
+        "Arrive mid-morning; park at the central viewing area.",
+        "Let kids watch the turbines and fly a kite on the wide shoreline.",
+        "Snack on empanada from roadside stalls; short walk along the bay.",
+        "Add a quick stop at the Bangui baywalk playground."
+      ] },
+      { "icon": "camera", "title": "Photography & Nature", "desc": "Chase the best light and coastal landscapes.", "items": [
+        "Golden hour at sunrise or sunset for silhouettes against the sea.",
+        "Shoot from multiple points along the 9 km stretch for variety.",
+        "Add Kapurpurawan Rock Formation and Cape Bojeador Lighthouse.",
+        "Bring a polarizer for glare off the blades and water."
+      ] },
+      { "icon": "accessible", "title": "Low-Effort / Accessible", "desc": "Minimal walking, comfortable pacing.", "items": [
+        "Drive the coastal road and stop at the main viewing pull-off.",
+        "Enjoy the view from the car or a shaded roadside bench.",
+        "Use nearby restrooms and stalls without long hikes.",
+        "Avoid midday heat; choose a cool, breezy morning."
+      ] }
+    ],
+    "generalTitle": "Classic Routes",
+    "halfDay": { "title": "Half-Day (2–3 h)", "desc": "The windmills plus one nearby highlight.", "items": [
+      "Bangui Windmills viewing stretch (60–90 min).",
+      "Short drive to Kapurpurawan Rock Formation.",
+      "Coffee or empanada stop in Bangui town."
+    ] },
+    "fullDay": { "title": "Full-Day (6–8 h)", "desc": "The northern Ilocos wind-and-heritage loop.", "items": [
+      "Bangui Windmills and baywalk.",
+      "Cape Bojeador Lighthouse (Burgos).",
+      "Kapurpurawan Rock Formation.",
+      "Burgos Wind Farm for a second turbine cluster.",
+      "Late lunch in Pagudpud or Laoag on the return."
+    ] }
+  },
+  "responsibility": {
+    "eyebrow": "Learn & Respect",
+    "title": "About the Wind Farm & Visitor Responsibility",
+    "subtitle": "A quick, neutral primer on what you're looking at — and how to enjoy it responsibly.",
+    "scienceTitle": "How It Works — A Quick Primer",
+    "science": [
+      "Bangui Windmills was Southeast Asia's first wind farm: 20 turbines line the coast, each about 70 m tall, converting steady monsoon winds into clean electricity.",
+      "Wind is a renewable resource — unlike fossil fuels, it produces no direct emissions while generating power for nearby communities.",
+      "The site sits on a dynamic coastal ecosystem where beach, dune and shallow sea meet; it is also a rest point for coastal birds."
+    ],
+    "respTitle": "Visitor Responsibility",
+    "responsibilities": [
+      "Stay clear of the turbine bases and fenced equipment — they are working infrastructure, not climbing frames.",
+      "Park fully off the highway; watch for traffic when crossing the coastal road.",
+      "Take all litter with you; leave the shoreline as you found it.",
+      "Respect private land and local homes; keep noise and drones considerate of residents.",
+      "Heed weather and sea advisories — coastal winds and surf can turn quickly."
+    ]
   },
   "legal": {
     "privacy": {

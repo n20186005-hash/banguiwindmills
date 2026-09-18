@@ -1,0 +1,40 @@
+---
+const { t } = Astro.props;
+
+const ICONS: Record<string, string> = {
+  restroom: `<svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007z" /></svg>`,
+  dining: `<svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>`,
+  lodging: `<svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75V21m3-15v15m3-15h.75V21M6.75 6.75h10.5v3.75H6.75V6.75z" /></svg>`,
+  shopping: `<svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007z" /></svg>`,
+  fuel: `<svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918M12 10.5c2.998 0 5.74-1.1 7.843-2.918" /></svg>`,
+  parking: `<svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg>`,
+};
+---
+
+<section id="amenities" class="section-alt">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal mb-12 text-center">
+      <span class="badge">{t.amenities.eyebrow}</span>
+      <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+        {t.amenities.title}
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-stone leading-relaxed">
+        {t.amenities.subtitle}
+      </p>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {t.amenities.categories.map((cat, i) => (
+        <div class="reveal card p-6" style={`animation-delay: ${i * 0.05}s`}>
+          <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-ocean/10" set:html={ICONS[cat.icon] || ICONS.parking} />
+          <h3 class="text-lg font-bold text-navy">{cat.title}</h3>
+          <p class="mt-2 text-sm text-stone leading-relaxed">{cat.body}</p>
+        </div>
+      ))}
+    </div>
+
+    <p class="reveal mx-auto mt-8 max-w-3xl text-center text-xs text-stone/70">
+      {t.amenities.note}
+    </p>
+  </div>
+</section>

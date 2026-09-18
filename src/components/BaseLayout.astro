@@ -1,15 +1,35 @@
 ---
-import { getBaseUrl, attraction } from '../config';
+import { getBaseUrl, attraction, mapsUrl, govtTourismUrl } from '../config';
 import '../global.css';
 
-const { t, lang } = Astro.props;
+const { t, lang, pagePath, title, description, preloadImage } = Astro.props;
 
 const baseUrl = getBaseUrl();
 
-const pageTitle = t.meta.title;
-const pageDesc = t.meta.description;
-const canonicalUrl = baseUrl ? `${baseUrl}/` : undefined;
-const ogImage = baseUrl ? `${baseUrl}/gallery/bangui-windmills-1.jpg` : '/gallery/bangui-windmills-1.jpg';
+// ===== 多语言路由：全站语言集合与默认语言 =====
+const SUPPORTED_LANGS = ['fil', 'en', 'zh'] as const;
+const HREFLANG: Record<string, string> = { fil: 'fil', en: 'en', zh: 'zh' };
+const DEFAULT_LANG = 'fil';
+
+const currentPath: string = pagePath ?? `/${lang}/`;
+// 去掉语言前缀后的路径片段（首页为 ''，子页为 'privacy-policy/'）
+const pathRest = currentPath.replace(/^\/(fil|en|zh)\//, '');
+const langPath = (code: string) => `/${code}/${pathRest}`;
+
+const absUrl = (p: string) => (baseUrl ? `${baseUrl}${p}` : p);
+
+const canonicalUrl = absUrl(currentPath);
+const altLinks = SUPPORTED_LANGS.map((code) => ({
+  hreflang: HREFLANG[code],
+  href: absUrl(langPath(code)),
+}));
+const xDefaultUrl = absUrl(langPath(DEFAULT_LANG));
+
+const pageTitle = title ?? t.meta.title;
+const pageDesc = description ?? t.meta.description;
+const ogImage = baseUrl
+  ? `${baseUrl}/gallery/bangui-windmills-1.jpg`
+  : '/gallery/bangui-windmills-1.jpg';
 
 const localeMap: Record<string, string> = {
   en: 'en_US',
@@ -17,10 +37,57 @@ const localeMap: Record<string, string> = {
   fil: 'fil_PH',
 };
 const ogLocale = localeMap[lang] || 'en_US';
+
+// ===== 结构化数据：TouristAttraction =====
+// 注意：必须在 frontmatter 中构建对象，再用 set:html 输出。
+// 若写成 <script is:inline>，Astro 不会解析其中的模板表达式，会输出字面量导致 JSON 无效。
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'TouristAttraction',
+  '@id': `${canonicalUrl}#attraction`,
+  name: attraction.name,
+  alternateName: attraction.alternateNames,
+  description: pageDesc,
+  url: canonicalUrl,
+  image: [ogImage],
+  inLanguage: HREFLANG[lang] || lang,
+  isAccessibleForFree: true,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: attraction.address,
+    addressLocality: attraction.city,
+    addressRegion: attraction.stateProvince,
+    postalCode: attraction.postalCode,
+    addressCountry: attraction.countryCode,
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: attraction.lat,
+    longitude: attraction.lng,
+  },
+  hasMap: mapsUrl,
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: [
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
+      'Sunday',
+    ],
+    opens: '00:00',
+    closes: '23:59',
+  },
+  touristType: attraction.touristType,
+  // 评分/评价数只展示在页面上，不写入 JSON-LD，以免触发 Google 结构化数据违规
+  sameAs: [mapsUrl, govtTourismUrl],
+};
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={HREFLANG[lang] || lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,22 +95,30 @@ const ogLocale = localeMap[lang] || 'en_US';
     <!-- Primary Meta -->
     <title>{pageTitle}</title>
     <meta name="description" content={pageDesc} />
-    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- hreflang：每个语言版本互相声明 + x-default -->
+    {altLinks.map((alt) => <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />)}
+    <link rel="alternate" hreflang="x-default" href={xDefaultUrl} />
 
     <!-- Open Graph -->
-    <meta property="og:title" content={t.meta.ogTitle} />
-    <meta property="og:description" content={t.meta.ogDescription} />
+    <meta property="og:title" content={title ?? t.meta.ogTitle} />
+    <meta property="og:description" content={description ?? t.meta.ogDescription} />
     <meta property="og:type" content="website" />
-    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:alt" content={attraction.name} />
     <meta property="og:site_name" content={attraction.name} />
     <meta property="og:locale" content={ogLocale} />
+    {SUPPORTED_LANGS.filter((c) => c !== lang).map((c) => (
+      <meta property="og:locale:alternate" content={localeMap[c]} />
+    ))}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={t.meta.ogTitle} />
-    <meta name="twitter:description" content={t.meta.ogDescription} />
+    <meta name="twitter:title" content={title ?? t.meta.ogTitle} />
+    <meta name="twitter:description" content={description ?? t.meta.ogDescription} />
     <meta name="twitter:image" content={ogImage} />
 
     <!-- Favicon / Icons -->
@@ -51,6 +126,14 @@ const ogLocale = localeMap[lang] || 'en_US';
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0f2942" />
+
+    <!-- Performance: 提前建立第三方连接、预载首屏主图（LCP） -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} />}
 
     <!-- GA4 -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-YJTNXGWZNY"></script>
@@ -62,34 +145,7 @@ const ogLocale = localeMap[lang] || 'en_US';
     </script>
 
     <!-- JSON-LD Structured Data: TouristAttraction -->
-    <script type="application/ld+json" is:inline>
-      {
-        "@context": "https://schema.org",
-        "@type": "TouristAttraction",
-        "name": "Bangui Windmills",
-        "description": pageDesc,
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Bangui Bay",
-          "addressLocality": "Bangui",
-          "addressRegion": "Ilocos Norte",
-          "addressCountry": "PH"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "18.5285706",
-          "longitude": "120.7181102"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-          "opens": "00:00",
-          "closes": "23:59"
-        },
-        "touristType": "Wind Farm / Scenic Viewpoint",
-        "sameAs": "https://maps.app.goo.gl/6rStRyytritErtFk6"
-      }
-    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
 
   <body class="min-h-screen bg-white text-navy antialiased">
@@ -101,6 +157,15 @@ const ogLocale = localeMap[lang] || 'en_US';
         entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
       }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
       document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+
+    <!-- PWA: 注册 Service Worker（network-first，在线始终返回最新内容） -->
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
     </script>
   </body>
 </html>

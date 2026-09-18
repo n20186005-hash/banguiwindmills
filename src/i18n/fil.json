@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Bangui Windmills — Ang Unang Wind Farm sa Timog-Silangang Asya | Gabay sa Bisita",
-    "description": "Kumpletong gabay para sa mga bibisita sa Bangui Windmills sa Ilocos Norte, Pilipinas. Ang unang wind farm sa Timog-Silangang Asya — 20 turbines sa 9 km na baybayin. Kasaysayan, transportasyon, tiket, pinakamagandang oras, at mga kalapit na atraksyon.",
-    "ogTitle": "Bangui Windmills — Unang Wind Farm sa Timog-Silangang Asya",
+    "title": "Bangui Windmills: Lokasyon, Kasaysayan at Gabay sa Pagbisita sa Ilocos Norte",
+    "description": "Naghahanap ka ba kung saan matatagpuan ang Bangui Windmills? Nasa Bangui Bay, Ilocos Norte ito. Alamin ang kasaysayan, paano pumunta mula Laoag o Vigan, bayad at pinakamagandang oras!",
+    "ogTitle": "Bangui Windmills — Saan Matatagpuan, Kasaysayan at Paano Pumunta",
     "ogDescription": "Ang unang komersyal na wind farm sa Timog-Silangang Asya. 20 matatayog na wind turbine sa magandang baybayin ng Bangui Bay, Ilocos Norte, Pilipinas."
   },
   "header": {
@@ -14,6 +14,9 @@
     "entranceFee": "Bayad sa Pagpasok",
     "parking": "Paradahan",
     "transport": "Paano Pumunta",
+    "weather": "Panahon",
+    "amenities": "Serbisyo",
+    "plan": "Itinerary",
     "nearbyFood": "Kainan sa Malapit",
     "nearby": "Mga Kalapit",
     "gallery": "Galeriya",
@@ -28,12 +31,25 @@
     "readMore": "Magbasa pa",
     "onSiteConfirm": "Maaaring magbago ang mga kondisyon — kumpirmahin sa lugar bago ang pagbisita"
   },
+  "reviews": {
+    "sourceNote": "Ang rating at bilang ng review ay sinabay mula sa mga user review sa Google Maps · Setyembre 2026 · ",
+    "sourceLink": "Tingnan ang lahat ng review sa Google Maps↗",
+    "copyright": "Sinabay sa mga user review ng Google Maps, Setyembre 2026; ang karapatan ay sa mga orihinal na may-akda at Google Maps.",
+    "viewAllButton": "Tingnan ang lahat ng review sa Google Maps"
+  },
+  "sources": {
+    "title": "Mga Pinagkuhan",
+    "subtitle": "Kung saan nanggagaling ang impormasyong ipinapakita sa pahinang ito.",
+    "reviewLabel": "Pagsusuri",
+    "officialLabel": "Kagawaran ng Turismo, Pilipinas",
+    "officialDesc": "Opisyal na portal ng turismo ng pamahalaan para sa impormasyong pansrehiyon."
+  },
   "hero": {
     "localName": "Bangui Windmills",
-    "title": "Bangui Windmills",
+    "title": "Bangui Windmills (Bangui)",
     "subtitle": "Ang unang wind farm sa Timog-Silangang Asya — 20 matatayog na turbine na nakatayo sa baybayin ng Bangui Bay, kung saan nagtatagpo ang kalikasan at makabagong teknolohiya.",
     "rating": "4.7",
-    "reviews": "1,486",
+    "reviews": "3,858",
     "reviewsSuffix": "na pagsusuri",
     "ctaMaps": "Buksan sa Google Maps",
     "ctaExplore": "Tuklasin",
@@ -43,7 +59,7 @@
       { "k": "Turbines", "v": "20 yunit (Vestas V82)" },
       { "k": "Haba", "v": "9 km na baybayin" }
     ],
-    "heroAlt": "Bangui Windmills sa baybayin ng Ilocos Norte, Pilipinas"
+    "heroAlt": "Bangui Windmills (Bangui Wind Farm) sa baybayin ng Bangui, Ilocos Norte, Pilipinas"
   },
   "info": {
     "eyebrow": "Sa Isang Sulyap",
@@ -55,7 +71,7 @@
       { "k": "Uri", "v": "Wind Farm / Tanawin", "icon": "tree" },
       { "k": "Lokasyon", "v": "Bangui Bay, Bangui, Ilocos Norte", "icon": "pin" },
       { "k": "Map Code", "v": "GPH9+C6H", "icon": "pin" },
-      { "k": "Rating", "v": "4.7 / 5 (≈1,486)", "icon": "star" },
+      { "k": "Rating", "v": "4.7 / 5 (≈3,858)", "icon": "star" },
       { "k": "Bansa", "v": "Pilipinas", "icon": "city" }
     ]
   },
@@ -137,15 +153,16 @@
   "transport": {
     "eyebrow": "Transportasyon",
     "title": "Paano Pumunta sa Bangui Windmills",
-    "overview": "Ang Bangui ay humigit-kumulang 550 km hilaga ng Manila at mga 55 km mula sa Lungsod ng Laoag. Maraming pagpipilian para sa pagmamaneho ng sarili o pampublikong sasakyan.",
+    "overview": "Ang Bangui ay humigit-kumulang 550 km hilaga ng Manila, mga 55 km mula sa Lungsod ng Laoag, at mga 135 km mula sa Vigan (Ilocos Sur). Maraming pagpipilian para sa pagmamaneho ng sarili o pampublikong sasakyan.",
     "modes": [
       {
         "icon": "car",
         "title": "Sa Pamamagitan ng Kotse / Sariling Pagmamaneho",
-        "description": "Mula sa Manila: Sumakay ng NLEX → SCTEX → TPLEX, pagkatapos ay ang Manila North Road (AH26) sa pamamagitan ng Ilocos. Mula sa Laoag: ~55 km pahilaga.",
+        "description": "Mula sa Manila: Sumakay ng NLEX → SCTEX → TPLEX, pagkatapos ay ang Manila North Road (AH26) sa pamamagitan ng Ilocos. Mula sa Laoag: ~55 km pahilaga. Mula sa Vigan (Ilocos Sur): ~135 km pahilaga sa AH26.",
         "details": [
           "Humigit-kumulang 9–11 oras na biyahe mula sa Manila",
           "1 hanggang 1.5 oras mula sa Lungsod ng Laoag",
+          "2.5 hanggang 3 oras mula sa Vigan, Ilocos Sur",
           "Gumamit ng Google Maps o Waze — hanapin ang \"Bangui Windmills\" o ilagay ang Plus Code GPH9+C6H",
           "Ang kalsada ay maayos na sementado sa buong lugar"
         ]
@@ -158,7 +175,8 @@
           "Tantiya ng pamasahe: PHP 600–900 para sa isang biyaheng Manila–Laoag",
           "Ang biyahe sa bus ay tumatagal ng mga 8–10 oras",
           "Mula sa terminal ng Laoag, sumakay ng tricycle o jeepney patungong terminal ng van na papuntang Bangui",
-          "Bus o van na papuntang Bangui bayan (~1 oras), pagkatapos ay tricycle papuntang windmills (5–10 minuto)"
+          "Bus o van na papuntang Bangui bayan (~1 oras), pagkatapos ay tricycle papuntang windmills (5–10 minuto)",
+          "Mula sa Vigan: sumakay ng bus papuntang Laoag (~2 oras), pagkatapos ay van o bus papuntang Bangui"
         ]
       },
       {
@@ -309,6 +327,14 @@
     "title": "Mga Madalas Itanong",
     "items": [
       {
+        "q": "Saan matatagpuan ang Bangui Windmills?",
+        "a": "Matatagpuan ang Bangui Windmills sa baybayin ng Bangui Bay, sa bayan ng Bangui, Ilocos Norte, Pilipinas — humigit-kumulang 550 km hilaga ng Manila at 55 km mula sa Lungsod ng Laoag. Ang 20 wind turbines ay nakahanay sa 9 kilometrong dalampasigan sa tabi ng Manila North Road (AH26), kaya nakikita at mapupuntahan agad mula sa kalsada. Plus Code: GPH9+C6H."
+      },
+      {
+        "q": "Ano ang kasaysayan ng Bangui Windmills?",
+        "a": "Ang Bangui Wind Farm ay pinatakbo noong 2005 ng NorthWind Power Development Corporation na may 15 Vestas V82 turbines — ang unang komersyal na wind farm sa Pilipinas at sa buong Timog-Silangang Asya. Noong 2008, idinagdag ang lima pang turbine para maging 20 yunit at humigit-kumulang 33 MW na kabuuang kapasidad. Ngayon, pinamamahalaan ito ng ACEN Corporation (dating AC Energy) ng Ayala Group, at nagbibigay ng kuryente para sa halos 40% ng Ilocos Norte."
+      },
+      {
         "q": "Ano nga ba ang Bangui Windmills?",
         "a": "Ang Bangui Windmills ay binubuo ng 20 Vestas V82 wind turbines na bumubuo sa Bangui Wind Farm — ang unang komersyal na wind farm sa Timog-Silangang Asya. Bawat turbine ay may taas na 70 metro (230 talampakan) at gumagawa ng 1.65 megawatts ng kuryente. Sila ay nakahanay sa 9 kilometrong baybayin ng Bangui, Ilocos Norte, at gumagawa ng humigit-kumulang 40% ng pangangailangan ng kuryente ng lalawigan, habang isa ring pangunahing atraksyong panturista."
       },
@@ -327,6 +353,10 @@
       {
         "q": "Paano pumunta sa Bangui Windmills mula sa Manila?",
         "a": "Mula sa Manila, sumakay ng bus patungong Laoag (8–10 oras) sa pamamagitan ng Partas, Florida, o Fariñas Transit. Mula sa Laoag, sumakay ng bus o van na papuntang Bangui (~1 oras), pagkatapos ay maikling biyahe ng tricycle papuntang windmills. Bilang kahalili, magmaneho ng sarili sa pamamagitan ng North Luzon Expressway (NLEX), SCTEX, at TPLEX, pagkatapos ay ipagpatuloy sa Manila North Road (AH26) — kabuuang oras ng biyahe ay humigit-kumulang 9–11 oras. Marami ring available na day tour mula sa mga hotel sa Laoag."
+      },
+      {
+        "q": "Paano pumunta sa Bangui Windmills mula sa Vigan o Laoag?",
+        "a": "Mula sa Laoag (~55 km, 1–1.5 oras): sumakay ng bus o van papuntang Bangui bayan, pagkatapos ay tricycle nang 5–10 minuto papuntang lugar ng pagtingin. Mula sa Vigan, Ilocos Sur (~135 km, 2.5–3 oras): sumakay ng bus na papuntang Laoag sa Manila North Road (AH26) at magpalit ng van papuntang Bangui, o umarkila ng pribadong van para sa direktang biyahe. Maraming day tour mula sa Laoag at Vigan ang nagsasama na ng Bangui Windmills, Cape Bojeador Lighthouse at Kapurpurawan Rock Formation sa iisang biyahe."
       },
       {
         "q": "Ano ang pinakamagandang oras para bumisita?",
@@ -389,6 +419,136 @@
     "privacy": "Patakaran sa Privacy",
     "terms": "Mga Tuntunin ng Serbisyo",
     "cookie": "Mga Setting ng Cookie"
+  },
+  "weather": {
+    "eyebrow": "Kondisyon ngayon",
+    "title": "Panahon at 7-Araw na Forecast",
+    "subtitle": "Ang kondisyon sa baybayin ng Bangui Bay, patuloy na ina-update para madaling mapagplano ang iyong biyahe.",
+    "loading": "Kinukuha ang kasalukuyang panahon…",
+    "error": "Sandaling hindi available ang live na panahon. Subukan muli mamaya.",
+    "now": "Ngayon",
+    "feelsLike": "Pakiramdam na parang",
+    "wind": "Hangin",
+    "humidity": "Halumigmig",
+    "precip": "Tsansa ng ulan",
+    "forecast": "7-Araw na Tanawin",
+    "umbrella": "Malamang na ulan — magdala ng jacket o payong.",
+    "noUmbrella": "Halos tuyo — hindi kailangan ang payong ngayon.",
+    "updated": "Na-update",
+    "today": "Ngayon",
+    "uv": "UV Index"
+  },
+  "amenities": {
+    "eyebrow": "Mga Serbisyo para sa Bisita",
+    "title": "Mga Pasilidad at Serbisyo sa Paligid",
+    "subtitle": "Bilang isang non-profit na gabay, nililista namin ang mga uri ng serbisyo sa paligid ng site — hindi ang mga partikular na negosyo — upang makapagplano ka nang malaya at neutral.",
+    "categories": [
+      { "icon": "restroom", "title": "Mga Pampublikong Banyo", "body": "May simpleng pampublikong banyo malapit sa pangunahing viewing area at sa baywalk ng bayan. Magdala ng sariling tissue at alcohol." },
+      { "icon": "dining", "title": "Pagkain at Inumin", "body": "Ang lokal na meryenda at inumin ay ibinebenta ng mga stall sa tabi ng kalsada malapit sa pangunahing grupo ng turbine — kabilang ang sikat na Ilocos empanada. Tingnan ang seksyong Pagkain." },
+      { "icon": "lodging", "title": "Matutuluyan sa Malapit", "body": "Sari-saring uri ng tinutuluyan — mula sa maliliit na pension house at homestay hanggang sa resort — ay makikita sa Bangui at sa wider na Pagudpud–Laoag. Mag-book nang maaga sa peak season." },
+      { "icon": "shopping", "title": "Mga Tindahan at Convenience", "body": "Ang mga sari-sari store at maliliit na convenience shop sa bayan ng Bangui ay nagbebenta ng inumin, meryenda at essentials. Para sa supermarket at ATM, puntahan ang Laoag o Pagudpud." },
+      { "icon": "fuel", "title": "Gasolina at EV Charging", "body": "May mga gasolinahan sa national highway sa Bangui. Limitado ang charging para sa electric vehicle sa immediate area — magplano ng mahabang ruta na may sapat na baterya o backup." },
+      { "icon": "parking", "title": "Parking", "body": "May libreng roadside parking sa tabi ng shoreline road. Tingnan ang seksyong Parking para sa gabay sa laki ng sasakyan at safety tips." }
+    ],
+    "note": "Ang mga listing ay naglalarawan lamang ng uri ng serbisyo. Hindi namin inirerekomenda o iniraranggo ang anumang partikular na establisyimento, at maaaring magbago ang availability — i-verify sa lugar."
+  },
+  "transportGuide": {
+    "eyebrow": "Paano Pumunta",
+    "title": "Paano Marating ang Bangui Windmills",
+    "subtitle": "Ang Bangui ay nasa hilagang dulo ng Ilocos Norte, mga 2 oras mula sa Laoag City. Narito ang mga pangunahing paraan.",
+    "routes": [
+      { "icon": "plane", "title": "Mula sa Airport ng Laoag", "summary": "Ang Laoag International Airport (LAO) ang pinakamalapit na gateway, may flight mula sa Manila.", "steps": [
+        "Dumating sa Laoag International Airport (LAO), mga 90–110 km timog ng Bangui.",
+        "Mag-hire ng private transfer, mag-renta ng kotse, o sumakay ng bus papuntang hilaga mula sa terminal ng Laoag patungong Pagudpud/Bangui.",
+        "Sundin ang national highway papuntang hilaga; ang mga windmill ay lalabas sa baybayin bago ang bayan ng Bangui."
+      ] },
+      { "icon": "bus", "title": "Sa pamamagitan ng Bus / Public Transport", "summary": "Ang mga long-haul bus mula Manila at regional lines ay konektado sa Bangui at Pagudpud.", "steps": [
+        "Mula Manila, sakyan ang Partas o GV Florida bus papuntang Laoag, pagkatapos lumipat sa lokal na bus patungong Bangui/Pagudpud.",
+        "Sabihin sa konduktor na ibaba ka sa Bangui Windmills viewing stretch (Paspo / coastal road).",
+        "Mula sa highway, maglakad o sumakay ng maikling tricycle patungo sa shoreline viewing point."
+      ] },
+      { "icon": "taxi", "title": "Taxi / Ride-Hailing", "summary": "Limitado ang ride apps sa hilaga; ang private hire ang pinaka-reliabe.", "steps": [
+        "Sa Laoag, mag-ayos ng taxi, Grab (kung available) o private van para sa round-trip papuntang Bangui.",
+        "Pagkasunduan ang flat fare at waiting time bago umalis — maraming driver ang naghihintay habang nag-e-explore ka.",
+        "Para sa maikling biyahe, ang lokal na tricycle ay konektado sa bayan ng Bangui patungo sa viewing area."
+      ] },
+      { "icon": "car", "title": "Pagda-drive / Sariling Sasakyan", "summary": "Ang pinakamalaking flexibility para sa wind-and-lighthouse loop ng Ilocos Norte.", "steps": [
+        "Sakyan ang North Luzon Expressway patungong Tarlac, pagkatapos ang TPLEX papuntang La Union.",
+        "Magpatuloy sa hilaga via national highway sa Ilocos Sur at Ilocos Norte papuntang Laoag, saka Bangui.",
+        "Mag-park sa malapad na shoulder ng kalsada na nakaharap sa turbines; madaling i-explore ang 9 km stretch stop-by-stop."
+      ] }
+    ],
+    "note": "Kadalasang maayos ang kalsada ngunit maaaring bahain o maabala tuwing bagyo (Hul–Okt). Laging suriin ang panahon at road advisories bago ang mahabang biyahe."
+  },
+  "seasonal": {
+    "eyebrow": "Estratehiya ng Panahon",
+    "title": "Kailan Pumunta — Isang Seasonal Strategy",
+    "subtitle": "Isang praktikal na tingin sa klima ng Bangui sa buong taon, mula sa long-term climate normals ng northern Luzon.",
+    "cols": { "season": "Pananahon", "months": "Buwan", "climate": "Panahon", "coast": "Baybayin at Dagat", "nature": "Nature Watch", "best": "Pinakamainam Para Sa" },
+    "rows": [
+      { "season": "Cool Dry (Amihan)", "months": "Nob – Peb", "climate": "Maheng hangin, 22–29°C, kaunti ang ulan. Ang northeast monsoon ay nagdudulot ng matatag na hangin sa baybayin.", "coast": "Pinakakalmadong dagat; malinaw na liwanag para sa litrato.", "nature": "Malinaw na ikot ng turbine; migratory birds sa baybayin.", "best": "Pinaka-komportableng sightseeing at photography." },
+      { "season": "Hot Dry", "months": "Mar – Mayo", "climate": "Mainit at maalinsangan, 25–34°C, kaunti ang ulan. Matinding araw sa tanghali.", "coast": "Mainit na tubig; abalang beach season.", "nature": "Luntiang burol; tuyo at bahagyang maulap na horizon.", "best": "Pagpunta sa umaga o hapon." },
+      { "season": "Wet (Habagat)", "months": "Hun – Sety", "climate": "Southwest monsoon; maalinsangan na may malakas na ulan sa hapon.", "coast": "Mas magalaw na dagat, malalaking alon; dramatikong langit.", "nature": "Masaganang tanawin; paminsan-minsang baha sa mababang kalsada.", "best": "Dramatikong storm-light photography; kaunting tao." },
+      { "season": "Transition / Bagyo", "months": "Okt – unang Nob", "climate": "Hindi stable; kasukdulan ng risk ng bagyo. Biglaang malakas na hangin at ulan.", "coast": "Mapanganib na alon; posibleng pagsasara ng baybayin.", "nature": "Maaaring huminto ang turbines sa sobrang lakas ng hangin para sa kaligtasan.", "best": "Suriin ang advisories; flexible, may indoor-backup plan." }
+    ]
+  },
+  "itineraries": {
+    "eyebrow": "Mga Mungkahing Plano",
+    "title": "Mga Mungkahing Itinerary",
+    "subtitle": "Pumili ng plano na swak sa iyong grupo at pacing — lahat ay nakabase sa mga windmill at malapit na highlight ng Ilocos Norte.",
+    "byAudienceTitle": "Ayon sa Iyong Biyahe",
+    "audiences": [
+      { "icon": "family", "title": "Pamilya with Kids", "desc": "Madali, mababang stress na stops na may food at photo breaks.", "items": [
+        "Dumating sa gitnang umaga; mag-park sa central viewing area.",
+        "Hayaang panoorin ng mga bata ang turbines at magpalipad ng kite sa malawak na shoreline.",
+        "Kumain ng empanada sa mga stall; maikling lakad sa bay.",
+        "Dagdag na quick stop sa Bangui baywalk playground."
+      ] },
+      { "icon": "camera", "title": "Photography & Nature", "desc": "Habulin ang pinakamagandang liwanag at coastal landscapes.", "items": [
+        "Golden hour sa pagsikat o paglubog ng araw para sa silhouette sa dagat.",
+        "Kumuha mula sa iba't ibang punto sa 9 km stretch para sa variety.",
+        "Idagdag ang Kapurpurawan Rock Formation at Cape Bojeador Lighthouse.",
+        "Magdala ng polarizer para sa glare sa blades at tubig."
+      ] },
+      { "icon": "accessible", "title": "Low-Effort / Accessible", "desc": "Kaunting lakad, komportableng pacing.", "items": [
+        "Mag-drive sa coastal road at huminto sa main viewing pull-off.",
+        "Tamasin ang view mula sa kotse o shaded na bench sa gilid.",
+        "Gamitin ang malapit na banyo at stall nang walang mahabang lakad.",
+        "Iwasan ang init ng tanghali; pumili ng cool, maheng umaga."
+      ] }
+    ],
+    "generalTitle": "Classic Routes",
+    "halfDay": { "title": "Half-Day (2–3 oras)", "desc": "Ang windmills plus isang malapit na highlight.", "items": [
+      "Bangui Windmills viewing stretch (60–90 min).",
+      "Maikling drive patungong Kapurpurawan Rock Formation.",
+      "Coffee o empanada stop sa bayan ng Bangui."
+    ] },
+    "fullDay": { "title": "Full-Day (6–8 oras)", "desc": "Ang northern Ilocos wind-and-heritage loop.", "items": [
+      "Bangui Windmills at baywalk.",
+      "Cape Bojeador Lighthouse (Burgos).",
+      "Kapurpurawan Rock Formation.",
+      "Burgos Wind Farm para sa pangalawang turbine cluster.",
+      "Late lunch sa Pagudpud o Laoag sa pagbalik."
+    ] }
+  },
+  "responsibility": {
+    "eyebrow": "Matuto at Galangin",
+    "title": "Tungkol sa Wind Farm at Pananagutan ng Bisita",
+    "subtitle": "Isang mabilis, neutral na primer sa tinitingnan mo — at kung paano ito tamasahin nang responsable.",
+    "scienceTitle": "Paano Ito Gumagana — Mabilis na Primer",
+    "science": [
+      "Ang Bangui Windmills ang unang wind farm sa Southeast Asia: 20 turbines ang nakahanay sa baybayin, bawat isa ay mga 70 m ang taas, na nagpapalit ng matatag na hangin ng monsoon sa malinis na kuryente.",
+      "Ang hangin ay renewable resource — hindi tulad ng fossil fuels, hindi ito naglalabas ng direct emissions habang gumagawa ng kuryente para sa mga nearby community.",
+      "Ang site ay nasa isang dynamic na coastal ecosystem kung saan nagtatagpo ang beach, dune at mababaw na dagat; ito rin ay rest point para sa coastal birds."
+    ],
+    "respTitle": "Pananagutan ng Bisita",
+    "responsibilities": [
+      "Lumayo sa base ng turbine at fenced equipment — working infrastructure sila, hindi climbing frames.",
+      "Mag-park nang tuluyang labas sa highway; mag-ingat sa sasakyan kapag tatawid sa coastal road.",
+      "Isama ang lahat ng basura; iwan ang shoreline gaya ng nahanap mo ito.",
+      "Galangin ang pribadong lupa at mga lokal na bahay; panatilihing considerate ang ingay at drone sa mga residente.",
+      "Pansinin ang weather at sea advisories — ang coastal winds at surf ay maaaring biglang magbago."
+    ]
   },
   "legal": {
     "privacy": {

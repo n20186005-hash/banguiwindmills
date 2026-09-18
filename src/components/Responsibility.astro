@@ -1,0 +1,63 @@
+---
+const { t } = Astro.props;
+---
+
+<section id="responsibility" class="section-alt">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal mb-12 text-center">
+      <span class="badge">{t.responsibility.eyebrow}</span>
+      <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+        {t.responsibility.title}
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-stone leading-relaxed">
+        {t.responsibility.subtitle}
+      </p>
+    </div>
+
+    <div class="grid gap-8 lg:grid-cols-2">
+      <!-- Science primer -->
+      <div class="reveal card p-8">
+        <div class="mb-5 flex items-center gap-3">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-ocean/10">
+            <svg class="h-6 w-6 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707.707m12.728 0l-.707.707M6.343 17.657l-.707.707M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy">{t.responsibility.scienceTitle}</h3>
+        </div>
+        <ul class="space-y-4">
+          {t.responsibility.science.map((s) => (
+            <li class="flex items-start gap-3 text-sm text-stone leading-relaxed">
+              <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+              </svg>
+              <span>{s}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Visitor responsibility -->
+      <div class="reveal card p-8">
+        <div class="mb-5 flex items-center gap-3">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green/10">
+            <svg class="h-6 w-6 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy">{t.responsibility.respTitle}</h3>
+        </div>
+        <ul class="space-y-4">
+          {t.responsibility.responsibilities.map((r) => (
+            <li class="flex items-start gap-3 text-sm text-stone leading-relaxed">
+              <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>{r}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

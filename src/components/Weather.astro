@@ -1,0 +1,620 @@
+---
+import { attraction } from '../config';
+const { t, lang } = Astro.props;
+const lat = attraction.lat;
+const lng = attraction.lng;
+---
+
+<section id="weather" class="section">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal mb-12 text-center">
+      <span class="badge">{t.weather.eyebrow}</span>
+      <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+        {t.weather.title}
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-stone leading-relaxed">
+        {t.weather.subtitle}
+      </p>
+    </div>
+
+    <div
+      class="reveal mx-auto max-w-5xl"
+      id="weather-widget"
+      data-lat={lat}
+      data-lng={lng}
+      data-lang={lang}
+      data-umb={t.weather.umbrella}
+      data-noumb={t.weather.noUmbrella}
+      data-today={t.weather.today}
+    >
+      <div class="card overflow-hidden">
+        <!-- Loading state -->
+        <div id="weather-loading" class="flex items-center justify-center gap-3 p-12 text-stone">
+          <svg class="h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
+          </svg>
+          <span>{t.weather.loading}</span>
+        </div>
+        <!-- Error state (hidden by default) -->
+        <div id="weather-error" class="hidden p-12 text-center text-stone">
+          {t.weather.error}
+        </div>
+        <!-- Content (filled by script) -->
+        <div id="weather-content" class="hidden grid gap-6 p-6 sm:p-8 lg:grid-cols-[1.1fr_1.4fr]">
+          <!-- Risk banner (red, only when severe conditions) -->
+          <div id="w-risk" class="hidden lg:col-span-2 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">
+            <div class="flex items-start gap-2">
+              <svg class="mt-0.5 h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+              </svg>
+              <div>
+                <div id="w-risk-label" class="font-bold"></div>
+                <div id="w-risk-body" class="mt-0.5 leading-relaxed"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Current -->
+          <div class="rounded-2xl bg-gradient-to-br from-ocean to-ocean-dark p-6 text-white">
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium text-white/80">{t.weather.now}</span>
+              <span id="w-updated" class="text-xs text-white/70"></span>
+            </div>
+            <div class="mt-3 flex items-center gap-4">
+              <span id="w-icon" class="text-6xl leading-none">⛅</span>
+              <div>
+                <div id="w-temp" class="text-5xl font-extrabold">--°</div>
+                <div id="w-cond" class="mt-1 text-sm text-white/90">--</div>
+              </div>
+            </div>
+            <div id="w-umbrella" class="mt-4 hidden rounded-xl bg-white/15 px-3 py-2 text-xs text-white/90"></div>
+            <div class="mt-5 grid grid-cols-2 gap-3 text-sm">
+              <div class="rounded-xl bg-white/10 px-3 py-2">
+                <div class="text-white/70">{t.weather.feelsLike}</div>
+                <div id="w-feels" class="font-semibold">--°</div>
+              </div>
+              <div class="rounded-xl bg-white/10 px-3 py-2">
+                <div class="text-white/70">{t.weather.wind}</div>
+                <div id="w-wind" class="font-semibold">-- km/h</div>
+              </div>
+              <div class="rounded-xl bg-white/10 px-3 py-2">
+                <div class="text-white/70">{t.weather.humidity}</div>
+                <div id="w-humidity" class="font-semibold">--%</div>
+              </div>
+              <div class="rounded-xl bg-white/10 px-3 py-2">
+                <div class="text-white/70">{t.weather.precip}</div>
+                <div id="w-precip" class="font-semibold">--%</div>
+              </div>
+              <div class="col-span-2 rounded-xl bg-white/10 px-3 py-2">
+                <div class="text-white/70">{t.weather.uv}</div>
+                <div id="w-uv" class="font-semibold">--</div>
+              </div>
+            </div>
+          </div>
+          <!-- Forecast -->
+          <div>
+            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-stone">{t.weather.forecast}</h3>
+            <div id="w-forecast" class="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7"></div>
+          </div>
+
+          <!-- Smart advice (travel / activity / carry) -->
+          <div id="w-advice" class="hidden lg:col-span-2 grid gap-4 sm:grid-cols-3">
+            <div id="w-travel-wrap" class="rounded-2xl bg-white p-4 shadow-sm border border-turbine/40">
+              <h4 id="w-travel-title" class="text-sm font-semibold text-navy"></h4>
+              <ul id="w-travel" class="mt-2 space-y-1.5 text-xs text-stone"></ul>
+            </div>
+            <div id="w-activity-wrap" class="rounded-2xl bg-white p-4 shadow-sm border border-turbine/40">
+              <h4 id="w-activity-title" class="text-sm font-semibold text-navy"></h4>
+              <ul id="w-activity" class="mt-2 space-y-1.5 text-xs text-stone"></ul>
+            </div>
+            <div id="w-carry-wrap" class="rounded-2xl bg-white p-4 shadow-sm border border-turbine/40">
+              <h4 id="w-carry-title" class="text-sm font-semibold text-navy"></h4>
+              <ul id="w-carry" class="mt-2 space-y-1.5 text-xs text-stone"></ul>
+            </div>
+          </div>
+
+          <!-- Tides (coastal, derived from Open-Meteo Marine API) -->
+          <div id="w-tide" class="hidden lg:col-span-2 rounded-2xl bg-white p-5 shadow-sm border border-ocean/30">
+            <div class="flex items-center justify-between">
+              <h3 id="w-tide-title" class="text-sm font-semibold uppercase tracking-wider text-stone"></h3>
+              <span id="w-tide-state" class="rounded-full bg-ocean/10 px-3 py-1 text-xs font-medium text-ocean"></span>
+            </div>
+            <div class="mt-3 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-xl bg-turbine/40 p-3">
+                <div id="w-tide-now-label" class="text-xs text-stone/70"></div>
+                <div id="w-tide-now" class="mt-1 text-2xl font-bold text-navy">-- m</div>
+                <div id="w-tide-wave" class="mt-1 text-xs text-stone"></div>
+              </div>
+              <div class="rounded-xl bg-turbine/40 p-3">
+                <div id="w-tide-next-label" class="text-xs text-stone/70"></div>
+                <ul id="w-tide-list" class="mt-1 space-y-1 text-sm text-navy"></ul>
+              </div>
+            </div>
+            <p id="w-tide-note" class="mt-3 text-[11px] leading-relaxed text-stone/60"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const widget = document.getElementById('weather-widget');
+  if (widget) {
+    const lat = widget.dataset.lat;
+    const lng = widget.dataset.lng;
+    const lang = widget.dataset.lang || 'en';
+
+    // WMO weather code → localized description
+    const WMO = {
+      0: { en: 'Clear sky', zh: '晴朗', fil: 'Malinaw na langit' },
+      1: { en: 'Mainly clear', zh: '大致晴朗', fil: 'Halos malinaw' },
+      2: { en: 'Partly cloudy', zh: '局部多云', fil: 'Bahagyang maulap' },
+      3: { en: 'Overcast', zh: '阴天', fil: 'Maulap' },
+      45: { en: 'Fog', zh: '雾', fil: 'Hamog' },
+      48: { en: 'Rime fog', zh: '雾凇', fil: 'Hamog' },
+      51: { en: 'Light drizzle', zh: '小毛毛雨', fil: 'Mahinang ambon' },
+      53: { en: 'Drizzle', zh: '毛毛雨', fil: 'Ambon' },
+      55: { en: 'Dense drizzle', zh: '浓毛毛雨', fil: 'Makapal na ambon' },
+      56: { en: 'Freezing drizzle', zh: '冻毛毛雨', fil: 'Yelong ambon' },
+      57: { en: 'Freezing drizzle', zh: '冻毛毛雨', fil: 'Yelong ambon' },
+      61: { en: 'Light rain', zh: '小雨', fil: 'Mahinang ulan' },
+      63: { en: 'Rain', zh: '中雨', fil: 'Ulan' },
+      65: { en: 'Heavy rain', zh: '大雨', fil: 'Malakas na ulan' },
+      66: { en: 'Freezing rain', zh: '冻雨', fil: 'Yelong ulan' },
+      67: { en: 'Freezing rain', zh: '冻雨', fil: 'Yelong ulan' },
+      71: { en: 'Light snow', zh: '小雪', fil: 'Mahinang niyebe' },
+      73: { en: 'Snow', zh: '雪', fil: 'Niyebe' },
+      75: { en: 'Heavy snow', zh: '大雪', fil: 'Malakas na niyebe' },
+      77: { en: 'Snow grains', zh: '雪粒', fil: 'Butil ng niyebe' },
+      80: { en: 'Rain showers', zh: '阵雨', fil: 'Buhos ng ulan' },
+      81: { en: 'Rain showers', zh: '阵雨', fil: 'Buhos ng ulan' },
+      82: { en: 'Violent showers', zh: '强阵雨', fil: 'Malakas na buhos' },
+      85: { en: 'Snow showers', zh: '阵雪', fil: 'Buhos ng niyebe' },
+      86: { en: 'Snow showers', zh: '阵雪', fil: 'Buhos ng niyebe' },
+      95: { en: 'Thunderstorm', zh: '雷暴', fil: 'Kulog at kidlat' },
+      96: { en: 'Thunderstorm w/ hail', zh: '雷暴伴冰雹', fil: 'Kulog at yelo' },
+      99: { en: 'Thunderstorm w/ hail', zh: '雷暴伴冰雹', fil: 'Kulog at yelo' },
+    };
+    const ICON = {
+      0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️', 45: '🌫️', 48: '🌫️',
+      51: '🌦️', 53: '🌦️', 55: '🌦️', 56: '🌧️', 57: '🌧️',
+      61: '🌧️', 63: '🌧️', 65: '🌧️', 66: '🌧️', 67: '🌧️',
+      71: '🌨️', 73: '🌨️', 75: '🌨️', 77: '🌨️',
+      80: '🌦️', 81: '🌦️', 82: '⛈️', 85: '🌨️', 86: '🌨️',
+      95: '⛈️', 96: '⛈️', 99: '⛈️',
+    };
+    const d = (code) => (WMO[code] ? WMO[code][lang] || WMO[code].en : '—');
+    const ic = (code) => ICON[code] || '🌡️';
+
+    // Localized UI titles
+    const TXT = {
+      travel: { en: 'Getting around', zh: '出行穿搭', fil: 'Paggalaw' },
+      activity: { en: 'What to do', zh: '游玩安排', fil: 'Mga Gawain' },
+      carry: { en: 'What to bring', zh: '随身物品', fil: 'Dalhin' },
+      risk: { en: 'Safety advisory', zh: '风险提醒', fil: 'Paalala sa Kaligtasan' },
+      uvBand: {
+        en: ['Low', 'Moderate', 'High', 'Very High'],
+        zh: ['弱', '中', '强', '很强'],
+        fil: ['Mababa', 'Katamtaman', 'Mataas', 'Napakataas'],
+      },
+      tideTitle: { en: 'Tides', zh: '潮汐', fil: 'Tide' },
+      rising: { en: 'Rising', zh: '涨潮中', fil: 'Tumaas' },
+      falling: { en: 'Falling', zh: '退潮中', fil: 'Bumababa' },
+      high: { en: 'High', zh: '高潮', fil: 'High' },
+      low: { en: 'Low', zh: '低潮', fil: 'Low' },
+      current: { en: 'Now', zh: '当前海平面', fil: 'Kasalukuyang lebel' },
+      nextLabel: { en: 'Upcoming tides', zh: '未来潮汐', fil: 'Susunod na tide' },
+      wave: { en: 'Waves', zh: '浪高', fil: 'Alon' },
+      tideNote: { en: 'Tide times are modeled (~8 km resolution) for reference only — not for navigation.', zh: '潮汐为模型推算（分辨率约 8 km），仅供参考，不可用于航行。', fil: 'Ang oras ng tide ay modelo (~8 km) lamang — sanggunian, hindi para sa paglalakbay.' },
+      waveNote: { en: 'Waves are high today — keep away from the rocks and surf.', zh: '今日浪高较大，远离礁石与浪区。', fil: 'Mataas ang alon ngayon — layuan ang bato at dagat.' },
+    };
+    const L = (o) => (o ? (o[lang] || o.en) : '');
+
+    // Trilingual helper
+    const T = (en, zh, fil) => ({ en, zh, fil });
+
+    // --- Advice rule library (condition → tourist-facing text) ---
+    // Each rule: test(ctx) → boolean; out: {travel?, activity?, carry?, risk?} (trilingual)
+    const RULES = [
+      // 🌂 Precipitation
+      {
+        test: (c) => c.precipProbMax >= 60 || c.precipProbNow >= 60,
+        out: {
+          travel: T('High chance of rain — bring rain gear.', '降水概率较高，尽量携带雨具。', 'Mataas ang tsansa ng ulan — magdala ng payong o jacket.'),
+          activity: T('Prefer indoor spots; postpone open-sea or beach plans.', '优先选择室内场馆，海边、户外游玩建议延后。', 'Mas mainam ang indoor; ipagpaliban ang beach o outdoor.'),
+          carry: T('Umbrella / raincoat', '雨伞 / 雨衣', 'Payong / raincoat'),
+        },
+      },
+      {
+        test: (c) => c.isLightRain,
+        out: {
+          travel: T('Light rain — watch for slippery paths.', '有小雨，路面湿滑，走路注意防滑。', 'May ambon — ingat sa madulas na daan.'),
+          activity: T('Open-air exhibits feel less comfortable in the drizzle.', '露天项目体验较差。', 'Masikip sa open-air na attractions.'),
+          carry: T('Compact umbrella', '折叠伞', 'Portable na payong'),
+        },
+      },
+      {
+        test: (c) => c.isModRain || c.isHeavyRain,
+        out: {
+          risk: T('Heavy rain — avoid valleys and low-lying areas.', '降雨较强，避开山谷、低洼地带。', 'Malakas na ulan — iwasan ang lambak at mababang lugar.'),
+          activity: T('Outdoor play not advised; boats/cable cars may stop.', '不建议户外游玩，游船、缆车可能停运。', 'Huwag mag-outdoor; posibleng tumigil ang bangka/cable car.'),
+          carry: T('Raincoat (long umbrellas fail in wind)', '雨衣（风大不宜长柄伞）', 'Raincoat (huwag long umbrella sa hangin)'),
+        },
+      },
+      {
+        test: (c) => c.isThunder,
+        out: {
+          risk: T('Thunderstorm — no climbing, no swimming, no shelter under trees.', '谨防雷电，不要登山、海边戏水、树下避雨。', 'Kidlat — huwag umakyat, lumangoy, o huminto sa ilalim ng puno.'),
+          activity: T('Water activities are likely closed.', '水上项目大概率关闭。', 'Sarado ang water activities.'),
+        },
+      },
+      // 🌞 Heat & UV
+      {
+        test: (c) => c.tempMax >= 32,
+        out: {
+          travel: T('Hot — avoid going out at noon.', '气温较高，尽量避开正午外出。', 'Mainit — iwasan lumabas sa tanghaling tapat.'),
+          activity: T('Shorten outdoor time.', '缩短户外游玩时间。', 'Ikli ang oras sa labas.'),
+          carry: T('Sunscreen, plenty of water, heat relief', '防晒、充足饮用水、防暑用品', 'Sunscreen, tubig, pamaypay'),
+        },
+      },
+      {
+        test: (c) => c.uvMax >= 5,
+        out: {
+          travel: T('Strong UV — protect your skin.', '紫外线较强，注意防晒。', 'Matindi ang UV — mag-sunscreen.'),
+          carry: T('Sunscreen, sunglasses, hat', '防晒霜、墨镜、遮阳帽', 'Sunscreen, shades, sumbrero'),
+        },
+      },
+      // ❄️ Cold / big swing
+      {
+        test: (c) => (c.tempMax - c.tempMin) > 8,
+        out: {
+          travel: T('Big day-night swing — bring a layer.', '昼夜温差大，建议备一件外套。', 'Malaki ang pagbabago ng temp — magdala ng jacket.'),
+        },
+      },
+      {
+        test: (c) => c.tempMin <= 10,
+        out: {
+          travel: T('Cold — dress warmly.', '气温偏低，注意防寒。', 'Malamig — magdamit nang makapal.'),
+          carry: T('Warm jacket, scarf', '厚外套、围巾', 'Jacket, scarf'),
+        },
+      },
+      // 💨 Wind
+      {
+        test: (c) => c.windLevel >= 5 && c.windLevel <= 6,
+        out: {
+          travel: T('Breezy — hold onto hats.', '风力偏大，帽子容易被吹落。', 'Maheng hangin — hawakan ang sumbrero.'),
+          activity: T('Harbor cruises / open rides may pause.', '海边游船、部分露天项目可能停航。', 'Posibleng huminto ang boat ride.'),
+          carry: T('Skip loose long dresses', '不建议穿宽松长裙', 'Huwag magsuot ng maluwag na bestida'),
+        },
+      },
+      {
+        test: (c) => c.windLevel >= 7,
+        out: {
+          risk: T('Strong wind — stay away from shore rocks and signs.', '大风天气，远离广告牌、海边礁石。', 'Malakas na hangin — layuan ang bato sa baybayin.'),
+          activity: T('Sea activities likely closed.', '户外海上项目大概率关闭。', 'Sarado ang sea activities.'),
+        },
+      },
+      // ☁️ Clear / Cloudy
+      {
+        test: (c) => c.isClear,
+        out: {
+          travel: T('Clear skies — great for exploring.', '天气晴好，适合户外游览。', 'Malinaw — magandang maglakad.'),
+          activity: T('Good for sunrise/sunset views.', '适合看日出日落。', 'Ganda para sa sunrise/sunset.'),
+          carry: T("Don't forget sunscreen", '记得防晒', "Huwag kalimutan ang sunscreen"),
+        },
+      },
+      {
+        test: (c) => c.isCloudy,
+        out: {
+          travel: T('Soft light — ideal for photos.', '光线柔和，很适合拍照。', 'Hinhin ang liwanag — maganda sa litrato.'),
+          activity: T('No harsh sun — good for long outdoor walks.', '无暴晒，适合长时间户外。', 'Walang tirik — ok sa mahabang lakad.'),
+        },
+      },
+      // 🌫️ Fog
+      {
+        test: (c) => c.isFog,
+        out: {
+          risk: T('Poor visibility — ferries/flights may delay.', '能见度差，轮渡、航班易延误。', 'Mababa ang visibility — baka maantala.'),
+          activity: T('Not ideal for sea/mountain views.', '不适合观海看山。', 'Hindi ok para sa view.'),
+          carry: T('Mask', '口罩', 'Mask'),
+        },
+      },
+      // 🌬️ Wind + rain combined (coastal hazard)
+      {
+        test: (c) => c.windLevel >= 6 && (c.isLightRain || c.isModRain || c.isHeavyRain),
+        out: {
+          risk: T('Wind and rain together — keep away from shore rocks.', '风雨较大，远离海边礁石。', 'Hangin at ulan — layuan ang bato sa baybayin.'),
+        },
+      },
+    ];
+
+    function beaufort(kmh) {
+      const s = [1, 5, 11, 19, 28, 38, 49, 61, 74, 88, 102, 117];
+      let lvl = 0;
+      for (let i = 0; i < s.length; i++) if (kmh > s[i]) lvl = i + 1;
+      return lvl;
+    }
+
+    // In-browser cache (~30 min) to avoid refetch on every view
+    const CACHE_KEY = `bw-weather-${lat},${lng}`;
+    const CACHE_TTL = 30 * 60 * 1000;
+
+    function render(data) {
+      const cur = data.current;
+      const daily = data.daily;
+      const hourly = data.hourly;
+      const labels = { en: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], zh: ['日','一','二','三','四','五','六'], fil: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'] };
+      const mon = { en: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'], zh: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'], fil: ['Ene','Peb','Mar','Abr','May','Hun','Hul','Ago','Set','Okt','Nob','Dis'] };
+
+      const nowPrecip = hourly && hourly.precipitation_probability ? hourly.precipitation_probability[0] : null;
+      const tempMax = daily.temperature_2m_max ? daily.temperature_2m_max[0] : cur.temperature_2m;
+      const tempMin = daily.temperature_2m_min ? daily.temperature_2m_min[0] : cur.temperature_2m;
+      const precipProbMax = daily.precipitation_probability_max ? daily.precipitation_probability_max[0] : (nowPrecip || 0);
+      const uvMax = daily.uv_index_max ? daily.uv_index_max[0] : null;
+      const windKmh = cur.wind_speed_10m;
+      const windLevel = beaufort(windKmh);
+      const code = cur.weather_code;
+      const isThunder = [95, 96, 99].includes(code);
+      const isHeavyRain = [65, 82].includes(code);
+      const isModRain = [63, 66, 67, 81].includes(code);
+      const isLightRain = [51, 53, 55, 56, 57, 61, 80].includes(code);
+      const isFog = [45, 48].includes(code);
+      const isClear = code === 0;
+      const isCloudy = [2, 3].includes(code);
+
+      const ctx = { code, isThunder, isHeavyRain, isModRain, isLightRain, isFog, isClear, isCloudy,
+        tempMax, tempMin, precipProbNow: nowPrecip || 0, precipProbMax, windKmh, windLevel, uvMax: uvMax || 0 };
+
+      // Basic card
+      document.getElementById('w-temp').textContent = `${Math.round(cur.temperature_2m)}°`;
+      document.getElementById('w-feels').textContent = `${Math.round(cur.apparent_temperature)}°`;
+      document.getElementById('w-wind').textContent = `${Math.round(windKmh)} km/h · ${windLevel}级`;
+      document.getElementById('w-humidity').textContent = `${cur.relative_humidity_2m}%`;
+      document.getElementById('w-precip').textContent = nowPrecip != null ? `${nowPrecip}%` : '—';
+      document.getElementById('w-icon').textContent = ic(code);
+      document.getElementById('w-cond').textContent = d(code);
+
+      const uvEl = document.getElementById('w-uv');
+      if (uvMax != null) {
+        const band = uvMax < 3 ? 0 : uvMax < 6 ? 1 : uvMax < 8 ? 2 : 3;
+        uvEl.textContent = `${uvMax} · ${L(TXT.uvBand)[band] || ''}`;
+      } else {
+        uvEl.textContent = '—';
+      }
+
+      const upd = document.getElementById('w-updated');
+      if (cur.time) {
+        const dt = new Date(cur.time);
+        upd.textContent = `${dt.getHours().toString().padStart(2,'0')}:${dt.getMinutes().toString().padStart(2,'0')}`;
+      }
+
+      // ---- Smart advice engine ----
+      const travel = [], activity = [], carry = [], risk = [];
+      for (const r of RULES) {
+        if (!r.test(ctx)) continue;
+        if (r.out.travel) travel.push(L(r.out.travel));
+        if (r.out.activity) activity.push(L(r.out.activity));
+        if (r.out.carry) carry.push(L(r.out.carry));
+        if (r.out.risk) risk.push(L(r.out.risk));
+      }
+      const dedupe = (arr) => Array.from(new Set(arr));
+
+      const travelU = dedupe(travel), activityU = dedupe(activity), carryU = dedupe(carry), riskU = dedupe(risk);
+
+      // Risk banner (red, pinned top)
+      const riskBox = document.getElementById('w-risk');
+      if (riskU.length) {
+        const sep = lang === 'zh' ? '；' : lang === 'fil' ? '. ' : ' ';
+        document.getElementById('w-risk-label').textContent = L(TXT.risk);
+        document.getElementById('w-risk-body').textContent = riskU.join(sep);
+        riskBox.classList.remove('hidden');
+      } else {
+        riskBox.classList.add('hidden');
+      }
+
+      // If no advice at all, fall back to the simple umbrella tip
+      const adviceBox = document.getElementById('w-advice');
+      const umbrella = document.getElementById('w-umbrella');
+      if (travelU.length || activityU.length || carryU.length) {
+        umbrella.classList.add('hidden');
+        adviceBox.classList.remove('hidden');
+        const fill = (wrapId, listId, arr) => {
+          const wrap = document.getElementById(wrapId);
+          const list = document.getElementById(listId);
+          if (arr.length) {
+            list.innerHTML = arr.map((x) => `<li class="flex gap-1.5"><span class="text-ocean">•</span><span>${x}</span></li>`).join('');
+            wrap.classList.remove('hidden');
+          } else {
+            wrap.classList.add('hidden');
+          }
+        };
+        document.getElementById('w-travel-title').textContent = L(TXT.travel);
+        document.getElementById('w-activity-title').textContent = L(TXT.activity);
+        document.getElementById('w-carry-title').textContent = L(TXT.carry);
+        fill('w-travel-wrap', 'w-travel', travelU);
+        fill('w-activity-wrap', 'w-activity', activityU);
+        fill('w-carry-wrap', 'w-carry', carryU);
+      } else {
+        adviceBox.classList.add('hidden');
+        const todayMaxP = daily.precipitation_probability_max ? daily.precipitation_probability_max[0] : 0;
+        const needUmbrella = (todayMaxP >= 40) || (cur.precipitation > 0);
+        const tip = needUmbrella
+          ? (window.__wText ? window.__wText.umbrella : '')
+          : (window.__wText ? window.__wText.noUmbrella : '');
+        if (tip) { umbrella.textContent = tip; umbrella.classList.remove('hidden'); }
+      }
+
+      // 7-day forecast
+      const fc = document.getElementById('w-forecast');
+      fc.innerHTML = '';
+      const days = daily.time.length;
+      for (let i = 0; i < days; i++) {
+        const dt = new Date(daily.time[i] + 'T00:00');
+        const wdName = (labels[lang] || labels.en)[dt.getDay()];
+        const mName = (mon[lang] || mon.en)[dt.getMonth()];
+        const isToday = i === 0;
+        const el = document.createElement('div');
+        el.className = 'rounded-xl bg-turbine/50 p-3 text-center';
+        el.innerHTML = `
+          <div class="text-xs font-medium text-stone">${isToday ? (window.__wText ? window.__wText.today : 'Today') : wdName}</div>
+          <div class="text-[10px] text-stone/60">${mName} ${dt.getDate()}</div>
+          <div class="my-1 text-2xl leading-none">${ic(daily.weather_code[i])}</div>
+          <div class="text-sm font-semibold text-navy">${Math.round(daily.temperature_2m_max[i])}°</div>
+          <div class="text-xs text-stone">${Math.round(daily.temperature_2m_min[i])}°</div>
+          <div class="mt-1 text-[10px] text-ocean">${daily.precipitation_probability_max[i]}%</div>
+        `;
+        fc.appendChild(el);
+      }
+    }
+
+    // ---- Tides (Open-Meteo Marine Weather API) ----
+    const TIDE_CACHE_KEY = `bw-tide-${lat},${lng}`;
+
+    function parseTides(time, level) {
+      const n = time.length;
+      const ev = [];
+      for (let i = 1; i < n - 1; i++) {
+        const a = level[i - 1], b = level[i], c = level[i + 1];
+        if (b > a && b >= c) ev.push({ i, t: time[i], v: b, type: 'high' });
+        else if (b < a && b <= c) ev.push({ i, t: time[i], v: b, type: 'low' });
+      }
+      // keep the strongest extremum within a ~5h window (avoids flat-top doubles)
+      const kept = [];
+      for (const e of ev) {
+        const last = kept[kept.length - 1];
+        if (!last || Math.abs(e.i - last.i) >= 5) kept.push(e);
+        else if ((e.type === 'high' && e.v > last.v) || (e.type === 'low' && e.v < last.v)) kept[kept.length - 1] = e;
+      }
+      return kept;
+    }
+
+    async function loadTides() {
+      let cached = null;
+      try {
+        const raw = localStorage.getItem(TIDE_CACHE_KEY);
+        if (raw) {
+          const p = JSON.parse(raw);
+          if (Date.now() - p.ts < CACHE_TTL) cached = p.data;
+        }
+      } catch (e) {}
+      const m = cached || await fetchTides();
+      if (!m) return;
+      if (!cached) {
+        try { localStorage.setItem(TIDE_CACHE_KEY, JSON.stringify({ ts: Date.now(), data: m })); } catch (e) {}
+      }
+      renderTides(m);
+    }
+
+    async function fetchTides() {
+      const url = `https://marine-api.open-meteo.com/v1/marine?latitude=${lat}&longitude=${lng}`
+        + `&hourly=sea_level_height_msl,wave_height&timezone=auto&forecast_days=3`;
+      try {
+        const res = await fetch(url);
+        if (!res.ok) return null;
+        const j = await res.json();
+        if (!j.hourly || !j.hourly.sea_level_height_msl) return null;
+        return j;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function renderTides(m) {
+      const time = m.hourly.time;
+      const level = m.hourly.sea_level_height_msl;
+      const wave = m.hourly.wave_height;
+      const events = parseTides(time, level);
+      if (!events || !events.length) return;
+
+      const now = new Date();
+      let idx = 0;
+      for (let i = 0; i < time.length; i++) {
+        if (new Date(time[i]) >= now) { idx = i; break; }
+        idx = i;
+      }
+      const base = new Date(time[idx]);
+      const upcoming = events.filter((e) => new Date(e.t) >= base - 30 * 60000).slice(0, 4);
+
+      let state = null;
+      if (upcoming.length) state = upcoming[0].type === 'high' ? 'rising' : 'falling';
+      else {
+        const a = level[Math.max(0, idx - 1)], b = level[Math.min(level.length - 1, idx + 1)];
+        state = b >= a ? 'rising' : 'falling';
+      }
+
+      document.getElementById('w-tide-title').textContent = L(TXT.tideTitle);
+      document.getElementById('w-tide-state').textContent = L(TXT[state]);
+      document.getElementById('w-tide-now-label').textContent = L(TXT.current);
+      document.getElementById('w-tide-now').textContent = `${Number(level[idx]).toFixed(1)} m`;
+
+      const waveEl = document.getElementById('w-tide-wave');
+      if (wave && wave[idx] != null) waveEl.textContent = `${L(TXT.wave)} ${Number(wave[idx]).toFixed(1)} m`;
+      else waveEl.textContent = '';
+
+      document.getElementById('w-tide-next-label').textContent = L(TXT.nextLabel);
+      document.getElementById('w-tide-list').innerHTML = upcoming.map((e) => {
+        const dt = new Date(e.t);
+        const hh = `${dt.getHours().toString().padStart(2, '0')}:${dt.getMinutes().toString().padStart(2, '0')}`;
+        const typeLbl = e.type === 'high' ? L(TXT.high) : L(TXT.low);
+        return `<li class="flex items-center justify-between gap-2"><span class="text-stone">${typeLbl}</span><span class="font-semibold">${hh} · ${Number(e.v).toFixed(1)} m</span></li>`;
+      }).join('');
+
+      let note = L(TXT.tideNote);
+      if (wave && wave[idx] != null && wave[idx] >= 1.5) note = L(TXT.waveNote) + ' ' + note;
+      document.getElementById('w-tide-note').textContent = note;
+
+      document.getElementById('w-tide').classList.remove('hidden');
+    }
+
+    function showError() {
+      document.getElementById('weather-loading').classList.add('hidden');
+      document.getElementById('weather-content').classList.add('hidden');
+      document.getElementById('weather-error').classList.remove('hidden');
+    }
+
+    async function load() {
+      window.__wText = {
+        umbrella: widget.dataset.umb || '',
+        noUmbrella: widget.dataset.noumb || '',
+        today: widget.dataset.today || 'Today',
+      };
+
+      let cached = null;
+      try {
+        const raw = localStorage.getItem(CACHE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Date.now() - parsed.ts < CACHE_TTL) cached = parsed.data;
+        }
+      } catch (e) {}
+
+      const data = cached || await fetchData();
+      if (!data) { showError(); return; }
+      if (!cached) {
+        try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data })); } catch (e) {}
+      }
+      document.getElementById('weather-loading').classList.add('hidden');
+      document.getElementById('weather-content').classList.remove('hidden');
+      render(data);
+      loadTides();
+    }
+
+    async function fetchData() {
+      const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}`
+        + `&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,weather_code,wind_speed_10m,wind_gusts_10m,wind_direction_10m`
+        + `&hourly=precipitation_probability`
+        + `&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,uv_index_max,sunrise,sunset`
+        + `&wind_speed_unit=kmh&timezone=auto&forecast_days=7`;
+      try {
+        const res = await fetch(url);
+        if (!res.ok) return null;
+        return await res.json();
+      } catch (e) {
+        return null;
+      }
+    }
+
+    load();
+  }
+</script>

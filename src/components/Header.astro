@@ -1,12 +1,17 @@
 ---
 import { attraction } from '../config';
 
-const { t } = Astro.props;
+const { t, lang } = Astro.props;
+
+const homeHref = `/${lang}/`;
 
 const navItems = [
   { label: t.header.intro, href: '#introduction' },
   { label: t.header.history, href: '#history' },
   { label: t.header.bestTime, href: '#best-time' },
+  { label: t.header.weather, href: '#weather' },
+  { label: t.header.amenities, href: '#amenities' },
+  { label: t.header.plan, href: '#itineraries' },
   { label: t.header.nearby, href: '#nearby-food' },
   { label: t.header.gallery, href: '#gallery' },
   { label: t.header.faq, href: '#faq' },
@@ -17,7 +22,7 @@ const navItems = [
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <!-- Logo -->
-      <a href="/" class="flex items-center gap-2.5 group" aria-label="Bangui Windmills — Home">
+      <a href={homeHref} class="flex items-center gap-2.5 group" aria-label="Bangui Windmills — Home">
         <img
           src="/favicon.svg"
           alt=""

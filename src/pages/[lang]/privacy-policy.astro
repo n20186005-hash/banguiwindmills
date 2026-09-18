@@ -22,7 +22,13 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 ---
 
-<BaseLayout t={t} lang={currentLang}>
+<BaseLayout
+  t={t}
+  lang={currentLang}
+  pagePath={`/${currentLang}/privacy-policy/`}
+  title={`${t.legal.privacy.title} — Bangui Windmills`}
+  description={t.meta.description}
+>
   <Header t={t} lang={currentLang} />
   <main>
     <article class="max-w-3xl mx-auto px-4 py-24 prose prose-lg">

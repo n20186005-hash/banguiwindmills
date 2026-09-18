@@ -1,0 +1,66 @@
+---
+const { t } = Astro.props;
+const c = t.seasonal.cols;
+---
+
+<section id="seasonal" class="section-alt">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal mb-12 text-center">
+      <span class="badge">{t.seasonal.eyebrow}</span>
+      <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+        {t.seasonal.title}
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-stone leading-relaxed">
+        {t.seasonal.subtitle}
+      </p>
+    </div>
+
+    <!-- Desktop / tablet table -->
+    <div class="reveal hidden overflow-x-auto rounded-2xl bg-white shadow-sm border border-turbine/40 md:block">
+      <table class="w-full border-collapse text-left text-sm">
+        <thead>
+          <tr class="bg-turbine/60 text-navy">
+            <th class="px-4 py-3 font-semibold">{c.season}</th>
+            <th class="px-4 py-3 font-semibold">{c.months}</th>
+            <th class="px-4 py-3 font-semibold">{c.climate}</th>
+            <th class="px-4 py-3 font-semibold">{c.coast}</th>
+            <th class="px-4 py-3 font-semibold">{c.nature}</th>
+            <th class="px-4 py-3 font-semibold">{c.best}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {t.seasonal.rows.map((row, i) => (
+            <tr class={i % 2 === 0 ? 'bg-white' : 'bg-turbine/30'}>
+              <td class="px-4 py-3 align-top">
+                <div class="font-semibold text-navy">{row.season}</div>
+              </td>
+              <td class="px-4 py-3 align-top text-stone whitespace-nowrap">{row.months}</td>
+              <td class="px-4 py-3 align-top text-stone">{row.climate}</td>
+              <td class="px-4 py-3 align-top text-stone">{row.coast}</td>
+              <td class="px-4 py-3 align-top text-stone">{row.nature}</td>
+              <td class="px-4 py-3 align-top text-stone">{row.best}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Mobile stacked cards -->
+    <div class="reveal space-y-4 md:hidden">
+      {t.seasonal.rows.map((row) => (
+        <div class="card p-5">
+          <div class="flex items-baseline justify-between gap-2">
+            <h3 class="text-base font-bold text-navy">{row.season}</h3>
+            <span class="badge text-xs">{row.months}</span>
+          </div>
+          <dl class="mt-3 space-y-2 text-sm">
+            <div><dt class="font-semibold text-ocean">{c.climate}</dt><dd class="text-stone">{row.climate}</dd></div>
+            <div><dt class="font-semibold text-ocean">{c.coast}</dt><dd class="text-stone">{row.coast}</dd></div>
+            <div><dt class="font-semibold text-ocean">{c.nature}</dt><dd class="text-stone">{row.nature}</dd></div>
+            <div><dt class="font-semibold text-ocean">{c.best}</dt><dd class="text-stone">{row.best}</dd></div>
+          </dl>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

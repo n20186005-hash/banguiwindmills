@@ -1,8 +1,34 @@
-node_modules
-dist
-.astro
-.wrangler
-*.log
-.DS_Store
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output (this is what gets uploaded to Cloudflare Workers — keep locally, ignore in git)
+dist/
+dist-*/
+dist-static/
+
+# Astro / Vite cache
+.astro/
+.cache/
+
+# Cloudflare
+.wrangler/
 .dev.vars
-package-lock.json
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Local overrides
+*.local

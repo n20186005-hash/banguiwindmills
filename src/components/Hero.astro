@@ -57,6 +57,17 @@ const { t } = Astro.props;
           ))}
         </div>
         <div class="mt-0.5 text-sm text-white/60">{t.hero.reviews} {t.hero.reviewsSuffix}</div>
+        <div class="mt-1 max-w-xs text-center text-xs text-white/50">
+          {t.reviews.sourceNote}
+          <a
+            href={mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="underline decoration-white/40 underline-offset-2 transition-colors hover:text-white"
+          >
+            {t.reviews.sourceLink}
+          </a>
+        </div>
       </div>
 
       {t.hero.facts.map((fact: { k: string; v: string }) => (
