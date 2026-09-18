@@ -208,6 +208,8 @@ const lng = attraction.lng;
       wave: { en: 'Waves', zh: '浪高', fil: 'Alon' },
       tideNote: { en: 'Tide times are modeled (~8 km resolution) for reference only — not for navigation.', zh: '潮汐为模型推算（分辨率约 8 km），仅供参考，不可用于航行。', fil: 'Ang oras ng tide ay modelo (~8 km) lamang — sanggunian, hindi para sa paglalakbay.' },
       waveNote: { en: 'Waves are high today — keep away from the rocks and surf.', zh: '今日浪高较大，远离礁石与浪区。', fil: 'Mataas ang alon ngayon — layuan ang bato at dagat.' },
+      tideActNow: { en: 'It is low tide now — great for beachcombing and reef photography.', zh: '当前正值低潮，是赶海、礁石拍摄的好时机。', fil: 'Low tide ngayon — magandang oras para sa baybayin at litrato sa bato.' },
+      tideActNext: { en: 'Next low tide ~{t} — best for beachcombing & reef photos 1–2h around it.', zh: '下次低潮约 {t}，前后 1–2 小时适合赶海、礁石拍摄。', fil: 'Susunod na low tide ~{t} — maganda ang baybayin at litrato sa bato 1–2 oras bago/dahil.' },
     };
     const L = (o) => (o ? (o[lang] || o.en) : '');
 
@@ -563,6 +565,26 @@ const lng = attraction.lng;
       let note = L(TXT.tideNote);
       if (wave && wave[idx] != null && wave[idx] >= 1.5) note = L(TXT.waveNote) + ' ' + note;
       document.getElementById('w-tide-note').textContent = note;
+
+      // Tide-based activity tip → appends to "游玩安排 / What to do"
+      const nextLow = upcoming.find((e) => e.type === 'low');
+      if (nextLow) {
+        const lowDt = new Date(nextLow.t);
+        const hh = `${lowDt.getHours().toString().padStart(2, '0')}:${lowDt.getMinutes().toString().padStart(2, '0')}`;
+        const diffH = (lowDt - base) / 3600000;
+        const tip = Math.abs(diffH) <= 1.5
+          ? L(TXT.tideActNow)
+          : (TXT.tideActNext[lang] || TXT.tideActNext.en).replace('{t}', hh);
+        const actList = document.getElementById('w-activity');
+        const li = document.createElement('li');
+        li.className = 'flex gap-1.5';
+        li.innerHTML = `<span class="text-ocean">•</span><span>${tip}</span>`;
+        actList.appendChild(li);
+        document.getElementById('w-activity-title').textContent = L(TXT.activity);
+        document.getElementById('w-activity-wrap').classList.remove('hidden');
+        document.getElementById('w-advice').classList.remove('hidden');
+        document.getElementById('w-umbrella').classList.add('hidden');
+      }
 
       document.getElementById('w-tide').classList.remove('hidden');
     }
