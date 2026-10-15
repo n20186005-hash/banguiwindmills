@@ -8,7 +8,7 @@ const baseUrl = getBaseUrl();
 
 // ===== 多语言路由：全站语言集合与默认语言 =====
 const SUPPORTED_LANGS = ['fil', 'en', 'zh'] as const;
-const HREFLANG: Record<string, string> = { fil: 'fil', en: 'en', zh: 'zh' };
+const HREFLANG: Record<string, string> = { fil: 'tl', en: 'en', zh: 'zh' };
 const DEFAULT_LANG = 'fil';
 
 const currentPath: string = pagePath ?? `/${lang}/`;
@@ -34,7 +34,7 @@ const ogImage = baseUrl
 const localeMap: Record<string, string> = {
   en: 'en_US',
   zh: 'zh_CN',
-  fil: 'fil_PH',
+  fil: 'tl_PH',
 };
 const ogLocale = localeMap[lang] || 'en_US';
 

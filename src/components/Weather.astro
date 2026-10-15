@@ -36,8 +36,14 @@ const lng = attraction.lng;
           <span>{t.weather.loading}</span>
         </div>
         <!-- Error state (hidden by default) -->
-        <div id="weather-error" class="hidden p-12 text-center text-stone">
-          {t.weather.error}
+        <div id="weather-error" class="hidden p-8 text-center text-stone">
+          <p>{t.weather.error}</p>
+          <a
+            href="#seasonal"
+            class="mt-3 inline-flex items-center gap-1 font-medium text-ocean underline underline-offset-2 transition-colors hover:text-ocean-dark"
+          >
+            {t.weather.errorGuide} →
+          </a>
         </div>
         <!-- Content (filled by script) -->
         <div id="weather-content" class="hidden grid gap-6 p-6 sm:p-8 lg:grid-cols-[1.1fr_1.4fr]">
@@ -618,7 +624,12 @@ const lng = attraction.lng;
       }
       document.getElementById('weather-loading').classList.add('hidden');
       document.getElementById('weather-content').classList.remove('hidden');
-      render(data);
+      try {
+        render(data);
+      } catch (e) {
+        showError();
+        return;
+      }
       loadTides();
     }
 

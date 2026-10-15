@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Bangui Windmills — Ilocos Norte's Iconic Wind Farm | Visitor Guide",
-    "description": "Complete visitor guide to Bangui Windmills in Ilocos Norte, Philippines. Southeast Asia's first wind farm — 20 turbines along 9 km of coastline. History, transport, entrance fees, best time to visit, and nearby attractions.",
+    "title": "Bangui Windmills, Ilocos Norte – Free Entrance & Visitor Guide",
+    "description": "Visit Bangui Windmills in Ilocos Norte, Philippines. Find free entrance details, directions from Laoag, best visiting times, and tips for exploring Bangui Wind Farm.",
     "ogTitle": "Bangui Windmills — Southeast Asia's First Wind Farm",
     "ogDescription": "The first wind farm in Southeast Asia. 20 towering wind turbines along the scenic coastline of Bangui Bay, Ilocos Norte, Philippines."
   },
@@ -32,9 +32,9 @@
     "onSiteConfirm": "Conditions may change — confirm on-site before your visit"
   },
   "reviews": {
-    "sourceNote": "Rating and review count synced from Google Maps user reviews · September 2026 · ",
+    "sourceNote": "Rating and review count synced from Google Maps user reviews · October 2026 · ",
     "sourceLink": "View all Google Maps reviews↗",
-    "copyright": "Synced from Google Maps user reviews, synced September 2026; copyright belongs to the original authors and Google Maps.",
+    "copyright": "Synced from Google Maps user reviews, synced October 2026; copyright belongs to the original authors and Google Maps.",
     "viewAllButton": "View all reviews on Google Maps"
   },
   "sources": {
@@ -42,21 +42,24 @@
     "subtitle": "Where the information shown on this page comes from.",
     "reviewLabel": "Reviews",
     "officialLabel": "Department of Tourism, Philippines",
-    "officialDesc": "The official government tourism portal for regional travel information."
+    "officialDesc": "The official government tourism portal for regional travel information.",
+    "operatorLabel": "Facility Operator",
+    "operatorDesc": "NorthWind Bangui (ACEN) operates the wind farm; see the official site for facility data."
   },
   "hero": {
     "localName": "Bangui Windmills",
     "title": "Bangui Windmills (Bangui)",
     "subtitle": "Southeast Asia's first wind farm — 20 towering turbines standing sentinel along the windswept shores of Bangui Bay, where nature and innovation meet.",
     "rating": "4.7",
-    "reviews": "3,858",
+    "reviews": "3,869",
     "reviewsSuffix": "reviews",
     "ctaMaps": "Open in Google Maps",
     "ctaExplore": "Explore",
+    "independentNote": "Free to visit — the public viewing area has no entrance fee. This is an independent, non-profit visitor guide.",
     "facts": [
       { "k": "Type", "v": "Wind Farm / Scenic Viewpoint" },
       { "k": "Location", "v": "Ilocos Norte, Philippines" },
-      { "k": "Turbines", "v": "20 units (Vestas V82)" },
+      { "k": "Turbines", "v": "20 iconic (26 total)" },
       { "k": "Stretch", "v": "9 km coastline" }
     ],
     "heroAlt": "Bangui Windmills (Bangui Wind Farm) along the coastline of Bangui, Ilocos Norte, Philippines"
@@ -71,20 +74,20 @@
       { "k": "Type", "v": "Wind Farm / Scenic Viewpoint", "icon": "tree" },
       { "k": "Location", "v": "Bangui Bay, Bangui, Ilocos Norte", "icon": "pin" },
       { "k": "Map Code", "v": "GPH9+C6H", "icon": "pin" },
-      { "k": "Rating", "v": "4.7 / 5 (≈3,858)", "icon": "star" },
+      { "k": "Rating", "v": "4.7 / 5 (≈3,869)", "icon": "star" },
       { "k": "Country", "v": "Philippines", "icon": "city" }
     ]
   },
   "intro": {
     "eyebrow": "Introduction",
     "title": "Where Wind Meets the Sea",
-    "description": "Stretching 9 kilometers along the dark-sand shoreline of Bangui Bay, the Bangui Windmills form one of the Philippines' most photographed landmarks. Twenty Vestas V82 wind turbines — each standing 70 meters (230 feet) tall — spin gracefully against the West Philippine Sea, creating a mesmerizing contrast between cutting-edge technology and raw coastal beauty.",
+    "description": "Stretching 9 kilometers along the dark-sand shoreline of Bangui Bay, the Bangui Windmills form one of the Philippines' most photographed landmarks. The iconic shoreline row of twenty Vestas V82 wind turbines — each standing 70 meters (230 feet) tall — spin gracefully against the West Philippine Sea, creating a mesmerizing contrast between cutting-edge technology and raw coastal beauty.",
     "whyTitle": "Why visit",
-    "why": "Built in 2005 as Southeast Asia's first wind farm, these turbines generate enough electricity to cover approximately 40% of Ilocos Norte's power needs. Beyond their engineering significance, they have become a symbol of the region's commitment to renewable energy and a must-visit destination along the Ilocos tourist circuit. Best of all? The viewing area is completely free and open to the public year-round.",
+    "why": "Built in 2005 as Southeast Asia's first wind farm, these turbines generate enough electricity to cover a significant share of Ilocos Norte's power needs. Beyond their engineering significance, they have become a symbol of the region's commitment to renewable energy and a must-visit destination along the Ilocos tourist circuit. Best of all? The viewing area is completely free and open to the public year-round.",
     "highlights": {
       "title": "What you'll find",
       "items": [
-        "20 towering 70-meter wind turbines along a 9-km coastline",
+        "The iconic shoreline row of 20 towering 70-meter wind turbines along a 9-km coastline",
         "Completely free viewing area, open 24 hours a day",
         "Dramatic ocean views perfect for photography",
         "A natural starting point for the Ilocos Norte scenic route"
@@ -114,7 +117,7 @@
       {
         "era": "Today",
         "heading": "Under ACEN Renewables",
-        "body": "The NorthWind Bangui facility now operates under ACEN Corporation (formerly AC Energy), the Ayala Group's energy platform. With a total capacity of 52 MW across its NorthWind assets, the Bangui site remains a flagship of the Philippines' clean energy transition and a model for how renewable infrastructure can coexist with thriving tourism."
+        "body": "The NorthWind Bangui facility now operates under ACEN Corporation (formerly AC Energy), the Ayala Group's energy platform. The wider Bangui Wind Farm today totals 26 turbines — the iconic 20 Vestas V82 units plus 6 Siemens units added in 2014 — with a combined capacity of 52 MW across its NorthWind assets. The Bangui site remains a flagship of the Philippines' clean energy transition and a model for how renewable infrastructure can coexist with thriving tourism."
       }
     ]
   },
@@ -141,14 +144,14 @@
     ],
     "possibleExpenses": [
       "Local souvenirs and snacks from vendors near the viewing area (voluntary)",
-      "Environmental fee — occasional small fees collected by local government (~PHP 10–20), not consistently applied",
+      "Environmental / community fee — a small fee (around PHP 10–20) is occasionally collected by local authorities, but this is not consistently applied; always confirm any charge on-site",
       "Drone photography — always check local rules before flying; drone use near power infrastructure may be restricted"
     ]
   },
   "parking": {
     "eyebrow": "Parking",
     "title": "Parking Information",
-    "overview": "Parking is free and available along the roadside shoulder adjacent to the viewing area."
+    "overview": "Parking along the roadside shoulder is generally free of charge, but availability depends on the day and conditions. Always follow on-site signage and never stop on the highway itself."
   },
   "transport": {
     "eyebrow": "Getting There",
@@ -326,7 +329,7 @@
     "items": [
       {
         "q": "Where are the Bangui Windmills located?",
-        "a": "The Bangui Windmills are located along the shoreline of Bangui Bay in the municipality of Bangui, Ilocos Norte, Philippines — about 550 km north of Manila and 55 km from Laoag City. The 20 wind turbines line 9 kilometers of coastline beside the Manila North Road (AH26), so they are visible and directly accessible from the road. Plus Code: GPH9+C6H."
+        "a": "The Bangui Windmills are located along the shoreline of Bangui Bay in the municipality of Bangui, Ilocos Norte, Philippines — about 550 km north of Manila and 55 km from Laoag City. The iconic shoreline row of 20 wind turbines lines 9 kilometers of coastline beside the Manila North Road (AH26), so they are visible and directly accessible from the road. Plus Code: GPH9+C6H."
       },
       {
         "q": "What is the history of the Bangui Windmills?",
@@ -338,7 +341,7 @@
       },
       {
         "q": "What exactly are the Bangui Windmills?",
-        "a": "The Bangui Windmills are 20 Vestas V82 wind turbines that form the Bangui Wind Farm — the first commercial wind farm in Southeast Asia. Each turbine stands 70 meters (230 feet) tall and generates 1.65 megawatts of electricity. They stretch along 9 kilometers of coastline in Bangui, Ilocos Norte, and generate approximately 40% of the province's electricity needs while serving as a major tourist attraction."
+        "a": "The Bangui Windmills are the iconic shoreline row of 20 Vestas V82 wind turbines that form the Bangui Wind Farm — the first commercial wind farm in Southeast Asia. Each turbine stands 70 meters (230 feet) tall and generates 1.65 megawatts of electricity. With the wider wind farm's 6 Siemens units added in 2014, the full Bangui Wind Farm totals 26 turbines. They stretch along 9 kilometers of coastline in Bangui, Ilocos Norte, and generate a major share of the province's electricity needs while serving as a major tourist attraction."
       },
       {
         "q": "Is there an entrance fee?",
@@ -366,7 +369,7 @@
       },
       {
         "q": "Is parking available? Is it free?",
-        "a": "Yes, parking is free. Visitors park along the roadside shoulder adjacent to the viewing area. There is no designated parking lot — the road runs parallel to the turbines, and there's space all along the 9-kilometer stretch. The area near the central turbine cluster is the most popular parking spot."
+        "a": "Roadside parking along the shoreline is generally free of charge, though spaces depend on the day. There is no formal parking lot — visitors pull over to the shoulder beside the turbines. Always obey on-site signs and avoid blocking the highway or private driveways."
       },
       {
         "q": "Are there restaurants or food vendors nearby?",
@@ -424,6 +427,7 @@
     "subtitle": "Coastal conditions at Bangui Bay, refreshed continuously so you can plan your visit with confidence.",
     "loading": "Loading current conditions…",
     "error": "Live weather is temporarily unavailable. Please check again shortly.",
+    "errorGuide": "See the seasonal climate guide below.",
     "now": "Now",
     "feelsLike": "Feels like",
     "wind": "Wind",
@@ -535,7 +539,7 @@
     "subtitle": "A quick, neutral primer on what you're looking at — and how to enjoy it responsibly.",
     "scienceTitle": "How It Works — A Quick Primer",
     "science": [
-      "Bangui Windmills was Southeast Asia's first wind farm: 20 turbines line the coast, each about 70 m tall, converting steady monsoon winds into clean electricity.",
+    "Bangui Windmills was Southeast Asia's first wind farm: the iconic shoreline row of 20 turbines lines the coast, each about 70 m tall, converting steady monsoon winds into clean electricity.",
       "Wind is a renewable resource — unlike fossil fuels, it produces no direct emissions while generating power for nearby communities.",
       "The site sits on a dynamic coastal ecosystem where beach, dune and shallow sea meet; it is also a rest point for coastal birds."
     ],
@@ -551,7 +555,7 @@
   "legal": {
     "privacy": {
       "title": "Privacy Policy",
-      "lastUpdated": "Last updated: August 2026",
+      "lastUpdated": "Last updated: October 2026",
       "sections": [
         {
           "h": "Information we collect",
@@ -590,7 +594,7 @@
     },
     "terms": {
       "title": "Terms of Service",
-      "lastUpdated": "Last updated: August 2026",
+      "lastUpdated": "Last updated: October 2026",
       "sections": [
         {
           "h": "Access and use",
@@ -616,7 +620,7 @@
     },
     "cookie": {
       "title": "Cookie Settings",
-      "lastUpdated": "Last updated: August 2026",
+      "lastUpdated": "Last updated: October 2026",
       "sections": [
         {
           "h": "We use cookies to improve your browsing experience. You can manage your preferences below.",

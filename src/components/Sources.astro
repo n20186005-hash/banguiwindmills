@@ -1,5 +1,5 @@
 ---
-import { mapsUrl, govtTourismUrl, attraction } from '../config';
+import { mapsUrl, govtTourismUrl, attraction, operatorUrl } from '../config';
 
 const { t } = Astro.props;
 const syncDate = attraction.reviewSyncDate;
@@ -64,6 +64,25 @@ const syncDate = attraction.reviewSyncDate;
           </svg>
         </a>
       </div>
+      <!-- 设施运营方 -->
+      <div class="flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex-1">
+          <div class="text-sm font-semibold text-navy">{t.sources.operatorLabel}</div>
+          <p class="mt-2 text-sm leading-relaxed text-stone">
+            {t.sources.operatorDesc}
+          </p>
+        </div>
+        <a
+          href={operatorUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex flex-shrink-0 items-center gap-2 rounded-full border border-stone/20 px-5 py-2.5 text-sm font-semibold text-navy transition-all hover:bg-turbine"
+        >
+          {operatorUrl.replace(/^https?:\/\//, '')}
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+
     </div>
   </div>
 </section>

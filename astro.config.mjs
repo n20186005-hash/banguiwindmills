@@ -16,7 +16,7 @@ export default defineConfig({
           i18n: {
             defaultLocale: 'fil',
             locales: {
-              fil: 'fil-PH',
+              fil: 'tl-PH',
               en: 'en-US',
               zh: 'zh-CN',
             },

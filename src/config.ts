@@ -43,16 +43,19 @@ export const mapsUrl = 'https://maps.app.goo.gl/BWrzkYmzxtDcUaSC7';
 // 当地政府/官方旅游局链接（用于 JSON-LD sameAs 与资料来源区）
 export const govtTourismUrl = 'https://www.tourism.gov.ph';
 
+// 设施运营方（一手来源：风机参数与风场历史）
+export const operatorUrl = 'https://www.acenrenewables.com';
+
 export const attraction = {
   name: 'Bangui Windmills',
   nameLocal: 'Bangui Windmills',
   alternateNames: ['Bangui Wind Farm', 'Bangui Windmills Bangui'],
   description:
-    'The first wind farm in Southeast Asia, featuring 20 towering wind turbines stretched along the picturesque coastline of Bangui Bay in Ilocos Norte, Philippines.',
+    'The first wind farm in Southeast Asia, featuring the iconic shoreline row of 20 wind turbines (26 across the full wind farm) stretched along the picturesque coastline of Bangui Bay in Ilocos Norte, Philippines.',
   rating: '4.7',
-  // 评分与评价数同步自 Google Maps 用户评价（2026 年 9 月），仅展示于页面、不进入 JSON-LD
-  reviewCount: '3,858',
-  reviewSyncDate: '2026-09',
+  // 评分与评价数同步自 Google Maps 用户评价（2026 年 10 月），仅展示于页面、不进入 JSON-LD
+  reviewCount: '3,869',
+  reviewSyncDate: '2026-10',
   lat: 18.5285706,
   lng: 120.7181102,
   plusCode: 'GPH9+C6H',
